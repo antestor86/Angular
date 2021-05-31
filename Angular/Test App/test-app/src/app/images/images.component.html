@@ -1,0 +1,7 @@
+<div id="body">
+    <h5 class='mitems' (click)="openMenu()">Social</h5>
+    <a *ngIf='!subListStatus;else addSub'></a>
+    <ng-template #addSub>
+        <li *ngFor="let item of items">{{items}}</li>
+    </ng-template>
+</div>

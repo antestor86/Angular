@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+  color: white;
+}
+header{
+  color:white;
+  background-color: rgba(0, 128, 128, 0.2);
+  width: auto;
+  height: 60px;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+h2{
+  font-family: 'Itim', cursive;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.card{
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+}
+li{
+  list-style: none;
+}
+
+a{
+  margin-top: 10px;
+  font-family: 'Itim', cursive;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.card a:hover{
+  color: grey;
+}
+
+.active{
+  color: rgb(53, 112, 151);
+}

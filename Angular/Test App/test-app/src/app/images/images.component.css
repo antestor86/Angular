@@ -1,0 +1,30 @@
+#body {
+    position: relative;
+    top: 80px;
+    display: inline-block;
+    border: 1px solid black;
+    width: 100%;
+    height: 600px;
+    background-color: rgb(102, 102, 122);
+}
+
+.mitems {
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    display: inline-block;
+    background-color: rgb(22, 87, 184);
+    color: lightblue;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mitems:hover {
+    background-color: rgb(179, 137, 24);
+}

@@ -1,0 +1,18 @@
+<head>
+    <h1>GameZone</h1>
+    <input type="text" name="gameName" [formControl]='gameName'>
+    <button (click)='checkGame()' appActivebutton>Search</button>
+    <h5 add-color>Home</h5>
+    <h5 add-color>Profile</h5>
+</head>
+<div class='body'>
+    <app-items *ngFor='let item of gameList|gameFilter:(searchField)' [images]='item' appAddShadows>
+
+    </app-items>
+</div>
+<div>
+    <ul *ngFor='let value of gameList'>
+        <li>{{value.price}}</li>
+
+    </ul>
+</div>

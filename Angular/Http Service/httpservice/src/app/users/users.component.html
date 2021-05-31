@@ -1,0 +1,18 @@
+<header>Users Test</header>
+<hr>
+<div class="card">
+  <input type="text" class="search" [(ngModel)]='userName'>
+  <input type="text" class="search" [(ngModel)]='phoneNumber'>
+  <input type="text" class="search" [(ngModel)]='email'>
+  <button class="btn" (click)="getUsers()">Get Users</button>
+  <button class="btn" (click)="addUser()">Add User</button>
+  <button class="btn">Delete User</button>
+</div>
+<div class="user" *ngFor='let user of users'>
+    <p>EMAIL:{{user.email}}</p>
+    <p>USER:{{user.name}}</p>
+    <P>PHONE:{{user.phone}}</P>
+    <p>ID:{{user.id}}</p>
+    <hr>
+    <p (click)="removeUser(user.id)">Remove</p>
+</div>

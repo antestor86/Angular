@@ -1,0 +1,7 @@
+<div>
+  <div *ngFor='let post of posts'>
+    <h1>{{post.title}}</h1>
+    <p>{{post.id}}</p>
+    <a [routerLink]="['/posts',post.id]">Open</a>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<div class=container>
+    <h1>User Emails</h1>
+    <form class='form-control' [formGroup]="form" (ngSubmit)="submit()">
+        <label>Email</label>
+        <input type="email" placeholder='Email' formControlName='email'>
+        <div *ngIf="form.get('email').invalid && form.get('email').touched" class='invalid'>
+            <small *ngIf="form.get('email').errors.required">Incorrect Email</small>
+            <small *ngIf="form.get('email').errors.required">Set Correct email address</small>
+        </div>
+        <label>Password</label>
+        <input type='password' formControlName='password'>
+        <div *ngIf="form.get('password').invalid && form.get('password').touched" class='invalid'>
+            <small *ngIf="form.get('email').errors.required">incorrect password</small>
+        </div>
+        <div formGroupName='address'>
+            <label>Country</label>
+            <select formControlName="country">
+                <option value='am'>Armenia</option>
+                <option value='ru'>Russia</option>
+                <option value='us'>USA</option>
+            </select>
+            <label>City</label>
+            <input type="text" placeholder='City' formControlName="city">
+            <button class='btn ' type='button' (click)='addCity()'>Country</button>
+            <button class='btn ' type='button ' (click)='addSkills() '>Add Skills</button>
+        </div>
+        <div class='form-control' *ngFor="let control of form.get('skills').controls;let idx=index">
+            <label>Your Skills {{idx+1}}</label>
+            <input type='text ' formControlName='skills '>
+        </div>
+        <button class='send ' type=" submit " [disabled]="form.invalid ">Send</button>
+    </form>
+</div>

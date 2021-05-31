@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+.maincontainer{
+    display: grid;
+    grid-template-rows: 6em 14em;
+}
+
+.container{
+    font-family:'Dela Gothic One', cursive;
+    display: grid;
+    grid-template-rows: 80% 80% 80% ;
+    background-color: rgb(7, 41, 61);
+    color: white;
+    height: 50px;
+    font-size: 12px;
+    padding-bottom: 18px;
+    padding-left: 10px;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+}
+
+.getbtns{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 30% 10% 10%;
+    grid-template-rows: 2em 2em 2em;
+    grid-gap:15px;
+}
+
+.card input{
+    border:1px solid rgb(21, 61, 71);
+    height: 20px;
+    width: 180px;
+    padding-left: 5px;
+    outline: none;
+}
+
+button{
+    border-radius: 3px;
+    outline: none;
+    background-color: rgba(49, 71, 100, 0.6);
+    color:white;
+    font-family:'Dela Gothic One', cursive;
+}
+
+
+
+
+
+

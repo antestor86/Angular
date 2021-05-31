@@ -1,0 +1,17 @@
+<header>
+    <h2>{{title}}</h2>
+    <button (click)='showForm()'>ADD MOVIE</button>
+</header>
+<div class="modal_window" [ngClass]="{hidden:showModal}">
+    <div id="modal_form">
+        <label for="title">Movie Title</label>
+        <input type='text' [(ngModel)]='movieTitle' name='title'>
+        <label for="url">Image Url</label>
+        <input type='text' [(ngModel)]='imageUrl' name='url'>
+        <label for="rate">Your Rating</label>
+        <input type='number' min='1' max='5' [(ngModel)]='movieRate' name='rate'>
+        <button class='cancel_button' (click)='hideForm()'>Cancel</button>
+        <button class='add_button' [(ngModel)]='movieRate' (click)='addMovie()'>Add</button>
+    </div>
+</div>
+<app-movie-template *ngFor='let movie of movies' [movie]="movie" class='list' (click)='deleteMovie()'></app-movie-template>

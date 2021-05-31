@@ -1,0 +1,10 @@
+<ul>
+    <li *ngFor='let item of items' (click)='onClick(item)'>
+        {{item}}
+    </li>
+</ul>
+<div [ngSwitch]='current'>
+    <div *ngSwitchCase='level1'>Level1</div>
+    <div *ngSwitchCase='level2'>Level2</div>
+    <div *ngSwitchCase='level3'>Level3</div>
+</div>

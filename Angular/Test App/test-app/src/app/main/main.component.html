@@ -1,0 +1,12 @@
+<header>
+    <h1>BEERS</h1>
+    <p>Home</p>
+    <p>Favories</p>
+</header>
+<div class="content">
+    <input type='text' [(ngModel)]='beerName'>
+    <div class="btn" (click)='findItem()'>
+        <h5>SEARCH</h5>
+    </div>
+</div>
+<app-beers *ngFor='let beer of beerItems' [beerContainer]='beer'></app-beers>

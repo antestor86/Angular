@@ -1,0 +1,31 @@
+<div class="container">
+  <h1>Angular Http Client</h1>
+  <div class="card">
+    <div class="form-control">
+      <input type="text" placeholder="Name" [(ngModel)]='userName'>
+    </div>
+    <button class="btn" (click)='addUser()'>Add</button>
+    <button class="btn">Upload</button>
+  </div>
+  <hr>
+  <div class="card">
+    <div *ngIf="todos.length; else noUsers">
+      <div *ngFor="let user of todos">
+        <span class="completed">{{user.id}}</span>
+        <p>{{user.name}}</p>
+        <p>{{user.username}}</p>
+        <p>{{user.id}}</p>
+        <button class="btn btn-danger" (click)='removeUser(user.id)'>Delete</button>
+        <hr>
+      </div>
+    </div>
+    <ng-template #noUsers>
+      <p>No Users</p>
+    </ng-template>
+
+    <span>
+
+      <button class="btn">Overload</button>
+    </span>
+  </div>
+</div>
