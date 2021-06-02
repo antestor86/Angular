@@ -1,6 +1,15 @@
 <div class="container">
-  <form class="login">
-    <button class="btn">Login</button>
+  <div></div>
+  <form class="login" [formGroup]="form" (ngSubmit)="login()">
+    <div class="component">
+      <label for="username">Username</label>
+      <input type="text" name="username" placeholder="type username" formControlName='username'>
+    </div>
+    <div class="component">
+      <label for="password">Password</label>
+      <input type="password" name="password" placeholder="type password" formControlName='password'>
+    </div>
+    <button class="btn" type="submit" >Login</button>
   </form>
 </div>
 
