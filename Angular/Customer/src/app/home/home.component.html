@@ -1,5 +1,7 @@
 <div class="container">
-  <div></div>
+  <div class="logo">
+    <img [src]='logo'>
+  </div>
   <form class="login" [formGroup]="form" (ngSubmit)="login()">
     <div class="component">
       <label for="username">Username</label>
@@ -9,7 +11,10 @@
       <label for="password">Password</label>
       <input type="password" name="password" placeholder="type password" formControlName='password'>
     </div>
-    <button class="btn" type="submit" >Login</button>
+    <div *ngIf="form.get('password').invalid && form.get('password').touched">
+      <small *ngIf="form.get('password').errors.required" class="invalid">incorrect password</small>
+    </div>
+    <button class="btn" type="submit" (click)="login()">Login</button>
   </form>
 </div>
 

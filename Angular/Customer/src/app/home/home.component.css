@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 .container{
   display: grid;
-  grid-template-columns: 35% 30%;
-  font-family:'Sigmar One', cursive;
+  grid-template-columns: 55% 30%;
+  font-family: 'Roboto', sans-serif;
 }
+
+img{
+  width: 450px;
+  height: 400px;
+  margin-left: 150px;
+
+  }
 
 .login{
   display: grid;
@@ -31,16 +38,12 @@ input{
   border-radius: 3px;
   outline: none;
   text-align: center;
-  font-family:'Sigmar One', cursive;
+  font-family: 'Roboto', sans-serif;
 }
 
 input.ng-invalid.ng-touched{
   border: 1px solid red;
 }
-
-
-
-
 .btn{
   width: 120px;
   height: 40px;
@@ -68,6 +71,12 @@ input.ng-invalid.ng-touched{
 }
 
 label{
-  font-family:'Sigmar One', cursive;
+  font-family: 'Roboto', sans-serif;
   color:rgba(45, 131, 112, 0.8) ;
 }
+
+.invalid{
+  color: red;
+}
+
+

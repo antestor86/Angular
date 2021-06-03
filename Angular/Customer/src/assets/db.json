@@ -1,0 +1,46 @@
+[
+    {
+    "id":1,
+    "name":"Պողոս",
+    "surname":" Պողոսյան",
+    "age":"25",
+    "country":"Armenia",
+    "city":"Yerevan",
+    "addresses":[
+      "Davitashen 1st block 42/54",
+      "Malatya Sebastaya 16 42/54"
+    ],
+    "gender":"male",
+    "avatar":"http://sun9-39.userapi.com/s/v1/ig2/8aqATIMGN_0ucbrpPT2w9-Od9s4_R-28vuF1rs263b_AnT8lBidXi9Tp1qazfob7TONkocJPt4t4cK1Z6ZOpdx3e.jpg?size=200x0&quality=96&crop=35,35,1002,1009&ava=1",
+    "phones":[
+      {"mobile":"09625654"},
+      {"home":"01045687"}
+    ],
+    "skills":[
+      "JS","HTML","CSS","NodeJs","Angular"
+    ]
+
+  },
+  {
+    "id":2,
+    "name":"John",
+    "surname":"Smith",
+    "age":"35",
+    "country":"USA",
+    "city":"New-York",
+    "addresses":[
+      "John Smit-1",
+      "John Smit-2"
+    ],
+    "gender":"male",
+    "avatar":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5bmndz9fckbQIY88RHnDBuoZ06ZTEyTi3bA&usqp=CAU",
+    "phones":[
+      {"mobile":"00009625654"},
+      {"home":"036501045687"}
+    ],
+    "skills":[
+      "C#","Python","MongoDB","Linux","Jenkins"
+       ]
+ }
+
+]

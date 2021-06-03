@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,8 @@ import { FormGroup,FormControl, Validators } from '@angular/forms';
 })
 export class HomeComponent implements OnInit {
   form:FormGroup|any
-  constructor() { }
+  logo='http://nabu.am/sites/default/files/ACBA_1024.png'
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
     this.form = new FormGroup(
@@ -21,6 +23,7 @@ export class HomeComponent implements OnInit {
 
   login(){
     const formData = {...this.form.value}
+    this.router.navigate(['/user'])
     console.log(formData)
   }
 
