@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { SearchComponent } from './search/search.component';
 import { InsertComponent } from './insert/insert.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SingleuserComponent } from './singleuser/singleuser.component';
 
 @NgModule({
   declarations: [
@@ -14,12 +16,14 @@ import { InsertComponent } from './insert/insert.component';
     HomeComponent,
     LoginComponent,
     SearchComponent,
-    InsertComponent
+    InsertComponent,
+    SingleuserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

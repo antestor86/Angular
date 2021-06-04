@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="logo">
+  <div class="acba">
     <img [src]='logo'>
   </div>
   <form class="login" [formGroup]="form" (ngSubmit)="login()">
@@ -14,7 +14,7 @@
     <div *ngIf="form.get('password').invalid && form.get('password').touched">
       <small *ngIf="form.get('password').errors.required" class="invalid">incorrect password</small>
     </div>
-    <button class="btn" type="submit" (click)="login()">Login</button>
+    <button class="btn" type="submit"  [disabled]="form.invalid">Login</button>
   </form>
 </div>
 
