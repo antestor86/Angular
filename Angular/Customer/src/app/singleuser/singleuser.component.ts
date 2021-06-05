@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { AuthService, User } from '../services/autentichate.service';
 
 @Component({
@@ -9,13 +9,14 @@ import { AuthService, User } from '../services/autentichate.service';
 })
 export class SingleuserComponent implements OnInit {
   customer:User|any
+  registr:User|any
 
-  constructor(private route:ActivatedRoute, private request:AuthService) { }
+  constructor(private route:ActivatedRoute, private request:AuthService,private router:Router) { }
 
   ngOnInit(): void {
-    this.route.params.subscribe((params:Params)=>{
-      this.customer=this.request.getById(+params.id)
-      console.log(this.customer)
+     this.route.params.subscribe((params:Params)=>{
+      //this.customer=this.request.getById(+params.id)
+      console.log('Params',params)
     })
   }
 
