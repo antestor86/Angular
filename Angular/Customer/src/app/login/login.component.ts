@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormControl,FormGroup,Validator, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { AuthService } from '../services/autentichate.service';
 export interface User{
   id?:number,
@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
   form:FormControl|any
   customers:User|any
 
-  constructor(private router:Router,private request:AuthService,private http:HttpClient) { }
+  constructor(private router:Router,private request:AuthService,private http:HttpClient,private route:ActivatedRoute) { }
  //Initalise Customers----Initalise Form
   ngOnInit(): void {
     this.form = new FormGroup(
@@ -40,6 +40,7 @@ export class LoginComponent implements OnInit {
         console.log('Customers',this.customers)
         return this.customers
       })
+
 
   }
 //back home route
