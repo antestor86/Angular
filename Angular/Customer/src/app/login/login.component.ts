@@ -59,8 +59,10 @@ getUsers(){
 
   findUser(){
     this.customers.filter((item:User)=>{
+      const finded = []
       console.log(item)
-      item.name.startsWith(this.form.value)
+      finded.push(item.name.startsWith(this.form.value))
+      console.log(finded)
     })
   }
 

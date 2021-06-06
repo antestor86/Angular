@@ -1,3 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@800&display=swap');
+.title{
+  font-family: 'Baloo Tammudu 2', cursive;
+  text-align: center;
+  color: rgba(41, 39, 39, 0.856);
+}
+
+.container{
+  font-family: 'Baloo Tammudu 2', cursive;
+  display: grid;
+  grid-template-rows: 70% 30% ;
+}
+
+form{
+  width: 800px;
+  height: 900px;
+  border-radius: 1px solid grey;
+  font-family: 'Baloo Tammudu 2', cursive;
+  display: grid;
+  grid-template-rows: 8% 8% 8% 8% 8% 8%;
+  grid-gap:20px;
+  margin-left: 25%;
+  color: white;
+}
+
+.input_component{
+  background-color: rgba(0, 128, 128, 0.438);
+  margin: 5px;
+  width: 1100px;
+  height: 50px;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 10% 23% 23% 23% 20%;
+
+}
+
+label{
+  margin-right: 10px;
+  width: 520px;
+}
+
+input{
+  width: 220px;
+  height: 30px;
+  margin-left:10px;
+}
+
 .btn{
   width: 220px;
   height: 40px;
@@ -9,4 +56,19 @@
   color: rgb(255, 255, 255);
   cursor: pointer;
   border-radius: 12px;
+}
+
+.btn:hover{
+  /* background-color: rgba(45, 131, 112, 0.8);*/
+   text-decoration: underline;
+   color: white;
+   width: 218px;
+   height: 38px;
+
+ }
+
+ .btn:active{
+  padding: 7px;
+  font-size: 16px;
+  background-color: rgba(110, 110, 110, 0.644)
 }

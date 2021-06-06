@@ -32,14 +32,14 @@ export class InsertComponent implements OnInit, OnDestroy {
       name: new FormControl('', [Validators.required]),
       username: new FormControl('', Validators.required),
       email: new FormControl('', [Validators.required, Validators.email]),
-      street: new FormControl(),
-      suite: new FormControl(),
-      zipcode: new FormControl(),
-      city: new FormControl(),
-      phone: new FormControl(),
-      companyName: new FormControl(),
-      catchPhrase: new FormControl(),
-      bs: new FormControl(),
+      street: new FormControl('',Validators.required),
+      suite: new FormControl(''),
+      zipcode: new FormControl(''),
+      city: new FormControl(''),
+      phone: new FormControl(''),
+      companyName: new FormControl(''),
+      catchPhrase: new FormControl(''),
+      bs: new FormControl(''),
     });
   }
   //Routing to list
