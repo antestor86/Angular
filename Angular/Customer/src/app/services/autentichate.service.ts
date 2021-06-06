@@ -14,7 +14,9 @@ export interface User {
 @Injectable({ providedIn: 'root' })
 export class AuthService {
   customers: User[] = [];
-
+  administrator = {admin:
+    {login:"admin",password:"acba123"}
+   }
   constructor(private http: HttpClient) {}
 
   addUsers(newUser: User): Observable<User> {

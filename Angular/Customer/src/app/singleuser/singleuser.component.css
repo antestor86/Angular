@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;800&display=swap');
+.container{
+  width: 800px;
+  height: 600px;
+  display: grid;
+  grid-template-rows: 13% 13% 13% 13%;
+}
+.btn{
+  width: 220px;
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 30px;
+  background-color: rgba(45, 131, 112, 0.8);
+  font-family:'Sigmar One', cursive;
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 12px;
+
+}
+
+.btn:hover{
+  /* background-color: rgba(45, 131, 112, 0.8);*/
+   text-decoration: underline;
+   color: white;
+
+ }
+
+ .btn:active{
+  padding: 7px;
+  font-size: 16px;
+  background-color: rgba(110, 110, 110, 0.644)
+}
+
+h1{
+  background-color: teal;
+  width: 600px;
+  height: 60px;
+  height: 60px;
+  color: rgb(255, 255, 255);
+  font-family:'Sigmar One', cursive;
+  margin: 10px;
+  box-shadow: 2px 2px 3px black;
+  padding-left: 2px;
+  font-family: 'Baloo Tammudu 2', cursive;
+}

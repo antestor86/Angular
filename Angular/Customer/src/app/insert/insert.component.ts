@@ -8,6 +8,7 @@ export interface User {
   name: string;
   username: string;
   email: string;
+  street:string;
   address: { street: string; suite: string; city: string; zipcode: string };
   phone: string;
   company: { name: string; catchPhrase: string; bs: string };
@@ -32,11 +33,11 @@ export class InsertComponent implements OnInit, OnDestroy {
       name: new FormControl('', [Validators.required]),
       username: new FormControl('', Validators.required),
       email: new FormControl('', [Validators.required, Validators.email]),
-      street: new FormControl('',Validators.required),
-      suite: new FormControl(''),
-      zipcode: new FormControl(''),
-      city: new FormControl(''),
       phone: new FormControl(''),
+      street: new FormControl('',Validators.required),
+      suite: new FormControl(null),
+      zipcode: new FormControl(null),
+      city: new FormControl(null),
       companyName: new FormControl(''),
       catchPhrase: new FormControl(''),
       bs: new FormControl(''),

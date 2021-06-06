@@ -25,8 +25,7 @@ export interface User{
 export class HomeComponent implements OnInit {
   customers:User|any
   form:FormGroup|any
-  userName = '';
-  password = '';
+  formValue:any
   loginStatuss = false;
   logo='http://nabu.am/sites/default/files/ACBA_1024.png'
   constructor(private router:Router,private http:HttpClient,private request:AuthService) { }
@@ -48,9 +47,11 @@ export class HomeComponent implements OnInit {
 
 
   login(){
-   this.router.navigate(['/user']);
-}
-
-
+    this.formValue={...this.form.value};
+    console.log(this.formValue)
+    if(this.formValue.username==this.request.administrator.admin.login && this.formValue.password){
+      this.router.navigate(['/user']);
+    }
+  }
 
 }

@@ -13,9 +13,9 @@
 </div>
 <div class="users" *ngFor='let user of customers'>
 
-  <div class="singlepost" [routerLink]="['/user',user.id]">
+  <div class="singlepost">
     <button class="remove" (click)='removeUser(user.id)'>X</button>
-    <div class="name">
+    <div class="name" [routerLink]="['/user',user.id]">
       <h2>Name<>{{user.name}}</h2>
       <h2>Username<>{{user.username}}</h2>
     </div>
