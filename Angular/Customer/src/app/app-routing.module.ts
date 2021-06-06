@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { InsertComponent } from './insert/insert.component';
 import { LoginComponent } from './login/login.component';
 import { SingleuserComponent } from './singleuser/singleuser.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'user',component:LoginComponent},
-  {path:'user/:id',component:SingleuserComponent}
+  {path:'user/:id',component:SingleuserComponent},
+  {path:'insert',component:InsertComponent}
 
 ];
 

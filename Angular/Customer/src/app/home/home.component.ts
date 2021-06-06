@@ -52,13 +52,5 @@ export class HomeComponent implements OnInit {
 }
 
 
-checkLogin(){
-  const formData = {...this.form.value}
-  if(this.request.users.find(user=>{
-    return user==formData.username
-  }))
-  {
-    this.login()
-  }
-}
+
 }

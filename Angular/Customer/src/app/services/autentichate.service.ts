@@ -1,52 +1,39 @@
-import { Injectable, OnInit } from "@angular/core";
-import {HttpClient} from '@angular/common/http'
-import { Observable } from "rxjs";
-export interface User{
-
-  id?:number,
-  name:string,
-  surname:string,
-  age:string,
-  country:string,
-  city:string,
-  addresses:string[],
-  gender:string,
-  avatar:string,
-  phones:{mobile:string,home:string},
-  skills:string[]
-
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { tap, map } from 'rxjs/operators';
+export interface User {
+  id?: number;
+  name: string;
+  username: string;
+  email: string;
+  address: { street: string; suite: string; city: string; zipcode: string };
+  phone: string;
+  company: { name: string; catchPhrase: string; bs: string };
 }
-@Injectable({providedIn:'root'})
-export class AuthService implements OnInit{
-  customers:User[]|any
-  users=[
-    {username:'admin',password:'aa123456'},
-    {username:'acba',password:'acba123*'},
-]
-  constructor(private http:HttpClient){}
-  ngOnInit(){
-    this.http.get<User>('http://localhost:4200/assets/db.json').subscribe(customer=>{
-      this.customers = customer
-      console.log(this.customers)
-    })
+@Injectable({ providedIn: 'root' })
+export class AuthService {
+  customers: User[] | any;
+
+  constructor(private http: HttpClient) {}
+  addUsers(user: User): Observable<User> {
+    return this.http.post<User>(
+      'https://jsonplaceholder.typicode.com/users',
+      user
+    );
   }
 
-
-  addUsers(user:User):Observable<User>{
-    return this.http.post<User>('http://localhost:4200/assets/db.json',user)
+  getUsers(): Observable<User[]> {
+    return this.http.get<User[]>('https://jsonplaceholder.typicode.com/users');
   }
 
-  getUsers():Observable<User>{
-    return this.http.get<User>('http://localhost:4200/assets/db.json')
-  }
-
-
-  getById(id:number):Observable<User>{
-     return this.customers.find((user: User) => {
-       user.id == id;
+  getById(id: number){
+    this.getUsers().subscribe((user) => {
+      this.customers = user;
+      console.log('Customers', this.customers);
+      this.customers.find((item) => {
+        return item.id === id;
+      });
     });
   }
-
-
-
 }

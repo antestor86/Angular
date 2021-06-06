@@ -4,17 +4,13 @@ import { FormControl,FormGroup,Validator, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AuthService } from '../services/autentichate.service';
 export interface User{
-  id?:number,
-  name:string,
-  surname:string,
-  age:string,
-  country:string,
-  city:string,
-  addresses:string[],
-  gender:string,
-  avatar:string,
-  phones:{mobile:string,home:string},
-  skills:string[]
+  id?: number;
+  name: string;
+  username: string;
+  email: string;
+  address:{street:string,suite:string,city:string,zipcode:string};
+  phone: string;
+  company:{name:string,catchPhrase:string,bs:string}
 
 }
 @Component({
@@ -37,11 +33,8 @@ export class LoginComponent implements OnInit {
     )
       this.request.getUsers().subscribe(user=>{
         this.customers=user
-        console.log('Customers',this.customers)
         return this.customers
       })
-
-
   }
 //back home route
   backHome(){
@@ -53,12 +46,12 @@ export class LoginComponent implements OnInit {
   findUser(){
     const formData = {...this.form.value}
     console.log(this.form.value)
-    if(formData == ""){
-       this.request.getUsers().subscribe((user)=>{
-        this.customers = user;
-        console.log(this.customers)
-      })
-    }
+
+  }
+
+  //insertUser
+  goToInsert(){
+    this.router.navigate(['/insert'])
   }
 
 }

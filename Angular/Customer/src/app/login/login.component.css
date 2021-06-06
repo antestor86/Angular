@@ -51,16 +51,19 @@
 }
 
 .singlepost{
-  width: 1000px;
-  height: 700px;
+  width: 800px;
+  height: 200px;
   border: 3px solid rgba(128, 128, 128, 0.705);
   border-radius: 20px;
   display: grid;
-  grid-template-rows: 5% 3% 5% 15% 8% 8% 5% 2%;
+  grid-template-rows: 30% 15% 20% 15%;
   grid-gap:3px;
   margin-left: 5%;
   margin-top: 2%;
+  background-color:rgba(29, 139, 115, 0.8) ;
   cursor:pointer;
+  color: white;
+  font-family:'Roboto', sans-serif;
 }
 
 .singlepost:hover{
@@ -74,11 +77,18 @@
   height: 693px;
  }
 
+ .email{
+  color: white;
+  font-family:'Roboto', sans-serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: bold;
+ }
+
 
 .name{
-  font-family: 'Roboto', sans-serif;
-  font-style: italic;
-  color: grey;
+  border:1px solid white;
+  border-radius: 8px;
 
 }
 
@@ -91,7 +101,8 @@ p{
 h2{
   font-family: 'Roboto', sans-serif;
   font-style: italic;
-  color: rgb(83, 83, 83);
+  color: rgb(255, 255, 255);
+  font-size: 23px;
 }
 
 .address{
@@ -101,19 +112,16 @@ h2{
   height: 100px;
   width: 400px;
 }
-.gender{
+
+
+a{
   font-family: 'Roboto', sans-serif;
   color: rgb(255, 255, 255);
   background-color: rgba(30, 148, 118, 0.486);
-  width: 120px;
+  width: 180px;
   height: 60px;
 }
 
-img{
-  width: 360px;
-  height: 360px;
-  margin-left: 550px;
-}
 
 .phone{
   font-family: 'Roboto', sans-serif;
@@ -122,6 +130,7 @@ img{
   grid-gap:10px;
   width: 600px;
 }
+
 
 .skill{
   font-family: 'Roboto', sans-serif;
