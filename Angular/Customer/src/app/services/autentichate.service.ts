@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { tap, map } from 'rxjs/operators';
 export interface User {
   id?: number;
@@ -13,27 +13,49 @@ export interface User {
 }
 @Injectable({ providedIn: 'root' })
 export class AuthService {
-  customers: User[] | any;
+  customers: User[] = [];
 
   constructor(private http: HttpClient) {}
-  addUsers(user: User): Observable<User> {
-    return this.http.post<User>(
-      'https://jsonplaceholder.typicode.com/users',
-      user
-    );
+
+  addUsers(newUser: User): Observable<User> {
+    console.log(this.customers);
+    return this.http
+      .post<any>('https://jsonplaceholder.typicode.com/users', newUser)
+      .pipe(tap((value) => (this.customers = [...this.customers, newUser])));
   }
 
   getUsers(): Observable<User[]> {
-    return this.http.get<User[]>('https://jsonplaceholder.typicode.com/users');
+    console.log(this.customers);
+    if (this.customers?.length) {
+      return of(this.customers);
+    }
+    return this.http
+      .get<User[]>('https://jsonplaceholder.typicode.com/users')
+      .pipe(tap((value) => (this.customers = value)));
   }
 
-  getById(id: number){
-    this.getUsers().subscribe((user) => {
-      this.customers = user;
-      console.log('Customers', this.customers);
-      this.customers.find((item) => {
-        return item.id === id;
+  getById(id: number): Observable<User> {
+    const user = this.getUsers().pipe(
+      map((value) => value.find((item) => item.id == id))
+    );
+    return user;
+  }
+
+  removeUsers(id: number) {
+    console.log(this.customers)
+    return this.http
+      .delete<{}>(`https://jsonplaceholder.typicode.com/users/${id}`)
+      .pipe(tap(console.log),
+        tap(() => {
+          this.customers = this.customers.filter((item) => {
+            return item.id != id;
+          });
+        })
+      );
+
+      /*this.customers = this.customers.filter((item) => {
+        return item.id != id;
       });
-    });
+      return of(this.customers)*/
   }
 }

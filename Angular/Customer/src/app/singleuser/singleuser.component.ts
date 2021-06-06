@@ -33,7 +33,7 @@ export class SingleuserComponent implements OnInit,OnDestroy {
   subscriptionToRoute(){
      this.route.params.subscribe((params:Params)=>{
       console.log('Params',params)
-      this.customer = this.request.customers.getById(+params.id)//Էս հատվածից չի սռացվում
+      //this.customer = this.request.customers.getById(+params.id)//Էս հատվածից չի սռացվում
       console.log('List',this.customer)
 
     })

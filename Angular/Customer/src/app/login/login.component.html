@@ -1,19 +1,21 @@
 <div class="container">
+
   <form class="searchForm" [formGroup]='form' (ngSubmit)='findUser()'>
     <div class="component">
       <input class="search" placeholder="search by name" formControlName='username'>
-      <button class="btn">Search by Name</button>
+      <button class="btn" type="submit">Search by Name</button>
     </div>
   </form>
 </div>
 <div class="insertButtons">
-  <button class="btn" [routerLink]="['/insert']">Insert User</button>
+  <button class="btn" (click)="goToInsert()">Insert User</button>
   <button class="btn" (click)='backHome()'>Logout</button>
 </div>
 <div class="users" *ngFor='let user of customers'>
+  <button class="remove" (click)='removeUser(user.id)'>X</button>
   <div class="singlepost" [routerLink]="['/user',user.id]">
     <div class="name">
-      <h2>Name--{{user.name}}</h2>
+      <h2>Name--{{user.name}} {{user.id}}</h2>
       <h2>Username--{{user.username}}</h2>
     </div>
     <p class="email">email.....{{user.email}}</p>
