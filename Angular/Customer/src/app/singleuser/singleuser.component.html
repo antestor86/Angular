@@ -1,14 +1,16 @@
 <div class="container" *ngIf='customer$|async as customer'>
-  <button class="btn">Back to CustomersList</button>
+  <button class="btn" (click)="backToHome()">Back to CustomersList</button>
   <h1>Name {{customer?.name}}</h1>
   <h1>Username {{customer?.username}} </h1>
   <h1>Phone Number "{{customer?.phone}}"</h1>
   <button class="btn" (click)="edit()">Edit</button>
 </div>
-<div *ngIf="!statuss,else formTemplate"></div>
+<div *ngIf="!statuss,else formTemplate" class="template"></div>
 <<ng-template #formTemplate>
-  <form>
-    <input placeholder="name">
-    <button (click)="finish()" class="btn">Finish</button>
+  <form [formGroup]='form' (ngSubmit)="finish()">
+    <input placeholder="name" formControlName="name">
+    <input placeholder="username" formControlName="username">
+    <input placeholder="phone number" formControlName="phone">
+    <button type="submit" class="btn">Finish</button>
   </form>
 </ng-template>

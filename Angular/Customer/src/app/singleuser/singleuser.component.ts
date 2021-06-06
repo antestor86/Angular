@@ -49,6 +49,8 @@ export class SingleuserComponent implements OnInit,OnDestroy {
     });
   }
 
+
+
   backToHome(){
     this.router.navigate(['/user']);
   }
@@ -57,13 +59,18 @@ export class SingleuserComponent implements OnInit,OnDestroy {
     this.statuss = true;
   }
 
-  finish(){
+  finish():void{
     this.statuss = false;
+    this.routeSubscription = this.route.params.subscribe((params: Params) => {
+      console.log('ID:', params);
+      this.customer$ = this.request.addUsers(this.form.value);
+    });
+
   }
 
 
   ngOnDestroy(): void {
-    this.routeSubscription.unsubsctribe();
+    this.routeSubscription;
 
   }
 }

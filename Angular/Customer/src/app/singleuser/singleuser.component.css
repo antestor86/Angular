@@ -44,3 +44,16 @@ h1{
   padding-left: 2px;
   font-family: 'Baloo Tammudu 2', cursive;
 }
+
+input{
+  width: 300px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 33px;
+}
+
+
+.template{
+  width: 800px;
+  height: 600px;
+}
