@@ -16,13 +16,13 @@
   <div class="singlepost">
     <button class="remove" (click)='removeUser(user.id)'>X</button>
     <div class="name" [routerLink]="['/user',user.id]">
-      <h2>Name<>{{user.name}}</h2>
-      <h2>Username<>{{user.username}}</h2>
+      <h2><strong>Name</strong>-{{user.name}}</h2>
+      <h2><strong>Username</strong>-{{user.username}}</h2>
     </div>
     <p class="email"><strong>Email-</strong>{{user.email}}</p>
     <div class="address">
-      <h3>street<>{{user.address.street}}</h3>
-      <h4>city<>{{user.address.city}}</h4>
+      <h4><strong>street</strong>-{{user.address.street}}</h4>
+      <h4><strong>city</strong>-{{user.address.city}}</h4>
     </div>
     <h3 class="phone">Phone Number:{{user.phone}}</h3>
   </div>

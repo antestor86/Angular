@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
 
 .container{
   height:100px;
@@ -62,11 +62,11 @@
   margin-left: 5%;
   margin-top: 2%;
   /*background-color:rgba(29, 139, 115, 0.8) ;*/
-  background-color: white;
+  background-color: rgb(156, 224, 188);
   cursor:pointer;
-  color: rgb(22, 21, 21);
-  font-family: 'Stint Ultra Condensed', cursive;
-  font-size: 18px;
+  color: rgb(133, 133, 133);
+  font-family: 'Baloo Tammudu 2', cursive;
+  font-size: 15px;
 }
 
 .singlepost:hover{
@@ -83,10 +83,9 @@
  .email{
   background-color: rgba(37, 100, 86, 0.699);
   color: rgb(0, 0, 0);
-  font-family: 'Stint Ultra Condensed', cursive;
-  font-size: 38px;
-  color: rgb(51, 50, 50);
-  text-decoration: underline;
+  font-family:  'Baloo Tammudu 2', cursive;
+  font-size: 30px;
+  color: rgb(190, 184, 184);
  }
 
 
@@ -102,14 +101,12 @@
 
 p{
   font-family: 'Stint Ultra Condensed', cursive;
-  font-style: italic;
-  color: rgb(83, 83, 83);
+  color: rgb(177, 175, 175);
 }
 
 h2{
   font-family: 'Stint Ultra Condensed', cursive;
-  font-style: italic;
-  color: rgb(54, 53, 53);
+  color: rgb(121, 120, 120);
   font-size: 26px;
 }
 
@@ -120,7 +117,7 @@ h2{
   height: 100px;
   width: 800px;
   background-color: rgba(20, 117, 85, 0.808);
-  color: rgb(42, 42, 42);
+  color: rgba(54, 53, 53, 0.726);
   font-size: 28px;
 
   text-decoration: underline;
@@ -149,7 +146,7 @@ a{
 
 strong{
   font-family: 'Stint Ultra Condensed', cursive;
-  color: white;
+  color: rgb(20, 20, 20);
 
  /* border: 1px solid grey;*/
 }
