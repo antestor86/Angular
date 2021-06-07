@@ -23,6 +23,8 @@ export interface User{
 export class LoginComponent implements OnInit,OnDestroy{
   form:FormControl|any
   customers:User|any
+  checkStatuss=false;
+  findedUsers = [];
   private sub =new SubSink()
 
   constructor(private router:Router,private request:AuthService,private http:HttpClient,private route:ActivatedRoute) { }
@@ -58,13 +60,22 @@ getUsers(){
     this.router.navigate(['/insert'])
   }
 
+//search function
   findUser(){
-    this.customers.filter((item:User)=>{
-      const finded = []
-      console.log(item)
-      finded.push(item.name.startsWith(this.form.value))
-      console.log(finded)
+    const formValue = {...this.form.value}
+    const range = formValue.username;
+    this.customers.filter(item=>{
+      if(item.username.includes(range.substring(0,3))){
+        console.log(item)
+        this.findedUsers.push(item)
+        this.checkStatuss = true;
+      }
+
+      console.log(this.checkStatuss)
+
     })
+
+
   }
 
   removeUser(id:number){
