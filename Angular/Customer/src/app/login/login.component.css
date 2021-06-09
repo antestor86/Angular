@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 
 .container{
   height:100px;
   border: 1px solid grey;
   display: grid;
   grid-template-columns: 60% 10%;
+  background-color: rgb(241, 237, 237);
 }
 
 .searchForm{
@@ -31,7 +33,7 @@
   margin-left: 10px;
   margin-top: 30px;
   background-color: rgba(45, 131, 112, 0.8);
-  font-family:'Sigmar One', cursive;
+  font-family: 'Nunito', sans-serif;
   border: none;
   color: rgb(255, 255, 255);
   cursor: pointer;
@@ -54,15 +56,15 @@
 .singlepost{
   width: 800px;
   height: 300px;
-  border: 3px solid rgba(128, 128, 128, 0.705);
+  border: 5px solid rgba(128, 128, 128, 0.3);
   border-radius: 20px;
   display: grid;
   grid-template-rows: 15% 30% 15% 20% 15%;
   grid-gap:3px;
   margin-left: 5%;
   margin-top: 2%;
-  /*background-color:rgba(29, 139, 115, 0.8) ;*/
-  background-color: rgb(156, 224, 188);
+  background-color:rgba(29, 139, 115, 0.8) ;
+  background-color: rgb(226, 222, 222);
   cursor:pointer;
   color: rgb(133, 133, 133);
   font-family: 'Baloo Tammudu 2', cursive;
@@ -75,57 +77,54 @@
 
  .singlepost:active{
   box-shadow: 15px 10px 5px 5px rgba(85, 189, 166, 0.699);
-  background-color: rgba(85, 189, 166, 0.1);
+  background-color: rgb(226, 222, 222);
   width: 793px;
   height: 293px;
  }
 
  .email{
-  background-color: rgba(37, 100, 86, 0.699);
+  background-color: rgb(226, 222, 222);
   color: rgb(0, 0, 0);
-  font-family:  'Baloo Tammudu 2', cursive;
+  font-family: 'Nunito', sans-serif;
   font-size: 30px;
-  color: rgb(190, 184, 184);
+  color: rgb(97, 94, 94);
  }
 
 
 .name{
   border:1px solid rgb(0, 0, 0);
   border-radius: 8px;
-  color: grey;
-  font-family: 'Stint Ultra Condensed', cursive;
-  background-color:rgba(85, 189, 166, 0.3);
-  text-align: center;
-
+  color: rgb(63, 62, 62);
+  font-family: 'Nunito', sans-serif;
+  background-color: rgba(45, 131, 112, 0.3);
 }
 
 p{
-  font-family: 'Stint Ultra Condensed', cursive;
-  color: rgb(177, 175, 175);
+  font-family: 'Nunito', sans-serif;
+  color: rgb(37, 36, 36);
 }
 
 h2{
-  font-family: 'Stint Ultra Condensed', cursive;
-  color: rgb(121, 120, 120);
+  font-family: 'Nunito', sans-serif;
+  color: rgb(27, 27, 27);
   font-size: 26px;
 }
 
 .address{
   display: grid;
   grid-template-columns: 40% 30%;
-  border: 2px solid rgba(128, 128, 128, 0.637);
+  /*border: 2px solid rgba(128, 128, 128, 0.637);*/
   height: 100px;
   width: 800px;
-  background-color: rgba(20, 117, 85, 0.808);
-  color: rgba(54, 53, 53, 0.726);
+  /*background-color: rgb(128, 126, 126);*/
+  color: rgba(53, 54, 54, 0.7);
   font-size: 28px;
-
   text-decoration: underline;
 }
 
 
 a{
-  font-family: 'Stint Ultra Condensed', cursive;
+  font-family: 'Nunito', sans-serif;
   color: rgb(0, 0, 0);
   background-color: rgba(30, 148, 118, 0.486);
   width: 180px;
@@ -134,7 +133,7 @@ a{
 
 
 .phone{
-  font-family: 'Stint Ultra Condensed', cursive;
+  font-family: 'Nunito', sans-serif;
   display: grid;
   grid-template-rows: 30% 2%;
   grid-gap:10px;
@@ -145,8 +144,8 @@ a{
 }
 
 strong{
-  font-family: 'Stint Ultra Condensed', cursive;
-  color: rgb(20, 20, 20);
+  font-family: 'Nunito', sans-serif;
+  color: rgb(0, 0, 0);
 
  /* border: 1px solid grey;*/
 }
@@ -162,5 +161,10 @@ strong{
   background:none;
   font-size: 28px;
   cursor: pointer;
+}
 
+.remove:hover{
+  background-color: grey;
+  color: white;
+  border-radius: 5px;
 }

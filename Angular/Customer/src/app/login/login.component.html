@@ -7,6 +7,7 @@
     </div>
   </form>
 </div>
+
 <div class="insertButtons">
   <button class="btn" (click)="goToInsert()">Insert User</button>
   <button class="btn" (click)='backHome()'>Logout</button>
@@ -21,8 +22,8 @@
     </div>
     <p class="email"><strong>Email-</strong>{{user.email}}</p>
     <div class="address">
-      <h4><strong>street</strong>-{{user.address.street}}</h4>
-      <h4><strong>city</strong>-{{user.address.city}}</h4>
+      <h4><strong>street</strong>-{{user.street}}</h4>
+      <h4><strong>city</strong>-{{user.city}}</h4>
     </div>
     <h3 class="phone">Phone Number:{{user.phone}}</h3>
   </div>
