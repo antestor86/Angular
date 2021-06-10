@@ -1,0 +1,20 @@
+[
+  {
+    "id":"1",
+    "name":"Razmik",
+    "surname":"Avetisyan",
+    "avatar":"https://img.favpng.com/15/19/18/computer-icons-ninja-favicon-iconfinder-avatar-png-favpng-Jku9r1TGGY4Ha6BLUXz1eL3DQ.jpg",
+    "address":{"street":"Davitashen","city":"Yerevan","country":"Armenia"},
+    "phone":"091900297",
+    "gender":"male"
+  },
+  {
+    "id":"1",
+    "name":"Poghos",
+    "surname":"Poghosyan",
+    "avatar":"https://cdn.imgbin.com/13/5/17/imgbin-computer-icons-avatar-icon-design-blog-man-male-avatar-kz8DFHycgu1X81JhN5gX77PcQ.jpg",
+    "address":{"street":"Malataya 8/15","city":"Yerevan","country":"Armenia"},
+    "phone":"099256598",
+    "gender":"male"
+  }
+]
