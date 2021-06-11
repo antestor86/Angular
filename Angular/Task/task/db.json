@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users":[
+    {
+    "id":"1",
+    "name":"Razmik",
+    "surname":"Avetisyan",
+    "phone":"091900297",
+    "address":{"street":"Davitashen","city":"Yerevan"},
+    "image":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
+    },
+    {
+     "id":"2",
+     "name":"John",
+     "surname":"Smith",
+     "phone":"9179248485",
+     "address":{"street":"50 Okland Ave","city":"Florida"},
+     "image":"https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png"
+    }
+  ]
+
+
+}

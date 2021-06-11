@@ -43,8 +43,7 @@ export class LoginComponent implements OnInit {
     console.log(this.formValue);
     if (
       this.formValue.username == this.data.administrator.admin.login &&
-      this.formValue.password == this.data.administrator.admin.password
-    ) {
+      this.formValue.password == this.data.administrator.admin.password) {
       this.router.navigate(['users'])
     }
     else{

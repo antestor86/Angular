@@ -1,1 +1,56 @@
-<p>users works!</p>
+<div class="page">
+  <div class="container">
+    <form class="searchForm" [formGroup]="form" (ngSubmit)="getInputs()">
+      <div class="component">
+        <label>Search by name</label>
+        <input
+          type="text"
+          class="search"
+          placeholder=".search by name"
+          formControlName="name"
+        />
+      </div>
+      <div class="component">
+        <label>Search by city</label>
+        <input
+          type="text"
+          class="search"
+          placeholder=".search by city"
+          formControlName="city"
+        />
+      </div>
+      <div class="component">
+        <label>Search by county</label>
+        <input
+          type="text"
+          class="search"
+          placeholder=".search by country"
+          formControlName="country"
+        />
+      </div>
+      <button type="submit" class="btn">Search</button>
+    </form>
+  </div>
+  <div class="list">
+    <table class="customer_table">
+      <tr class="title">
+        <th>N</th>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Phone</th>
+        <th>City</th>
+        <th>Street</th>
+      </tr>
+      <tr *ngFor="let user of customers">
+        <td  class="rows"><h3>{{user.id}}</h3></td>
+        <td  class="rows"><img [src]="user.image"></td>
+        <td  class="rows"><p>{{user.name}}</p></td>
+        <td  class="rows"><p>{{user.surname}}</p></td>
+        <td  class="rows"><p>{{user.phone}}</p></td>
+        <td  class="rows"><p>{{user.address.city}}</p></td>
+        <td  class="rows"><p>{{user.address.street}}</p></td>
+      </tr>
+    </table>
+  </div>
+</div>

@@ -6,11 +6,9 @@ export interface User {
   id?: number;
   name: string;
   surname: string;
-  brith: string;
-  country: string;
-  address: { street: string; city: string };
-  gender: string;
   phone: string;
+  address: { street: string; city: string ,country: string};
+  image:string;
 }
 @Injectable({ providedIn: 'root' })
 export class DataService {
