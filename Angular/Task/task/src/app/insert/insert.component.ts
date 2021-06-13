@@ -13,6 +13,7 @@ import { SubSink } from 'subsink';
 })
 export class InsertComponent implements OnInit {
   insertForm: FormGroup | any;
+  addressForm:FormGroup |any;
   private sub = new SubSink();
   formValue: any
   customers: User[] | any
@@ -33,9 +34,11 @@ export class InsertComponent implements OnInit {
       surname: new FormControl('', Validators.required),
       phone: new FormControl(null, [Validators.required]),
       image: new FormControl(null, Validators.required),
+      address:new FormGroup({
+        street: new FormControl('', Validators.required),
+        city: new FormControl('', Validators.required)
+      }),
       email: new FormControl('', [Validators.required, Validators.email]),
-      street: new FormControl('', Validators.required),
-      city: new FormControl('', Validators.required)
     })
   }
 

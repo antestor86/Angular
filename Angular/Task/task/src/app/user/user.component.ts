@@ -9,6 +9,7 @@ import { User, DataService } from '../services/data.service';
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.css']
 })
+
 export class UserComponent implements OnInit {
   customer$: Observable<User> | any;
   routeSubscription: Subscription | any;
@@ -31,11 +32,8 @@ export class UserComponent implements OnInit {
       city: new FormControl(''),
       street: new FormControl(''),
       url: new FormControl('')
-    }
-
-    )
-
-  }
+    })
+}
 
   backToHome() {
     this.router.navigate(['/users']);
@@ -63,7 +61,7 @@ export class UserComponent implements OnInit {
   }
 
   ngOndestroy(): void {
-    this.routeSubscribe;
+    this.routeSubscribe.unsubscribe();
   }
 
 

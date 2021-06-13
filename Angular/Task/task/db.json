@@ -52,6 +52,30 @@
       },
       "image": "https://pbs.twimg.com/profile_images/2149701228/zhorik-vartanov-avatar_400x400.jpg",
       "email": "arsenchik@mail.ru"
+    },
+    {
+      "name": "John ",
+      "surname": "Wick",
+      "phone": 99997777,
+      "image": "https://www.usmagazine.com/wp-content/uploads/2020/05/Keanu-Reeves-Kept-Calling-John-Wick-the-Wrong-Name.jpg?quality=86&strip=all",
+      "email": "johnwich@yahoo.com",
+      "address": {
+        "street": "Holywood str",
+        "city": "Los Angeles"
+      },
+      "id": "4"
+    },
+    {
+      "name": "James",
+      "surname": "Bond",
+      "phone": 700007,
+      "image": "https://i.pinimg.com/originals/29/e7/23/29e7231164c94243f66e555c875ef3cb.jpg",
+      "address": {
+        "street": "Holywood 007",
+        "city": "Los Angeles"
+      },
+      "email": "JB@yahoo.com",
+      "id": "2ZKkHKK"
     }
   ]
 }
