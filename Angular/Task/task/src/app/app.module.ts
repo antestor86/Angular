@@ -1,3 +1,4 @@
+import { UserComponent } from './user/user.component';
 import { InsertComponent } from './insert/insert.component';
 import { AppRoutingModule } from './app.routing.module';
 import { NgModule } from '@angular/core';
@@ -14,7 +15,8 @@ import { UsersComponent } from './users/users.component';
     LoginComponent,
     LoginComponent,
     UsersComponent,
-    InsertComponent
+    InsertComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,

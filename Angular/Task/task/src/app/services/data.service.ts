@@ -36,7 +36,7 @@ export class DataService {
   }
 
   getById(id: number): Observable<User> {
-    const user: any = this.getUsers().pipe(
+    const user: User|any = this.getUsers().pipe(
       map((value) => value.find((item) => item.id == id))
     );
     return user;

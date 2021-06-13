@@ -23,7 +23,7 @@ export class InsertComponent implements OnInit {
   ngOnInit(): void {
     this.initForm();
     //change
-    this.insertForm.id=+this.insertForm.id
+
 
   }
 
@@ -40,7 +40,7 @@ export class InsertComponent implements OnInit {
   }
 
   addUser() {
-    const formData = { ...this.insertForm.value };
+    const formData = { ...this.insertForm.value,id:+this.insertForm.value.id };
     console.log(formData)
     this.sub.add(this.data.addUsers(formData).subscribe());
 

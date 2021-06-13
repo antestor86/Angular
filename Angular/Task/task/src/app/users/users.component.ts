@@ -1,9 +1,11 @@
+import { User } from './../services/data.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { SubSink } from 'subsink';
-import { DataService, User } from '../services/data.service';
+import { DataService } from '../services/data.service';
+
 
 export interface Values {
   name: string;
@@ -23,6 +25,7 @@ export class UsersComponent implements OnInit {
   searchStatuss = false;
   findedUsers: User[] = [];
   insertStatuss = false;
+  user: User | any
   private sub = new SubSink();
   constructor(
     private router: Router,
@@ -35,6 +38,7 @@ export class UsersComponent implements OnInit {
     this.formInit();
     this.getUsers();
     this.formInit();
+
   }
 
   initForm() {
@@ -56,14 +60,13 @@ export class UsersComponent implements OnInit {
       street: new FormControl('', Validators.minLength(3)),
     });
   }
-  //Շարունակել
-  getInputs() {
-    const formValue = { ...this.form.value };
 
+  getInputs() {
+    const error = "Nothong to add"
+    const formValue = { ...this.form.value };
     const range = formValue.name as string;
     const city = formValue.city as string;
     const street = formValue.street as string;
-
 
     this.findedUsers = this.customers.filter((item: User) => {
       return (
@@ -123,10 +126,11 @@ export class UsersComponent implements OnInit {
     this.sub.add(this.data.getUsers().subscribe(user => {
       console.log(user)
       this.customers = user
-
     }))
   }
-
+  openPage() {
+    this.router.navigate([`/users/${this.customers.id}`])
+  }
 
   ngOnDestroy(): void {
     this.sub.unsubscribe();

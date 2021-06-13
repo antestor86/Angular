@@ -34,7 +34,6 @@
     </form>
   </div>
 
-
   <table class="title">
     <tr class="title">
       <th>N</th>
@@ -48,7 +47,11 @@
   </table>
   <table class="customer_table">
     <div class="list" *ngIf="!searchStatuss; else showSearch">
-      <tr *ngFor="let user of customers" class="rows">
+      <tr
+        *ngFor="let user of customers"
+        class="rows"
+        [routerLink]="['/users', user.id]"
+      >
         <td>
           <h3>{{ user?.id }}</h3>
         </td>
@@ -79,7 +82,7 @@
 
   <ng-template #showSearch>
     <table class="find" class="customer_table">
-      <tr *ngFor="let find of findedUsers" class="rows">
+      <tr *ngFor="let find of findedUsers" class="rows" [routerLink]="['/users', find.id]">
         <td>
           <h3>{{ find?.id }}</h3>
         </td>
