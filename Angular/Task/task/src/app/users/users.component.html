@@ -50,7 +50,7 @@
       <tr
         *ngFor="let user of customers"
         class="rows"
-        [routerLink]="['/users', user.id]"
+
       >
         <td>
           <h3>{{ user?.id }}</h3>
@@ -75,6 +75,7 @@
           <button (click)="removeUser(user.id)" class="removeBtn">
             Remove
           </button>
+          <a [routerLink]="['/users', user.id]" class="edit">Edit</a>
         </td>
       </tr>
     </div>
@@ -101,6 +102,12 @@
         </td>
         <td>
           <p>{{ find?.address?.street }}</p>
+        </td>
+        <td>
+          <button (click)="removeUser(user.id)" class="removeBtn">
+            Remove
+          </button>
+          <a [routerLink]="['/users', user.id]" class="edit">Edit</a>
         </td>
       </tr>
     </table>

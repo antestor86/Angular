@@ -56,26 +56,14 @@
     {
       "name": "John ",
       "surname": "Wick",
-      "phone": 99997777,
-      "image": "https://www.usmagazine.com/wp-content/uploads/2020/05/Keanu-Reeves-Kept-Calling-John-Wick-the-Wrong-Name.jpg?quality=86&strip=all",
-      "email": "johnwich@yahoo.com",
+      "phone": 9999,
+      "image": "https://i.guim.co.uk/img/media/877d147f10c311bf8df89444dd80c33f043e768c/0_563_2556_1533/master/2556.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=8a51aa6297fffded7b5d7746c767f309",
       "address": {
         "street": "Holywood str",
         "city": "Los Angeles"
       },
+      "email": "jw@yahoo.com",
       "id": "4"
-    },
-    {
-      "name": "James",
-      "surname": "Bond",
-      "phone": 700007,
-      "image": "https://i.pinimg.com/originals/29/e7/23/29e7231164c94243f66e555c875ef3cb.jpg",
-      "address": {
-        "street": "Holywood 007",
-        "city": "Los Angeles"
-      },
-      "email": "JB@yahoo.com",
-      "id": "2ZKkHKK"
     }
   ]
 }

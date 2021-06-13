@@ -12,6 +12,9 @@
     <div class="input_component">
       <label for="email">Email</label>
       <input placeholder="email." formControlName="email" />
+      <div *ngIf="insertForm.get('email').invalid && insertForm.get('email').touched">
+        <strong *ngIf="insertForm.get('email').errors.require">select correct email address</strong>
+      </div>
     </div>
     <div class="input_component">
       <label for="phone">Phone</label>
