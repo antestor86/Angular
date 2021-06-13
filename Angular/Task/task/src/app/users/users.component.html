@@ -20,37 +20,86 @@
         />
       </div>
       <div class="component">
-        <label>Search by county</label>
+        <label>Search by street</label>
         <input
           type="text"
           class="search"
-          placeholder=".search by country"
-          formControlName="country"
+          placeholder=".search by street"
+          formControlName="street"
         />
       </div>
       <button type="submit" class="btn">Search</button>
+      <button type="submit" class="btn" (click)="logOut()">Logout</button>
+      <button class="btn" (click)="insert()">Insert</button>
     </form>
   </div>
-  <div class="list">
-    <table class="customer_table">
-      <tr class="title">
-        <th>N</th>
-        <th>Image</th>
-        <th>Name</th>
-        <th>Surname</th>
-        <th>Phone</th>
-        <th>City</th>
-        <th>Street</th>
+
+
+  <table class="title">
+    <tr class="title">
+      <th>N</th>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>Phone</th>
+      <th>City</th>
+      <th>Street</th>
+    </tr>
+  </table>
+  <table class="customer_table">
+    <div class="list" *ngIf="!searchStatuss; else showSearch">
+      <tr *ngFor="let user of customers" class="rows">
+        <td>
+          <h3>{{ user?.id }}</h3>
+        </td>
+        <td><img [src]="user?.image" /></td>
+        <td>
+          <p>{{ user?.name }}</p>
+        </td>
+        <td>
+          <p>{{ user?.surname }}</p>
+        </td>
+        <td>
+          <p>{{ user?.phone }}</p>
+        </td>
+        <td>
+          <p>{{ user?.address?.city }}</p>
+        </td>
+        <td>
+          <p>{{ user?.address?.street }}</p>
+        </td>
+        <td>
+          <button (click)="removeUser(user.id)" class="removeBtn">
+            Remove
+          </button>
+        </td>
       </tr>
-      <tr *ngFor="let user of customers">
-        <td  class="rows"><h3>{{user.id}}</h3></td>
-        <td  class="rows"><img [src]="user.image"></td>
-        <td  class="rows"><p>{{user.name}}</p></td>
-        <td  class="rows"><p>{{user.surname}}</p></td>
-        <td  class="rows"><p>{{user.phone}}</p></td>
-        <td  class="rows"><p>{{user.address.city}}</p></td>
-        <td  class="rows"><p>{{user.address.street}}</p></td>
+    </div>
+  </table>
+
+  <ng-template #showSearch>
+    <table class="find" class="customer_table">
+      <tr *ngFor="let find of findedUsers" class="rows">
+        <td>
+          <h3>{{ find?.id }}</h3>
+        </td>
+        <td><img [src]="find?.image" /></td>
+        <td>
+          <p>{{ find?.name }}</p>
+        </td>
+        <td>
+          <p>{{ find?.surname }}</p>
+        </td>
+        <td>
+          <p>{{ find?.phone }}</p>
+        </td>
+        <td>
+          <p>{{ find?.address?.city }}</p>
+        </td>
+        <td>
+          <p>{{ find?.address?.street }}</p>
+        </td>
       </tr>
     </table>
-  </div>
+  </ng-template>
 </div>

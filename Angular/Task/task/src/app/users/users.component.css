@@ -2,13 +2,13 @@
   height:80px;
   border: 1px solid grey;
   display: grid;
-  grid-template-columns: 55% 30%;
+  grid-template-columns: 55% 30% 20%;
   background-color: rgba(255, 255, 255, 0.829);
 }
 
 .searchForm{
   display: grid;
-  grid-template-columns: 40% 40% 40% 40%;
+  grid-template-columns: 40% 40% 36% 21% 21% 20%;
   grid-gap: 5px;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 20px;
@@ -65,8 +65,8 @@ input{
   }
 
   img{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin-bottom:10px;
   }
 
@@ -83,7 +83,7 @@ input{
     border-radius: 3px;
     display: grid;
     grid-gap: 15px;
-    grid-template-columns: 1% 2% 12% 12% 15% 20% 15%;
+    grid-template-columns: 1% 2% 12% 12% 15% 20% 15% 15%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     margin-top: 1px;
@@ -93,7 +93,7 @@ input{
 
   }
 
-  tr:hover{
+  .rows:hover{
     z-index: 0;
     margin-left: 10px;
     margin-top:5px;
@@ -109,6 +109,29 @@ input{
   h3{
     padding-top: 8px;
   }
+
+  .removeBtn{
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    outline: none;
+    background: none;
+    cursor:pointer;
+  }
+
+  .insert{
+    margin-top: 10px;
+    border: 1px solid grey;
+  }
+.openForm{
+  margin: 10px;
+
+}
+
+
+
+
+
 
 
 

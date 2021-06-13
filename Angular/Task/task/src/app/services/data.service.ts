@@ -9,6 +9,7 @@ export interface User {
   phone: string;
   address: { street: string; city: string ,country: string};
   image:string;
+  email:string;
 }
 @Injectable({ providedIn: 'root' })
 export class DataService {

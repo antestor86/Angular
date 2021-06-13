@@ -16,24 +16,42 @@
   "profile": {
     "name": "typicode"
   },
-  "users":[
+  "users": [
     {
-    "id":"1",
-    "name":"Razmik",
-    "surname":"Avetisyan",
-    "phone":"091900297",
-    "address":{"street":"Davitashen","city":"Yerevan"},
-    "image":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
+      "id": "1",
+      "name": "Razmik",
+      "surname": "Avetisyan",
+      "phone": "+374091900297",
+      "address": {
+        "street": "Davitashen 1 38/54",
+        "city": "Yerevan"
+      },
+      "image": "https://media-exp3.licdn.com/dms/image/C5603AQHwKIbpCsZUtg/profile-displayphoto-shrink_200_200/0/1517447041195?e=1628726400&v=beta&t=fbNcVYT_jTPSPhc7hKtD6Sz1x8Fhozh6lbq-Lz2CFIs",
+      "email": "emperor86.86@mail.ru"
     },
     {
-     "id":"2",
-     "name":"John",
-     "surname":"Smith",
-     "phone":"9179248485",
-     "address":{"street":"50 Okland Ave","city":"Florida"},
-     "image":"https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png"
+      "id": "2",
+      "name": "John",
+      "surname": "Smith",
+      "phone": "+14156403180",
+      "address": {
+        "street": "2978 West Main Street",
+        "city": "Minneapolis"
+      },
+      "image": "https://cdns-images.dzcdn.net/images/artist/086f50bb1ce0e3033634e5e9c2d75462/264x264.jpg",
+      "email": "johnsmit@yahoo.com"
+    },
+    {
+      "id": "3",
+      "name": "Aram",
+      "surname": "Aramyan",
+      "phone": "+37477205245",
+      "address": {
+        "street": "Malatya sebastia Vantyan str.",
+        "city": "Yerevan"
+      },
+      "image": "https://pbs.twimg.com/profile_images/2149701228/zhorik-vartanov-avatar_400x400.jpg",
+      "email": "arsenchik@mail.ru"
     }
   ]
-
-
 }

@@ -1,1 +1,32 @@
-<p>insert works!</p>
+<h1 class="title">Insert New User</h1>
+<div class="container">
+  <form [formGroup]='insertForm' (ngSubmit)="addUser()">
+    <div class="input_component">
+      <label for="name">Name</label>
+      <input placeholder="name." formControlName="name">
+    </div>
+    <div class="input_component">
+      <label for="surname">Surname</label>
+      <input placeholder="surname." type="text" formControlName="surname">
+    </div>
+    <div class="input_component">
+      <label for="email" >Email</label>
+      <input placeholder="email." formControlName="email">
+    </div>
+    <div class="input_component">
+      <label for="phone">Phone</label>
+      <input placeholder="phonenumber." type="number" formControlName="phone">
+    </div>
+    <div class="input_component">
+      <label>Address</label>
+      <input placeholder="street" formControlName="street">
+      <input placeholder="city" formControlName="city">
+    </div>
+    <div class="input_component">
+      <label for="email">Image</label>
+      <input placeholder="set url." formControlName="image" type="text">
+    </div>
+    <button type="submit" class="btn">Add</button>
+  </form>
+  <button class="btn" (click)="return()">close</button>
+</div>
