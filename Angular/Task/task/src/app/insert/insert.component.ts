@@ -43,9 +43,11 @@ export class InsertComponent implements OnInit {
   }
 
   addUser() {
-    const formData = { ...this.insertForm.value,id:+this.insertForm.value.id };
-    console.log(formData)
+    const formData = { ...this.insertForm.value};
+    console.log("the form values",formData)
+    formData.id = formData.id.toString()
     this.sub.add(this.data.addUsers(formData).subscribe());
+
 
   }
 

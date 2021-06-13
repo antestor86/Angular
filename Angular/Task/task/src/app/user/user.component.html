@@ -1,6 +1,17 @@
-<div>
+<div *ngIf="!statuss,else editform">
   <h1>USERNAME</h1>
   <h2>{{customer$?.name}}</h2>
 </div>
+<button (click)="backToHome()" class="btn">Return</button>
+<button  class="btn" (click)="edit()">Edit</button>
+<ng-template #editform>
+  <form [formGroup]="form" (ngSubmit)="finish()">
+    <div class="input_component">
+      <label>Name</label>
+      <input type="text" formControlName='name'>
+    </div>
+    <button type="submit" class="btn">Submit</button>
+  </form>
+</ng-template>
 
 

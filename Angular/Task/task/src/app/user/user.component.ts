@@ -33,7 +33,7 @@ export class UserComponent implements OnInit {
       street: new FormControl(''),
       url: new FormControl('')
     })
-}
+  }
 
   backToHome() {
     this.router.navigate(['/users']);
