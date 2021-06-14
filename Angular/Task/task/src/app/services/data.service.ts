@@ -24,6 +24,8 @@ export class DataService {
       .pipe(tap((value) => (this.customers = [...this.customers, newUser])));
   }
 
+
+
   getUsers(): Observable<User[]> {
     if (this.customers?.length) {
       return of(this.customers);

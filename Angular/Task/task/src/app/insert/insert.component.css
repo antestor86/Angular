@@ -59,7 +59,7 @@ input{
   border-radius: 12px;
 }
 
-.btn:hover{
+.btn.valid:hover{
   /* background-color: rgba(45, 131, 112, 0.8);*/
    text-decoration: underline;
    color: white;
@@ -74,6 +74,20 @@ input{
   background-color: rgba(110, 110, 110, 0.644)
 }
 
-.ng-inavlid.ng-touched{
+.btn:disabled{
+  background-color: grey;
+  color: white;
+}
+
+.close{
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.alert.ng-touched.ng-invalid{
+  color: red;
+  border: 1px solid red;
+}
+
+small{
   color: red;
 }

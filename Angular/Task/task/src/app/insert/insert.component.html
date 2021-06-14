@@ -3,33 +3,44 @@
   <form [formGroup]="insertForm" (ngSubmit)="addUser()">
     <div class="input_component">
       <label for="name">Name</label>
-      <input placeholder="name." formControlName="name" />
+      <input placeholder="*name." formControlName="name" class="alert">
+      <div *ngIf="insertForm.get('name').invalid && insertForm.get('name').touched">
+        <small *ngIf="insertForm.get('name').errors.required">Please write the user name</small>
+      </div>
     </div>
     <div class="input_component">
       <label for="surname">Surname</label>
-      <input placeholder="surname." type="text" formControlName="surname" />
+      <input placeholder="*surname." type="text" formControlName="surname" class="alert">
+      <div *ngIf="insertForm.get('surname').invalid && insertForm.get('surname').touched">
+        <small *ngIf="insertForm.get('surname').errors.required">Please write the user surname</small>
+      </div>
     </div>
     <div class="input_component">
       <label for="email">Email</label>
-      <input placeholder="email." formControlName="email" />
+      <input placeholder="*email." formControlName="email" class="alert">
       <div *ngIf="insertForm.get('email').invalid && insertForm.get('email').touched">
-        <strong *ngIf="insertForm.get('email').errors.require">select correct email address</strong>
+        <small *ngIf="insertForm.get('email').errors.required">Please write correct email</small>
       </div>
     </div>
     <div class="input_component">
       <label for="phone">Phone</label>
-      <input placeholder="phonenumber." type="number" formControlName="phone" />
+      <input placeholder="*phonenumber." type="number" formControlName="phone" class="alert">
+      <div *ngIf="insertForm.get('phone').invalid && insertForm.get('phone').touched">
+        <small *ngIf="insertForm.get('phone').errors.required">Please write the correct value</small>
+      </div>
     </div>
     <div class="input_component" formGroupName="address">
       <label>Address</label>
-      <input placeholder="street" formControlName="street" />
-      <input placeholder="city" formControlName="city" />
+      <input placeholder="*street" formControlName="street">
+      <input placeholder="*city" formControlName="city">
     </div>
     <div class="input_component">
       <label for="email">Image</label>
       <input placeholder="set url." formControlName="image" type="text" />
     </div>
-    <button type="submit" class="btn">Add</button>
+    <button type="submit" [disabled]="insertForm.invalid" class="btn">
+      Add
+    </button>
   </form>
-  <button class="btn" (click)="return()">close</button>
+  <button class="close btn" (click)="return()">close</button>
 </div>

@@ -17,7 +17,7 @@ export class InsertComponent implements OnInit {
   private sub = new SubSink();
   formValue: any
   customers: User[] | any
-  addStatuss = ""
+  addStatuss = false;
 
   constructor(private http: HttpClient, private router: Router, private data: DataService) { }
 
@@ -32,23 +32,27 @@ export class InsertComponent implements OnInit {
     this.insertForm = new FormGroup({
       name: new FormControl('', Validators.required),
       surname: new FormControl('', Validators.required),
-      phone: new FormControl(null, [Validators.required]),
-      image: new FormControl(null, Validators.required),
+      phone: new FormControl('+', [Validators.required,Validators.minLength(6)]),
+      image: new FormControl(null),
       address:new FormGroup({
-        street: new FormControl('', Validators.required),
-        city: new FormControl('', Validators.required)
+        street: new FormControl(''),
+        city: new FormControl('')
       }),
       email: new FormControl('', [Validators.required, Validators.email]),
     })
   }
 
   addUser() {
-    const formData = { ...this.insertForm.value};
-    console.log("the form values",formData)
-    formData.id = formData.id.toString()
-    this.sub.add(this.data.addUsers(formData).subscribe());
-
-
+    if(this.insertForm.valid){
+      const formData = { ...this.insertForm.value};
+      console.log("the form values",formData)
+      this.addStatuss = true;
+      formData.id = formData.id.toString()
+      this.sub.add(this.data.addUsers(formData).subscribe());
+    }
+    else{
+      this.addStatuss=false;
+    }
   }
 
   getUsers() {
