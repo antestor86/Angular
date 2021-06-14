@@ -24,7 +24,7 @@
     </div>
     <div class="input_component">
       <label for="phone">Phone</label>
-      <input placeholder="*phonenumber." type="number" formControlName="phone" class="alert">
+      <input placeholder="phonenumber." type="number" formControlName="phone" class="alert">
       <div *ngIf="insertForm.get('phone').invalid && insertForm.get('phone').touched">
         <small *ngIf="insertForm.get('phone').errors.required">Please write the correct value</small>
       </div>
