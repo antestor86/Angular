@@ -1,4 +1,4 @@
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Observable, Subscription } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
@@ -28,25 +28,32 @@ export class UserComponent implements OnInit {
     this.form = new FormGroup({
       name: new FormControl(''),
       surname: new FormControl(''),
-      phone: new FormControl(''),
-      city: new FormControl(''),
+      phone: new FormControl(null),
+      image: new FormControl(null),
+      email: new FormControl('', [Validators.email]),
       street: new FormControl(''),
-      url: new FormControl('')
+      city: new FormControl('')
     })
+
   }
 
   backToHome() {
     this.router.navigate(['/users']);
   }
 
-  edit() {
-    this.statuss = true;
+  editStatuss(){
+    if(!this.statuss){
+      this.statuss=true
+    }
+    else{
+      this.statuss
+    }
   }
 
   subscriptionToRoute(): void {
     this.routeSubscription = this.route.params.subscribe((params: Params) => {
       console.log('ID:', params);
-      this.customer$ = this.data.getById(+params.id);
+      this.customer$ = this.data.getById(params.id);
       console.log(this.customer$.name)
     });
   }

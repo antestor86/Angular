@@ -18,7 +18,7 @@
   },
   "users": [
     {
-      "id": "1",
+      "id": 1,
       "name": "Razmik",
       "surname": "Avetisyan",
       "phone": "+374091900297",
@@ -30,7 +30,7 @@
       "email": "emperor86.86@mail.ru"
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "John",
       "surname": "Smith",
       "phone": "+14156403180",
@@ -42,7 +42,7 @@
       "email": "johnsmit@yahoo.com"
     },
     {
-      "id": "3",
+      "id": 4,
       "name": "Aram",
       "surname": "Aramyan",
       "phone": "+37477205245",
@@ -63,7 +63,19 @@
         "city": "Los Angeles"
       },
       "email": "jw@yahoo.com",
-      "id": "4"
+      "id": 4
+    },
+    {
+      "name": "Jeesica",
+      "surname": "Alba",
+      "phone": 3215897,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/21/Jessica_Alba_for_Culturelle.jpg",
+      "address": {
+        "street": "Manhattan str",
+        "city": "New York"
+      },
+      "email": "jessica@yahoo.com",
+      "id": 5
     }
   ]
 }

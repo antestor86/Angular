@@ -1,14 +1,65 @@
-<div *ngIf="!statuss,else editform">
-  <h1>USERNAME</h1>
-  <h2>{{customer$?.name}}</h2>
+<div class="main_container">
+  <div class="info">
+    <img [src]="customer$.image">
+    <div class="customer_params">
+      <div class="single">
+        <label>Name</label>
+        <h2>{{customer$.name}}</h2>
+      </div>
+      <div class="single">
+        <label>Surname</label>
+        <h2>{{customer$.surname}}</h2>
+      </div>
+      <div class="single">
+        <label>Phone Number</label>
+        <h3>{{customer$.phone}}</h3>
+      </div>
+      <div class="single">
+        <label>Address</label>
+        <h2>{{customer$.street}}</h2>
+        <h2>{{customer$.city}}</h2>
+      </div>
+      <div class="single">
+        <label>Email</label>
+        <a>{{customer$.email}}</a>
+      </div>
+    </div>
+  </div>
 </div>
+
+
 <button (click)="backToHome()" class="btn">Return</button>
-<button  class="btn" (click)="edit()">Edit</button>
+<button  class="btn" (click)="editStatuss()">Edit</button>
+<div *ngIf="!statuss,else editform"></div>
+
+
+
 <ng-template #editform>
   <form [formGroup]="form" (ngSubmit)="finish()">
     <div class="input_component">
       <label>Name</label>
-      <input type="text" formControlName='name'>
+      <input type="text" formControlName='name' placeholder="name">
+    </div>
+    <div class="input_component">
+      <label>Surname</label>
+      <input type="text" formControlName='surname' placeholder="surname">
+    </div>
+    <div class="input_component">
+      <label>Email</label>
+      <input type="text" formControlName='email' class="email" placeholder="email address">
+      <div *ngIf="form.get('email').invalid && form.get('email').touched" class="invalid">
+        <small *ngIf="form.get('email').errors.required">Write Correct Value</small>
+      </div>
+    </div>
+    <div class="input_component">
+      <label>Address</label>
+      <input type="text" formControlName='street' placeholder="street">
+      <input type="text" formControlName='city' placeholder="city">
+    </div>
+    <div class="input_component">
+      <label>Image Url</label>
+      <input type="text" formControlName='image' placeholder="..url">
+
     </div>
     <button type="submit" class="btn">Submit</button>
   </form>

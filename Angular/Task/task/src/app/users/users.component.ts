@@ -67,6 +67,7 @@ export class UsersComponent implements OnInit {
     const range = formValue.name as string;
     const city = formValue.city as string;
     const street = formValue.street as string;
+    const id = formValue.id as number;
 
     this.findedUsers = this.customers.filter((item: User) => {
       return (

@@ -42,5 +42,10 @@
       Add
     </button>
   </form>
+  <div *ngIf="!addStatuss,else completed" class="template"></div>
+  <ng-template #completed>
+    <h1 class="completed">User Added</h1>
+  </ng-template>
+
   <button class="close btn" (click)="return()">close</button>
 </div>

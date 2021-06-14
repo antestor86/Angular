@@ -62,3 +62,22 @@ label{
   color: rgba(41, 39, 39, 0.856);
 }
 
+.invalid{
+  color: red;
+}
+
+.email.ng-invalid{
+  color: red;
+}
+
+.email.ng-touched{
+  color: red;
+  border: 1px solid red;
+}
+
+small{
+  color: red;
+}
+
+
+

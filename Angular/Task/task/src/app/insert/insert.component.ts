@@ -47,7 +47,6 @@ export class InsertComponent implements OnInit {
       const formData = { ...this.insertForm.value};
       console.log("the form values",formData)
       this.addStatuss = true;
-      formData.id = formData.id.toString()
       this.sub.add(this.data.addUsers(formData).subscribe());
     }
     else{
