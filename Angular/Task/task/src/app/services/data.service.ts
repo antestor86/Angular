@@ -7,16 +7,17 @@ export interface User {
   name: string;
   surname: string;
   phone: string;
-  address: { street: string; city: string ,country: string};
-  image:string;
-  email:string;
+  address: { street: string; city: string, country: string };
+  image: string;
+  email: string;
 }
 @Injectable({ providedIn: 'root' })
 export class DataService {
   customers: User[] = [];
+  customer:User;
   administrator = { admin: { login: 'admin', password: 'acba123*' } };
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   addUsers(newUser: User) {
     return this.http
@@ -38,7 +39,7 @@ export class DataService {
   }
 
   getById(id: number): Observable<User> {
-    const user: User|any = this.getUsers().pipe(
+    const user: User | any = this.getUsers().pipe(
       map((value) => value.find((item) => item.id == id))
     );
     return user;
@@ -55,4 +56,28 @@ export class DataService {
       })
     );
   }
+
+
+  // editUser(user: User): Observable<any> {
+  //   console.log(user)
+  //   return this.http.patch(`http://localhost:3000/users/${user.id}`, user)
+  //    .pipe(
+  //     tap(() => {
+  //       this.customers = this.customers.map((item: User) => {
+  //         if (item.id == user.id) {
+  //           return user;
+  //         }
+
+  //          return item
+  //        })
+  //      }))
+  // }
+
+  editUsers(user: User):Observable<User> {
+    return this.http
+      .patch<any>(`http://localhost:3000/users/${user.id}`, user)
+      .pipe(tap((item) => (this.customer = item)));
+  }
+
+
 }

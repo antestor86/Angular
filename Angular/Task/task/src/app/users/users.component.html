@@ -45,9 +45,9 @@
       <th>Street</th>
     </tr>
   </table>
-  <table class="customer_table">
+  <table class="customer_table" >
     <div class="list" *ngIf="!searchStatuss; else showSearch">
-      <tr *ngFor="let user of customers" class="rows">
+      <tr *ngFor="let user of customers | paginate:{itemsPerPage:3,currentPage:page,totalLength:length}" class="rows">
         <td>
           <h3>{{ user?.id }}</h3>
         </td>
@@ -73,9 +73,13 @@
           </button>
           <a [routerLink]="['/users', user.id]" class="edit">Edit</a>
         </td>
-      </tr>
+       </tr>
+       <pagination-controls (pageChange)="page=$event"></pagination-controls>
     </div>
-  </table>
+   </table>
+
+
+
 
   <ng-template #showSearch>
     <table class="find" class="customer_table">
@@ -109,8 +113,8 @@
           </button>
           <a [routerLink]="['/users', find.id]" class="edit">Edit</a>
         </td>
-
       </tr>
     </table>
-  </ng-template>
+    </ng-template>
 </div>
+

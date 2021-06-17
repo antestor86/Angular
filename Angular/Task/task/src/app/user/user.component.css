@@ -1,3 +1,55 @@
+.info{
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 1800px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 30% 20%;
+}
+
+img{
+  width: 500px;
+  height: 500px;
+  border: 1px solid rgba(45, 131, 112, 0.8);
+}
+
+.customer_params{
+  margin-top: 10px;
+  border:1px solid grey;
+  width: 800px;
+  height: 400px;
+  display: grid;
+  grid-template-rows: 10% 10% 20% 10% 10% 10% 10% 10%;
+}
+
+.single{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 45% 40% 10%;
+  width: 400px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  color: grey;
+}
+
+.text{
+  font-size: 18px;
+  text-decoration:dotted;
+  color: rgba(45, 131, 112, 0.8);
+
+
+}
+
+.link{
+  color: blue;
+  font-style: italic;
+  cursor: pointer;
+}
+
 .btn{
   width: 220px;
   height: 40px;
@@ -21,6 +73,35 @@
  }
 
  .btn:active{
+  padding: 7px;
+  font-size: 16px;
+  background-color: rgba(110, 110, 110, 0.644)
+}
+
+.btn:disabled{
+  background-color: grey;
+  color: white;
+}
+
+.submit{
+  width: 220px;
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 30px;
+  background-color: rgba(45, 131, 112, 0.8);
+  font-family:'Sigmar One', cursive;
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.submit:disabled{
+  background-color: grey;
+  color: white;
+}
+
+.submit:active{
   padding: 7px;
   font-size: 16px;
   background-color: rgba(110, 110, 110, 0.644)
@@ -62,21 +143,27 @@ label{
   color: rgba(41, 39, 39, 0.856);
 }
 
-.invalid{
+
+input.ng-invalid{
   color: red;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.email.ng-invalid{
-  color: red;
-}
-
-.email.ng-touched{
+.invalid.ng-touched{
   color: red;
   border: 1px solid red;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 small{
   color: red;
+}
+
+.edit{
+  color:rgba(0, 128, 128, 0.8);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  margin-left: 20px;
 }
 
 

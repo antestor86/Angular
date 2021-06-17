@@ -25,8 +25,14 @@ export class UsersComponent implements OnInit {
   searchStatuss = false;
   findedUsers: User[] = [];
   insertStatuss = false;
-  user: User | any
+  user: User | any;
+  totalLength:any;
+  page:number = 1;
+  length:number;
   private sub = new SubSink();
+
+
+
   constructor(
     private router: Router,
     private http: HttpClient,
@@ -34,11 +40,12 @@ export class UsersComponent implements OnInit {
     route: ActivatedRoute
   ) { }
 
+
   ngOnInit(): void {
     this.formInit();
     this.getUsers();
     this.formInit();
-
+    //this.totalLength = this.customers.length
   }
 
   initForm() {
@@ -85,6 +92,8 @@ export class UsersComponent implements OnInit {
       this.data.getUsers().subscribe((user) => {
         console.log(user);
         this.customers = user;
+        this.length = this.customers.length
+        console.log("Length is",this.length)
       })
     );
   }
@@ -129,9 +138,13 @@ export class UsersComponent implements OnInit {
       this.customers = user
     }))
   }
+
+
   openPage() {
     this.router.navigate([`/users/${this.customers.id}`])
   }
+
+
 
   ngOnDestroy(): void {
     this.sub.unsubscribe();
