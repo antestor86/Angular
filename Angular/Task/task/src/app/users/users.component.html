@@ -47,7 +47,7 @@
   </table>
   <table class="customer_table" >
     <div class="list" *ngIf="!searchStatuss; else showSearch">
-      <tr *ngFor="let user of customers | paginate:{itemsPerPage:3,currentPage:page,totalLength:length}" class="rows">
+      <tr *ngFor="let user of customers | paginate:{itemsPerPage:5,currentPage:page,totalLength:length}" class="rows">
         <td>
           <h3>{{ user?.id }}</h3>
         </td>
@@ -84,7 +84,7 @@
   <ng-template #showSearch>
     <table class="find" class="customer_table">
       <tr
-        *ngFor="let find of findedUsers"
+        *ngFor="let find of findedUsers  | paginate:{itemsPerPage:5,currentPage:page,totalLength:length}"
         class="rows"
         [routerLink]="['/users', find.id]"
       >
@@ -114,6 +114,7 @@
           <a [routerLink]="['/users', find.id]" class="edit">Edit</a>
         </td>
       </tr>
+      <pagination-controls (pageChange)="page=$event" class="pagination"></pagination-controls>
     </table>
     </ng-template>
 </div>

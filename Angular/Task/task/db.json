@@ -100,6 +100,78 @@
       },
       "email": "jorik@mail.ru",
       "id": 8
+    },
+    {
+      "name": "Sargis",
+      "surname": "Torosyan",
+      "phone": 95654584,
+      "image": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+      "address": {
+        "street": "Margaryan 1/18",
+        "city": "Yerevan"
+      },
+      "email": "sargist@yahoo.com",
+      "id": 9
+    },
+    {
+      "name": "Stepan",
+      "surname": "Simonyan",
+      "phone": 93554125,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4vHwf_WqQW7lAjOAsNDwrzeJer1Bg863H1Q&usqp=CAU",
+      "address": {
+        "street": "Davitashen 3 38/54",
+        "city": "Yerevan"
+      },
+      "email": "step@google.com",
+      "id": 10
+    },
+    {
+      "name": "John ",
+      "surname": "Simons",
+      "phone": 6034508855,
+      "image": "https://www.atlassian.com/ru/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg",
+      "address": {
+        "street": "M12 6AE",
+        "city": "Manchester"
+      },
+      "email": "john88@yahoo.com",
+      "id": 11
+    },
+    {
+      "name": "Babken",
+      "surname": "Sirunyan",
+      "phone": "3749150026542565",
+      "image": "https://thumbs.dreamstime.com/b/happy-smiling-geek-hipster-beard-man-cool-avatar-geek-man-avatar-104871313.jpg",
+      "address": {
+        "city": "Yerevan",
+        "street": "Malatya 18/2"
+      },
+      "email": "babken_sirunyan@yahoo.com",
+      "id": 12
+    },
+    {
+      "name": "Saribek",
+      "surname": "Saribekyan",
+      "phone": 374885522,
+      "image": "https://static.vecteezy.com/system/resources/previews/002/002/332/non_2x/ablack-man-avatar-character-isolated-icon-free-vector.jpg",
+      "address": {
+        "street": "Halabyan 14",
+        "city": "Yerevan"
+      },
+      "email": "sarsar_86@mail.ru",
+      "id": 13
+    },
+    {
+      "name": "Tigran",
+      "surname": "Arzaqancyan",
+      "phone": 374888888,
+      "image": "http://df.am/img/news/big/1490086935-8749.jpeg",
+      "address": {
+        "street": "Baghramyan 23",
+        "city": "Yerevan"
+      },
+      "email": "parlament@yahoo.com",
+      "id": 14
     }
   ]
 }

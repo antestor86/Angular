@@ -14,7 +14,7 @@
       <label for="password">Password</label>
       <input type="password" name="password" placeholder="type password" formControlName="password">
     </div>
-    <div *ngIf="form.get('password').invalid && form.get('password').touched">
+    <div *ngIf="form.get('password').invalid && form.get('password').touched" class="ng_content">
       <small *ngIf="form.get('password').errors.required" class="invalid">type password</small>
     </div>
     <button class="btn" type="submit"  [disabled]="form.invalid">Login</button>

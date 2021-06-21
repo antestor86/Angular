@@ -58,25 +58,13 @@ export class DataService {
   }
 
 
-  // editUser(user: User): Observable<any> {
-  //   console.log(user)
-  //   return this.http.patch(`http://localhost:3000/users/${user.id}`, user)
-  //    .pipe(
-  //     tap(() => {
-  //       this.customers = this.customers.map((item: User) => {
-  //         if (item.id == user.id) {
-  //           return user;
-  //         }
-
-  //          return item
-  //        })
-  //      }))
-  // }
-
-  editUsers(user: User):Observable<User> {
-    return this.http
-      .patch<any>(`http://localhost:3000/users/${user.id}`, user)
-      .pipe(tap((item) => (this.customer = item)));
+  editUser(user: User): Observable<any> {
+    console.log('service user',user)
+    return this.http.patch<any>(`http://localhost:3000/users/${user.id}`, user)
+     .pipe(
+      tap((item) => {
+        return item = user
+       }))
   }
 
 

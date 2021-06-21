@@ -1,5 +1,5 @@
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Observable, Subscription, of } from 'rxjs';
+import { Observable, Subscription, of, interval } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { User, DataService } from '../services/data.service';
@@ -12,6 +12,7 @@ import { catchError, map, switchMap, tap } from 'rxjs/operators';
 })
 export class UserComponent implements OnInit {
   customer$: Observable<User>;
+  userID:any;
   statuss: boolean = false;
   addStatuss = false;
   form: FormGroup;
@@ -55,8 +56,8 @@ export class UserComponent implements OnInit {
     }
   }
 
-  subscriptionToRoute(): void {
-    this.customer$ = this.route.params
+  subscriptionToRoute():Observable<User> {
+   return  this.customer$ = this.route.params
       .pipe(
         map((params: Params) => +params.id),
         switchMap((id) =>
@@ -70,14 +71,29 @@ export class UserComponent implements OnInit {
 
   }
 
-  finish(): void {
-    if (this.form.valid) {
-      this.customer$ = this.data.editUsers(this.form.value);
+
+  finish():void{
+    if (this.form.value) {
+      this.route.params.subscribe((params: Params) => {
+         const curId = params.id
+         this.form.value.id = +curId
+         console.log(typeof(this.form.value.id))
+         this.data.editUser(this.form.value).subscribe(()=>{
+           console.log(this.form.value)
+            this.customer$ == this.form.value
+
+        })
+      })
+
+
       this.addStatuss = true;
-    } else {
+    }
+    else {
       this.addStatuss = false;
     }
   }
+
+
 
   ngOndestroy(): void {
     this.routeSubscribe.unsubscribe();

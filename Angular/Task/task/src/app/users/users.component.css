@@ -152,7 +152,14 @@ input.ng-invalid.ng-touched{
   color: black;
 }
 
+.current{
+  background-color: rgba(45, 131, 112, 0.8);
 
+}
+
+.current li{
+  color: red;
+}
 
 
 
