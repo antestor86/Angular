@@ -104,11 +104,6 @@ export class UsersComponent implements OnInit {
 
   insert() {
 
-    /*if (!this.insertStatuss) {
-      this.insertStatuss = true;
-    } else {
-      this.insertStatuss = false;
-    }*/
     this.router.navigate(['/insert'])
   }
 
