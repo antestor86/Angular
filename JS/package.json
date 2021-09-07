@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jshint": "^2.13.0",
+    "typescript": "^4.3.5"
+  }
+}

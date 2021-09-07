@@ -1,0 +1,67 @@
+[
+    {
+    "id":1,
+    "name":"Պողոս",
+    "surname":" Պողոսյան",
+    "age":"25",
+    "country":"Հայաստանի Հանրապետություն",
+    "city":"Երևան",
+    "addresses":[
+      "Դավիթաշեն 1թ 42/54",
+      "Մալաթիա Սեբաստիա 16 42/54"
+    ],
+    "gender":"Ա",
+    "avatar":"https://static.toiimg.com/thumb/resizemode-4,msid-76729750,imgsize-249247,width-720/76729750.jpg",
+    "phones":[
+      {"mobile":"09625654"},
+      {"home":"01045687"}
+    ],
+    "skills":[
+      "JS","HTML","CSS","NodeJs","Angular"
+    ]
+
+  },
+  {
+    "id":2,
+    "name":"John",
+    "surname":"Smith",
+    "age":"35",
+    "country":"USA",
+    "city":"New-York",
+    "addresses":[
+      "John Smit-1",
+      "John Smit-2"
+    ],
+    "gender":"male",
+    "avatar":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5bmndz9fckbQIY88RHnDBuoZ06ZTEyTi3bA&usqp=CAU",
+    "phones":[
+      {"mobile":"00009625654"},
+      {"home":"036501045687"}
+    ],
+    "skills":[
+      "C#","Python","MongoDB","Linux","Jenkins"
+       ]
+ },
+ {
+  "id":3,
+  "name":"admin",
+  "surname":"",
+  "age":"35",
+  "country":"Armenia",
+  "city":"Yerevan",
+  "addresses":[
+    "John Smit-1",
+    "John Smit-2"
+  ],
+  "gender":"male",
+  "avatar":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcWg5zDxZuI3vFy2tUnKV5YkAB629ePRqEKg&usqp=CAU",
+  "phones":[
+    {"mobile":"00009625654"},
+    {"home":"036501045687"}
+  ],
+  "skills":[
+    "C#","Python","MongoDB","Linux","Jenkins"
+     ]
+}
+
+]
