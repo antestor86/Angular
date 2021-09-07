@@ -6,7 +6,7 @@
   <button class="btn" (click)="edit()">Edit</button>
 </div>
 <div *ngIf="!statuss,else formTemplate" class="template"></div>
-<<ng-template #formTemplate>
+<ng-template #formTemplate>
   <form [formGroup]='form' (ngSubmit)="finish()">
     <input placeholder="name" formControlName="name">
     <input placeholder="username" formControlName="username">

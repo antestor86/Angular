@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { SubSink } from 'subsink';
 import { AuthService } from '../services/autentichate.service';
 export interface User {
-  id?: number;
+
   name: string;
   username: string;
   email: string;
@@ -12,6 +12,7 @@ export interface User {
   address: { street: string; suite: string; city: string; zipcode: string };
   phone: string;
   company: { name: string; catchPhrase: string; bs: string };
+  id?: number;
 }
 @Component({
   selector: 'app-insert',
@@ -51,6 +52,7 @@ export class InsertComponent implements OnInit, OnDestroy {
   //adding user
   addUser() {
     const formData = { ...this.form.value };
+    formData.id = parseInt(formData.id+1);
     //console.log(formData)
     this.sub.add(this.http.addUsers(formData).subscribe());
   }

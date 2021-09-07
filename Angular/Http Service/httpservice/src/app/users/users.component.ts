@@ -24,8 +24,8 @@ export class UsersComponent implements OnInit {
       //this.users.concat(user);
       console.log(user)
       //this.users.push(user);*/
-      for(let i in user){
-        this.users.push(user[i])
+      for(let i of user){
+        this.users.push(user)
       }
     })
   }

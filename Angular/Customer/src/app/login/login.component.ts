@@ -10,7 +10,7 @@ export interface User{
   username: string;
   email: string;
   street:string|any;
-  address:{street:string|any,suite:string,city:string,zipcode:string};
+  address:{street:string,suite:string,city:string,zipcode:string};
   phone: string;
   company:{name:string,catchPhrase:string,bs:string}
 
