@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@1,500&display=swap');
+
+.head{
+  font-family: 'Urbanist', sans-serif;
+  height: 70px;
+  background-color: rgb(49, 114, 189);
+  color: rgb(238, 234, 234);
+  display: grid;
+  grid-template-columns: 65% 15% 3% 18%;
+
+}
+
+.page-title{
+  font-size: 48px;
+  margin-left: 3%;
+  text-align: justify;
+  font-weight: bold;
+  text-decoration: underline 2px;
+  letter-spacing: 5px;
+  width: 180px;
+  margin-bottom: 5px;
+}
+
+.filter{
+  display: inline;
+  width: 200px;
+  height: 20px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  text-align: center;
+
+}
+
+.filter::placeholder{
+    color: rgba(128, 128, 128, 0.527);
+
+}
+
+button{
+  width: 120px;
+  height: 35px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  background-color: goldenrod;
+  cursor: pointer;
+}
+
+button:active{
+  background-color: rgb(126, 98, 27);
+  width: 119px;
+  height: 34px;
+}
