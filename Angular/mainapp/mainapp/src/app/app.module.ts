@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UsersComponent } from './reactiveforms/users.component';
 import {DataService} from '../app/serviec/data.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -16,12 +17,13 @@ import {DataService} from '../app/serviec/data.service';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     DataService
   ],
-  
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

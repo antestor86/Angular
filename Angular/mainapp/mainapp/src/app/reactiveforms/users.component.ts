@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import {FormGroup,FormControl, Validators, FormArray} from "@angular/forms";
 import {DataService} from "../serviec/data.service"
+export class User{
+  userName:string|any;
+  userAge:number|any;
+}
 
 @Component({
   selector: 'app-users',
@@ -9,6 +13,7 @@ import {DataService} from "../serviec/data.service"
   providers:[DataService]
 })
 export class UsersComponent implements OnInit {
+  user:User[] = [];
   form:FormGroup|any
   constructor() { }
   ngOnInit(): void {
@@ -21,7 +26,7 @@ export class UsersComponent implements OnInit {
      }),
      skills:new FormArray([])
    });
-  
+
   }
   submit(){
     if(this.form.valid){
@@ -29,7 +34,7 @@ export class UsersComponent implements OnInit {
       const formData = { ...this.form.value }
       console.log('Form', formData)
     }
-  
+
   }
   addCity(){
     const cityMap:any={
