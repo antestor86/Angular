@@ -11,12 +11,14 @@ import { DataService } from './services/data.service';
 import { HttpClientModule } from '@angular/common/http';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     InfoComponent,
-    TemplateComponent
+    TemplateComponent,
+
   ],
   imports: [
     BrowserModule,

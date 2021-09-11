@@ -1,9 +1,12 @@
-<ul>
-  <li *ngFor='let movie of movies'>
-    <h2>{{movie.title}}</h2>
-    <img [src]="movie.poster">
-    <p>IMDB:{{movie.rate}}</p>
-    <p>Год {{movie.year}}</p>
-    <p>Жанр:{{movie.genre}}</p>
-  </li>
-</ul>
+<div class="content">
+  <ul>
+    <li  *ngFor="let movie of movies">
+      <img [src]="movie.poster" alt="image">
+      <h2>{{movie.title}}</h2>
+      <p>IMDB:{{movie.rate}}</p>
+      <p>Год {{movie.year}}</p>
+      <p>Жанр:{{movie.genre}}</p>
+    </li>
+  </ul>
+</div>
+

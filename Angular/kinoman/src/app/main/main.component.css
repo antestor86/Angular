@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@1,500&display=swap');
+
+.content{
+  display:inline-grid;
+}
+
+ul{
+  display: inline-block;
+}
+
+li{
+  display: inline-grid;
+  margin: 15px;
+
+}
+
+li h2{
+  font-family: 'Urbanist', sans-serif;
+  height: 100px;
+  width: 150px;
+  text-align: center;
+
+}
+
+li img {
+  width: 180px;
+  height: 250px;
+}
+
+
