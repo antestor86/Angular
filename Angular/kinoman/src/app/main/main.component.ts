@@ -24,6 +24,7 @@ export class MainComponent implements OnInit {
     this.getData();
     console.log(this.movies)
 
+    
 
   }
 
