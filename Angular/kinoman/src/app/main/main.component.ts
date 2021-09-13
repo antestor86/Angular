@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../services/data.service';
 import { activeElement } from '../directives/active.directive';
 export interface Movie{
-  id:number,
+  id?:number,
   title:string,
   year:number,
   genre:string,
