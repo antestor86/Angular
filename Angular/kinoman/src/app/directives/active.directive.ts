@@ -44,5 +44,4 @@ export class activeElement{
     this.renderer.setStyle(this.elem.nativeElement,"padding",width)
   }
 
-
 }

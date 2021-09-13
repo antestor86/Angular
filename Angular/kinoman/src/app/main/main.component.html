@@ -1,7 +1,7 @@
 <div class="content">
   <ul>
     <li  *ngFor="let movie of movies" >
-      <a [routerLink]="['item','1']">
+      <a [routerLink]="['item',movie.id]">
         <img [src]="movie.poster" alt="image" activeelement>
       </a>
       <h2>{{movie.title}}</h2>
