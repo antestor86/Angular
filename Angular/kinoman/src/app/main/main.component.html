@@ -1,12 +1,16 @@
 <div class="content">
   <ul>
-    <li  *ngFor="let movie of movies">
-      <img [src]="movie.poster" alt="image">
+    <li  *ngFor="let movie of movies" >
+      <a [routerLink]="['item','1']">
+        <img [src]="movie.poster" alt="image" activeelement>
+      </a>
       <h2>{{movie.title}}</h2>
-      <p>IMDB:{{movie.rate}}</p>
+      <p class="imdb">IMDB:
+        <label>{{movie.rate}}</label>
+      </p>
       <p>Год {{movie.year}}</p>
-      <p>Жанр:{{movie.genre}}</p>
-    </li>
+      <p class="type">Жанр:{{movie.genre}}</p>
+   </li>
   </ul>
 </div>
 
