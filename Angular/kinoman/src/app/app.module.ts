@@ -9,6 +9,7 @@ import { InfoComponent } from './info/info.component';
 import { TemplateComponent } from './template/template.component';
 import { DataService } from './services/data.service';
 import { HttpClientModule } from '@angular/common/http';
+import { activeElement } from './directives/active.directive';
 
 
 
@@ -18,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     MainComponent,
     InfoComponent,
     TemplateComponent,
+    activeElement
 
   ],
   imports: [

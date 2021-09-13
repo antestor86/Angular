@@ -10,4 +10,8 @@ export class AppComponent {
   title = 'kinoman';
   filterText = "";
 
+  find(){
+    console.log(this.filterText)
+  }
+
 }

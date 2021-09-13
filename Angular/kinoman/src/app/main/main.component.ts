@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../services/data.service';
+import { activeElement } from '../directives/active.directive';
 export interface Movie{
   id:number,
   title:string,
@@ -7,25 +8,24 @@ export interface Movie{
   genre:string,
   country:string,
   rate:string,
-  poster:string
+  poster:string,
+  link:string
 }
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.css']
 })
+
 export class MainComponent implements OnInit {
   movies:Movie[] = [];
   constructor(private http:DataService) { }
-  imageSource:string [] = [];
+
 
   ngOnInit(): void {
-
     this.getData();
     console.log(this.movies)
-
-    
-
   }
 
   getData(){
@@ -34,7 +34,7 @@ export class MainComponent implements OnInit {
           this.movies.push(movie)
       }
     })
-
   }
+
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-info',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./info.component.css']
 })
 export class InfoComponent implements OnInit {
+  id:number|undefined;
 
-  constructor() { }
+  constructor(private activatedRoute:ActivatedRoute) {
+    this.id = activatedRoute.snapshot.params['id'];
+   }
 
   ngOnInit(): void {
   }
