@@ -20,6 +20,9 @@ export interface Movie{
 
 export class MainComponent implements OnInit {
   movies:Movie[] = [];
+  page = 1
+  totalLength:any;
+  length:number | any;
   constructor(private http:DataService) { }
 
 
@@ -33,6 +36,7 @@ export class MainComponent implements OnInit {
       for(let movie of data){
           this.movies.push(movie)
       }
+      this.length = this.movies.length;
     })
   }
 

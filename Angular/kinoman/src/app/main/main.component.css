@@ -64,4 +64,26 @@ li p{
   margin: 10px;
 }
 
+::ng-deep ul > li:not(.active) > a {
+  background-color: rgba(255, 255, 255, 0.226) !important;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: bold;
+}
+
+::ng-deep ul > li.disabled > span {
+  background-color: rgb(255, 255, 255) !important;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: bold;
+}
+
+::ng-deep li.current{
+  background-color: goldenrod;
+}
+::ng-deep ul>li.current span{
+  color: rgb(255, 255, 255);
+}
+
+
+
+
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription, Observable } from 'rxjs';
-import {switchMap} from 'rxjs/operators'
+import {map, switchMap} from 'rxjs/operators'
 import { Movie } from '../main/main.component';
 import { DataService } from '../services/data.service';
 @Component({
@@ -11,13 +11,17 @@ import { DataService } from '../services/data.service';
 })
 export class InfoComponent implements OnInit {
   id:number|any;
-  movie$:Observable<Movie> | undefined
-  movies:Movie[]|undefined;
+  movie:Movie|undefined;
+  movies:Movie[] = [];
 
   constructor(private route:ActivatedRoute,private data:DataService) {}
 
   ngOnInit(): void {
     this.initId();
+    this.getItem(this.id);
+    console.log(this.movie)
+
+
   }
 
   initId(){
@@ -25,9 +29,18 @@ export class InfoComponent implements OnInit {
       switchMap(params=>params.getAll('id'))
     ).subscribe(data=>{
       this.id = data
-     console.log(this.id);
+     //console.log(this.id);
     })
   }
 
-
+  getItem(id:number){
+      this.data.getData().subscribe((data:any)=>{
+        for(let movie of data){
+            this.movies.push(movie);
+        }
+        return this.movie= this.movies.find((item:any)=>{
+          item.id == id;
+        })
+      })
+  }
 }

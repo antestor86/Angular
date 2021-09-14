@@ -1,6 +1,6 @@
 <div class="content">
   <ul>
-    <li  *ngFor="let movie of movies" >
+    <li  *ngFor="let movie of movies | paginate:{itemsPerPage:14,currentPage:page}">
       <a [routerLink]="['item',movie.id]">
         <img [src]="movie.poster" alt="image" activeelement>
       </a>
@@ -11,6 +11,7 @@
       <p>Год {{movie.year}}</p>
       <p class="type">Жанр:{{movie.genre}}</p>
    </li>
+   <pagination-controls (pageChange)="page=$event"></pagination-controls>
   </ul>
 </div>
 

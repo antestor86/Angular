@@ -10,6 +10,8 @@ import { TemplateComponent } from './template/template.component';
 import { DataService } from './services/data.service';
 import { HttpClientModule } from '@angular/common/http';
 import { activeElement } from './directives/active.directive';
+import { NgxPaginationModule } from 'ngx-pagination';
+
 
 
 
@@ -26,7 +28,8 @@ import { activeElement } from './directives/active.directive';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
     ],
   providers: [DataService],
   bootstrap: [AppComponent]
