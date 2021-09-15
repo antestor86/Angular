@@ -29,16 +29,18 @@ export class MainComponent implements OnInit {
   length:number | any;
   filterText:string = "";
   genres:Genre[] = [];
+  genre:string|undefined
+  genreStatuss:boolean = false;
+
   constructor(private http:DataService) { }
 
   ngOnInit(): void {
     this.getData();
     this.getGenres();
-    console.log(this.movies);
-    console.log(this.genres);
-
+    this.getGenre();
   }
 
+  //Get Movies Data
   getData(){
     this.http.getData().subscribe((data:any)=>{
       for(let movie of data){
@@ -48,13 +50,19 @@ export class MainComponent implements OnInit {
     })
   }
 
+  //Get Genre Types
   getGenres(){
     this.http.getGenres().subscribe((data:any)=>{
-      console.log(data)
+
       for(let item of data){
         this.genres.push(item);
       }
     })
+  }
+
+  //Filter Types
+  getGenre(){
+
   }
 
 

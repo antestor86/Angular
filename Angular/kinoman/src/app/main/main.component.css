@@ -102,6 +102,36 @@ li p{
 
 }
 
+.navigation li{
+  border: 1px solid grey;
+  height: 40px;
+  width: 150px;
+  padding: 5px;
+  margin: 0.5px;
+  background-color: rgb(33, 107, 167);
+  color: white;
+  list-style: none;
+}
+
+.navigation li:hover{
+  background-color:  grey;
+}
+
+
+
+.genre{
+ text-decoration: none;
+ font-family: 'Urbanist', sans-serif;
+}
+
+
+
+
+
+
+
+
+
 
 
 
