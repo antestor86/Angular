@@ -38,9 +38,12 @@ export class InfoComponent implements OnInit {
         for(let movie of data){
             this.movies.push(movie);
         }
-        return this.movie= this.movies.find((item:any)=>{
-          item.id == id;
+        this.movies.find((item:Movie)=>{
+          if(item.id == id){
+            this.movie = item
+          }
         })
+
       })
   }
 }

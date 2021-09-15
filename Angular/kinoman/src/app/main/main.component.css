@@ -83,6 +83,25 @@ li p{
   color: rgb(255, 255, 255);
 }
 
+.filter{
+  display: inline;
+  position: relative;
+  bottom: 50px;
+  left: 1100px;
+  width: 200px;
+  height: 20px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  text-align: center;
+
+}
+
+.filter::placeholder{
+    color: rgba(128, 128, 128, 0.527);
+
+}
+
 
 
 

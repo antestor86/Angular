@@ -1,3 +1,11 @@
+<input type="text" class="filter" [(ngModel)]="filterText" placeholder="type text here..">
+<nav>
+  <ul>
+    <li *ngFor="let genre of genres">
+      <div>{{genre.name}}</div>
+    </li>
+  </ul>
+</nav>
 <div class="content">
   <ul>
     <li  *ngFor="let movie of movies | paginate:{itemsPerPage:14,currentPage:page}">

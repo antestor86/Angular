@@ -12,6 +12,10 @@ export interface Movie{
   link:string
 }
 
+export interface Genre{
+  name:string
+}
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -23,12 +27,16 @@ export class MainComponent implements OnInit {
   page = 1
   totalLength:any;
   length:number | any;
+  filterText:string = "";
+  genres:Genre[] = [];
   constructor(private http:DataService) { }
-
 
   ngOnInit(): void {
     this.getData();
-    console.log(this.movies)
+    this.getGenres();
+    console.log(this.movies);
+    console.log(this.genres);
+
   }
 
   getData(){
@@ -37,6 +45,15 @@ export class MainComponent implements OnInit {
           this.movies.push(movie)
       }
       this.length = this.movies.length;
+    })
+  }
+
+  getGenres(){
+    this.http.getGenres().subscribe((data:any)=>{
+      console.log(data)
+      for(let item of data){
+        this.genres.push(item);
+      }
     })
   }
 

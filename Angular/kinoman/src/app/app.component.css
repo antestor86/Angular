@@ -6,7 +6,7 @@
   background-color: rgb(49, 114, 189);
   color: rgb(238, 234, 234);
   display: grid;
-  grid-template-columns: 65% 15% 3% 18%;
+  grid-template-columns: 80% 9% 3%;
 
 }
 
@@ -21,21 +21,7 @@
   margin-bottom: 5px;
 }
 
-.filter{
-  display: inline;
-  width: 200px;
-  height: 20px;
-  border-radius: 3px;
-  border: none;
-  outline: none;
-  text-align: center;
 
-}
-
-.filter::placeholder{
-    color: rgba(128, 128, 128, 0.527);
-
-}
 
 button{
   width: 120px;
