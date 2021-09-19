@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../services/data.service';
 import { activeElement } from '../directives/active.directive';
+import { isNgTemplate } from '@angular/compiler';
 export interface Movie{
   id?:number,
   title:string,
@@ -30,14 +31,15 @@ export class MainComponent implements OnInit {
   filterText:string = "";
   genres:Genre[] = [];
   genre:string|undefined
-  genreStatuss:boolean = false;
+  filterStatuss:boolean = false;
+  filteredMovies:Movie [] = [];
 
   constructor(private http:DataService) { }
 
   ngOnInit(): void {
     this.getData();
     this.getGenres();
-    this.getGenre();
+
   }
 
   //Get Movies Data
@@ -61,9 +63,34 @@ export class MainComponent implements OnInit {
   }
 
   //Filter Types
-  getGenre(){
+  getGenre(event:any):void{
+    if(!this.filterStatuss){
+      this.movies.filter(
+        (item:any)=>{
+          if(item.genre.includes(event)){
+            this.filteredMovies.push(item);
+            this.filterStatuss = true;
+          }
+        }
+      )
+    }
+    else{
+      this.filteredMovies = [];
+      this.movies.filter(
+        (item:any)=>{
+          if(item.genre.includes(event)){
+            this.filteredMovies.push(item);
+            this.filterStatuss = true;
+          }
+        }
+      )
 
+    }
   }
+
+
+
+
 
 
 }
