@@ -1,0 +1,36 @@
+<div class="container" [ngClass]="{'hide':'display'}">
+  <div></div>
+  <form [formGroup]="addForm" (ngSubmit)="submit()">
+    <h2>Add New Movie</h2>
+    <div class="input_block">
+      <label class="movieLabel">Title</label>
+      <input type="text" class="addInput" formControlName='title'>
+    </div>
+    <div class="input_block">
+      <label class="movieLabel">Year</label>
+      <input type="number" class="addInput" formControlName='year'>
+    </div>
+    <div class="input_block">
+      <label class="movieLabel">Rate</label>
+      <input type="text" class="addInput" formControlName='rate'>
+    </div>
+    <div class="input_block">
+      <label class="movieLabel">Description</label>
+      <input type="text" class="addInput" formControlName='desc'>
+    </div>
+    <div class="input_block">
+      <label class="movieLabel">Genre</label>
+      <input type="text" class="addInput" formControlName='genre'>
+    </div>
+    <div class="input_block">
+      <label class="movieLabel">Poster</label>
+      <input type="file" class="addInput"  formControlName='poster'>
+    </div>
+    <div class="input_block">
+      <label class="movieLabel">Online Link</label>
+      <input type="text" class="addInput" formControlName='link'>
+    </div>
+    <button type="submit" class="submit">Add</button>
+    <button class="submit" (click)="hideBlock">Cancel</button>
+  </form>
+</div>

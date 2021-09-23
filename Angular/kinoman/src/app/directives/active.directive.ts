@@ -22,6 +22,12 @@ export class activeElement{
     this.setBorder("1px");
   }
 
+  @HostListener("click")onClick(){
+    this.showBlock(true);
+  }
+
+
+
 
 
   private setMargin(val:string){
@@ -43,5 +49,11 @@ export class activeElement{
   private setPadding(width:string){
     this.renderer.setStyle(this.elem.nativeElement,"padding",width)
   }
+
+  private showBlock(display:boolean){
+    this.renderer.setStyle(this.elem.nativeElement,"display",display)
+  }
+
+
 
 }

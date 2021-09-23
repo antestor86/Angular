@@ -2,6 +2,7 @@
 
 .content{
   display:inline-grid;
+  z-index: 0;
 }
 
 ul{
@@ -123,6 +124,10 @@ li p{
  text-decoration: none;
  font-family: 'Urbanist', sans-serif;
 }
+
+
+
+
 
 
 

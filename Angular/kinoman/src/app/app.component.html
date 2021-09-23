@@ -1,7 +1,8 @@
 <header class="head">
   <h3 class="page-title">Kinoman</h3>
   <button (click)="find()">Search</button>
-  <button>Add New Movie</button>
+  <button (click)="showBlock()">Add New Movie</button>
 </header>
+<app-addmovie [display]='isTrue'></app-addmovie>
 <router-outlet></router-outlet>
 

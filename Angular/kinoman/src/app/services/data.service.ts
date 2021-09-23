@@ -35,5 +35,9 @@ export class DataService{
     return movie
   }
 
+  setData(movie:Movie){
+    return this.http.post<Movie>("http://localhost:3000/movies",movie)
+  }
+
 
 }

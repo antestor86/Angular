@@ -4,13 +4,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { Routes,RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InfoComponent } from './info/info.component';
 import { TemplateComponent } from './template/template.component';
 import { DataService } from './services/data.service';
 import { HttpClientModule } from '@angular/common/http';
 import { activeElement } from './directives/active.directive';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { AddmovieComponent } from './addmovie/addmovie.component';
 
 
 
@@ -21,7 +22,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
     MainComponent,
     InfoComponent,
     TemplateComponent,
-    activeElement
+    activeElement,
+    AddmovieComponent
 
   ],
   imports: [
@@ -29,7 +31,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    ReactiveFormsModule
     ],
   providers: [DataService],
   bootstrap: [AppComponent]

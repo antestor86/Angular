@@ -1,7 +1,11 @@
+import { HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../services/data.service';
 import { activeElement } from '../directives/active.directive';
-import { isNgTemplate } from '@angular/compiler';
+import { TempService } from '../services/temp.service';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+
+
 export interface Movie{
   id?:number,
   title:string,
@@ -33,14 +37,19 @@ export class MainComponent implements OnInit {
   genre:string|undefined
   filterStatuss:boolean = false;
   filteredMovies:Movie [] = [];
+  file:File | null = null;
+  isTrue:boolean = false;
 
-  constructor(private http:DataService) { }
+  constructor(private http:DataService,private tempServie:TempService,) { }
 
   ngOnInit(): void {
     this.getData();
     this.getGenres();
 
+
   }
+
+  //init Form
 
   //Get Movies Data
   getData(){
@@ -88,9 +97,8 @@ export class MainComponent implements OnInit {
     }
   }
 
-
-
-
-
+  showBlock(){
+    this.isTrue = true;
+  }
 
 }
