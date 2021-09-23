@@ -1,4 +1,5 @@
 <input type="text" class="filter" [(ngModel)]="filterText" placeholder="type text here..">
+
 <nav>
   <ul class="navigation">
     <li *ngFor="let genre of genres" #genre (click)="getGenre(genre.name)">
