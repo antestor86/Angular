@@ -39,4 +39,8 @@ button:active{
   height: 34px;
 }
 
+.show{
+  display: grid;
+}
+
 

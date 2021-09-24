@@ -13,7 +13,7 @@ export class AppComponent {
   title = 'kinoman';
   filterText = "";
   hideen = false;
-  isTrue:boolean = false;
+  isTrue:boolean= false;
   constructor(private tempService:TempService){}
 
   find(){
@@ -29,7 +29,14 @@ export class AppComponent {
   }
 
   showBlock(){
-    this.isTrue = true;
+    if(!this.isTrue){
+      this.isTrue = true;
+    }
+    else{
+      this.isTrue = false;
+    }
+
+    console.log(this.isTrue)
   }
 
 }

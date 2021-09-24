@@ -11,9 +11,11 @@ import { Movie } from '../main/main.component';
   styleUrls: ['./addmovie.component.css']
 })
 export class AddmovieComponent implements OnInit {
-  @Input()display:boolean=false
+  @Input()display:boolean = false;
+  @Input()isTrue:boolean = true;
   addForm:FormGroup|any;
   movies:Movie[]|any;
+  hidden:boolean=false;
 
   constructor(private http:DataService) { }
 
@@ -23,7 +25,7 @@ export class AddmovieComponent implements OnInit {
 
   initForm(){
     this.addForm = new FormGroup({
-      title:new FormControl('',[Validators.required]),
+      title:new FormControl('',[Validators.required,Validators.minLength(3)]),
       year:new FormControl(null,[Validators.required,Validators.minLength(4)]),
       rate:new FormControl(null,[Validators.required,Validators.minLength(3),Validators.pattern("^[0-9]*$")]),
       desc:new FormControl('',[Validators.required]),
@@ -39,12 +41,21 @@ export class AddmovieComponent implements OnInit {
       this.http.setData(formData).subscribe((data: any)=>{
         this.movies.push(data)
       })
-
+      console.log('Data loading.....')
+      this.isTrue = false;
     }
 
     hideBlock(){
-      this.display = false;
+      if(!this.isTrue){
+        this.isTrue = true
+      }
+      else{
+        this.isTrue = false;
+      }
+
     }
+
+
 
 
 
