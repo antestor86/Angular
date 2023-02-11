@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+       <mat-toolbar color="primary">
+        <span>LocalCast Weather</span>
+      </mat-toolbar>
+      <div fxLayoutAlign="center">
+         <div fxLayout="row"></div>
+         <app-city-search (searchEvent)="doSearch($event)"></app-city-search>
+         <div fxLayout="row"></div>
+       </div>
+      <div style="text-align: center" class="mat-caption">Your City,four forecast</div>
+      <div fxLayout="row">
+        <div fxFlex></div>
+        <mat-card fxFlex="300px">
+          <mat-card-header class="mat-typography">
+            <mat-card-title><div class="mat-headline">Current Weather</div></mat-card-title>
+           <mat-card-content>
+             <app-current-weather></app-current-weather>
+           </mat-card-content>
+          </mat-card-header>
+        </mat-card>
+        <div fxFlex></div>
+      </div>
+</div>
+</body>
+</html>

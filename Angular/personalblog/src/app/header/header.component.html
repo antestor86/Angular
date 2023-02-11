@@ -1,0 +1,9 @@
+<div class="header">
+  <div class="title">My Personal Blog</div>
+  <ul class="menu">
+    <li *ngFor="let item of menu" class="menu_item" >
+      <a [routerLink]="[item.links]" routerLinkActive="active"  [routerLinkActiveOptions]="{exact: true}">{{item.itemname}}</a>
+    </li>
+  </ul>
+  <div></div>
+</div>

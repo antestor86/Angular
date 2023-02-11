@@ -1,0 +1,18 @@
+<div class="container">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+      <label>Email</label>
+      <input type="text" formControlName='email' placeholder="Set email">
+      <div *ngIf="form.get('email').invalid && form.get('email').touched" class="invalid">
+        <small *ngIf="form.get('email').error.required">Incorrect Email</small>
+      </div>
+    </div>
+    <hr>
+    <div class="form-control">
+      <label>Password</label>
+      <input type="password" formControlName='password' placeholder="Set Password">
+    </div>
+    <hr>
+    <button type="submit">Login</button>
+  </form>
+</div>

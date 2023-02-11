@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+.card {
+    color: white;
+    margin: auto;
+    width: 350px;
+    height: 215px;
+    padding: 10px;
+    background-image: url("../../../images/background.png");
+    z-index: 1000;
+}
+
+form {
+    width: 350px;
+    height: 210px;
+    margin-top: 35%;
+    display: grid;
+    grid-template-rows: 10% 20%;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(255, 219, 5, 0.69);
+}
+
+.card label {
+    z-index: 2000;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.input {
+    background: none;
+    border: none;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    outline: none;
+    display: grid;
+    grid-template-columns: 10% 15%;
+    text-align: start;
+}
+
+.numberinput {
+    background: none;
+    border: none;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    outline: none;
+    display: grid;
+    grid-template-columns: 8% 8% 8% 8%;
+    text-align: start;
+}
+
+.input input {
+    width: 100px;
+    background: none;
+    border: none;
+    color: rgba(177, 175, 175, 0.87);
+    outline: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.numberinput input {
+    width: 200px;
+    background: none;
+    border: none;
+    color: rgba(177, 175, 175, 0.87);
+    outline: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.dateinput {
+    margin-left: 5%;
+}
+
+.dateinput input {
+    width: 20px;
+    background: none;
+    border: none;
+    color: rgba(177, 175, 175, 0.87);
+    outline: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.cvc {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 15% 10%;
+    top: 10%;
+    right: 32%;
+    font-style: italic;
+
+}
+
+.cvc input {
+    background: none;
+    border: none;
+    color: rgba(177, 175, 175, 0.87);
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    outline: none;
+    text-align: center;
+}
+
+label {
+    color: rgba(177, 175, 175, 0.87);
+}
+
+
+/*.template input{
+  background:none;
+  border: none;
+  color:white;
+  font-family: 'Roboto Mono', monospace;
+  outline: none;
+  display: grid;
+  grid-template-columns: 10% 20%;
+}*/
+
+
+/*.date{
+  background:none;
+  border: none;
+  color:white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12px;
+  font-weight: normal;
+
+}*/
+
+input:active {
+    outline: none;
+    border: none;
+}
+
+
+/*.card::after{
+  content: "Visa"
+}*/

@@ -1,0 +1,169 @@
+.container{
+  height:80px;
+  border: 1px solid grey;
+  display: grid;
+  grid-template-columns: 55% 30% 20%;
+  background-color: rgba(255, 255, 255, 0.829);
+}
+
+.searchForm{
+  display: grid;
+  grid-template-columns: 40% 40% 36% 21% 21% 20%;
+  grid-gap: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+}
+
+.component{
+  width: 400px;
+  display: grid;
+  grid-template-columns:37% 60%;
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  margin-top: 5px;
+}
+
+label{
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 220px;
+  font-size: 18px;
+}
+
+input{
+  padding-left: 10px;
+}
+
+.btn{
+    width: 220px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: rgba(45, 131, 112, 0.8);
+    font-family:Arial, Helvetica, sans-serif;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 12px;
+  }
+
+  .btn:hover{
+    /* background-color: rgba(45, 131, 112, 0.8);*/
+     text-decoration: underline;
+     color: white;
+
+   }
+
+.btn:active{
+    padding: 7px;
+    font-size: 16px;
+    background-color: rgba(110, 110, 110, 0.644)
+  }
+
+  .list{
+    height: 30px;
+  }
+
+  img{
+    width: 30px;
+    height: 30px;
+    margin-bottom:10px;
+  }
+
+  .title{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1% 2% 12% 12% 15% 20% 15%;
+  }
+
+ tr{
+    width: 1600px;
+    height: 100%;
+    border:1px solid black;
+    border-radius: 3px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1% 2% 12% 12% 15% 20% 15% 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-top: 1px;
+    padding-top: 2px;
+    text-align: center;
+    cursor:pointer;
+
+  }
+
+  .rows:hover{
+    z-index: 0;
+    margin-left: 10px;
+    margin-top:5px;
+    background-color: rgb(221, 216, 216);
+  }
+
+  p{
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+  }
+
+  h3{
+    padding-top: 8px;
+  }
+
+  .removeBtn{
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    outline: none;
+    background: none;
+    cursor:pointer;
+    width: 60px;
+    height: 20px;
+  }
+
+  .removeBtn:hover{
+    background-color: grey;
+    color:white;
+  }
+
+  .insert{
+    margin-top: 10px;
+    border: 1px solid grey;
+  }
+.openForm{
+  margin: 10px;
+
+}
+
+input.ng-invalid.ng-touched{
+  color:red;
+}
+
+.edit{
+  text-decoration: none;
+  margin-left: 20px;
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.edit:hover{
+  text-decoration: underline;
+  color: black;
+}
+
+.current{
+  background-color: rgba(45, 131, 112, 0.8);
+
+}
+
+.current li{
+  color: red;
+}
+
+
+
+
+
+
+

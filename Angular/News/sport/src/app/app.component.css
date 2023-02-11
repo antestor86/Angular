@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+}
+
+div {
+    background-image: url(../assets/wallpaperflare.com_wallpaper.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

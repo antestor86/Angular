@@ -1,0 +1,169 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "menuitems": [
+    {
+      "itemname": "Home",
+      "id": 1,
+      "links": "/"
+    },
+    {
+      "itemname": "Articles",
+      "id": 2,
+      "links": "/article"
+    },
+    {
+      "itemname": "Links",
+      "id": 3,
+      "links": "/links"
+    },
+    {
+      "itemname": "Plans",
+      "id": 4,
+      "links": "/plans"
+    },
+    {
+      "itemname": "Calculator",
+      "id": 5,
+      "links": "/calculator"
+    }
+  ],
+  "homeitems": [
+    {
+      "id": "1",
+      "title": "Նեմրութ",
+      "content": "Նեմրութ (հուն․՝ Όρος Νεμρούτ), 2134 մ բարձրությամբ լեռ։ Նեմրութ, բարձունք Հայկական Տավրոսի լեռնաշղթայում, հնագույն Կոմմագենե երկրում։ XIX դ. Նեմրութ լեռան վրա հայտնաբերված է Կոմմագենեի Անտիոքոս Ա Երվանդունի թագավորի (մ.թ.ա. 69 - 34) կառուցած դամբարանաբլուր-սրբավայրը, որի արևելյան և արևմտյան կողմերի արհեստական հարթակներին դրված են արձաններ, բարձրաքանդակներով ու արձանագրություններով այլ կոթողներ։ Դեպի հարթակները տանում է սալահատակ ճանապարհ՝ տոնական շքերթների համար։ Արձանները, որոնց բարձրությունը հասնում է մինչև 8 մ, կառուցված են կրաքարե խոշոր վեմերից և պատկերում են Կոմմագենե երկրի աստվածներին ու Անտիոքոս Ա-ին՝ գահավորակներին բազմած։ Մեջտեղում հայ դիցաբանության գլխավոր աստվածԱրամազդի արձանն է, որի մի կողմից դրված են Արամազդի որդու՝Միհրի և Արտագնեսի, մյուս կողմից՝ Կոմմագենե երկրի դիցուհու և Անտիոքոս Ա-ի արձանները։ Թագավորը պատկերված է հայկական՝ տիգրանյան թագով։ Հարթակների երկու կողմերի պատվանդաններին բարձրացող ուղղանկյուն խոշոր սալերի վրա քանդակված են թագավորի նախնիների պատկերները 4 հունարեն արձանագրություններով, ինչպես նաև թագավորի ողջագուրման տեսարաններ Արամազդի, Միհր ու Արտագնեսի հետ։",
+      "autor": "ես",
+      "image": "assets/pictures/Nemrut.jpg"
+    }
+  ],
+  "links": [
+    {
+      "id": "1",
+      "title": "StackOverflow",
+      "address": "https://stackoverflow.com/",
+      "image": "https://gagan93.me/resources/images/so.png",
+      "desc": "developers blog is very cool blog you can find there answers of your question"
+    },
+    {
+      "id": "2",
+      "title": "morioh",
+      "address": "https://morioh.com/",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwZN46cHKQ9ZhIgY0joMYeQz_KnGMJPJcQGg&usqp=CAU",
+      "desc": "Social Network for Developers"
+    },
+    {
+      "title": "GitHub",
+      "address": "https://github.com/",
+      "image": "https://2sxc.org/Portals/0/adam/Content/4IqBjx3pXEC7a7-fVX2GBQ/Image/github-logo.png?w=1080&scale=both&quality=50",
+      "desc": "For Code Version Control",
+      "id": "QbSPScb"
+    },
+    {
+      "title": "RuTracker",
+      "address": "https://rutracker.net/forum/index.php",
+      "image": "https://ih1.redbubble.net/image.489771465.8404/flat,750x1000,075,f.jpg",
+      "desc": "Best Torrent Tracker",
+      "id": "phWJ0BQ"
+    },
+    {
+      "title": "NPM",
+      "address": "https://www.npmjs.com/",
+      "image": "https://notifystatus.io/images/parent/npmjs.png",
+      "desc": "npm guide",
+      "id": "ks0px0R"
+    },
+    {
+      "title": "Angular Material",
+      "address": "https://material.angular.io/",
+      "image": "https://lh3.googleusercontent.com/qhV0NtKrkgNsTSKIjjqFSVkJpTibe5RBcrxb6y5te70EH5VZXGzd5dGUCkHIpHxq94hQ",
+      "desc": "Angular Material Guide",
+      "id": "q6t1M2M"
+    },
+    {
+      "title": "NNM CLUB",
+      "address": "https://nnmclub.to/",
+      "image": "https://nnmclub.ch/forum/image.php?link=http://funkyimg.com/i/2BJoQ.png",
+      "desc": "Torrent tracker",
+      "id": "YsZtOUF"
+    },
+    {
+      "title": "ILookTv",
+      "address": "https://ilook.tv/cabinet",
+      "image": "http://ilook.tv/apple-touch-icon.png",
+      "desc": "Online Tv",
+      "id": "U8nlADy"
+    },
+    {
+      "title": "TheCoctailDB",
+      "address": "https://www.thecocktaildb.com/",
+      "image": "https://i.pinimg.com/1200x/76/ce/8b/76ce8bc7fe0cc1a2420b1dccabbd54b8.jpg",
+      "desc": "Coctail API",
+      "id": "CVK2tVk"
+    },
+    {
+      "title": "Google Translate API",
+      "address": "https://cloud.google.com/translate/docs/quickstarts/",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Google_Translate_logo.svg/2048px-Google_Translate_logo.svg.png",
+      "desc": "Google Cloud Translate API",
+      "id": "7B3UjY2"
+    },
+    {
+      "title": "IMDB API",
+      "address": "https://imdb-api.com/api",
+      "image": "https://m.media-amazon.com/images/G/01/imdb/images/social/imdb_logo.png",
+      "desc": "IMDB DATABASE",
+      "id": "IFOISzW"
+    },
+    {
+      "title": "Wheather API",
+      "address": "https://openweathermap.org/api",
+      "image": "https://openweathermap.org/themes/openweathermap/assets/img/mobile_app/android-app-top-banner.png",
+      "desc": "Best Wheather API",
+      "id": "KcN_eDG"
+    },
+    {
+      "title": "Currency Converter ",
+      "address": "https://www.currencyconverterapi.com/",
+      "image": "https://www.programmableweb.com/sites/default/files/styles/facebook_scale_width_200/public/freecurrencyconverter.jpg?itok=_Yg0AJF3",
+      "desc": "Currency Converter API",
+      "id": "vKa-6B5"
+    },
+    {
+      "title": "Sharavoz TV",
+      "address": "https://www.sharavoz.tv/Home/Profile",
+      "image": "https://pro-tv.biz/upload/iblock/5f9/sharavoz_mini.png",
+      "desc": "IP TV",
+      "id": "i5KUzWS"
+    },
+    {
+      "title": "",
+      "address": "",
+      "image": "",
+      "desc": "",
+      "id": "wBaVCdz"
+    },
+    {
+      "title": "TV TEAM",
+      "address": "https://tv.team/account/",
+      "image": "https://pro-tv.biz/upload/iblock/33e/tv_team_full2.png",
+      "desc": "Ip tv provider",
+      "id": "DZ7iaL1"
+    }
+  ]
+}

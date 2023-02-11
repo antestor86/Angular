@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Montserrat:wght@100;300&family=Oswald:wght@200;600&family=PT+Sans&family=Playfair+Display&family=Roboto:wght@700&family=Ubuntu&display=swap');
+.container{
+  display: grid;
+  grid-template-columns:repeat(5,3fr) ;
+  font-family: 'Corinthia', cursive;
+
+}
+
+
+.user_container{
+  background-color: #021f1f;
+  color: white;
+  width: 330px;
+  height: 500px;
+  display: grid;
+  grid-template-rows: 10% 2% 1% 2% 40% 20%;
+  grid-gap: 3%;
+  margin:10px;
+
+  border-radius: 5px;
+}
+.user_container:hover{
+  box-shadow: rgba(209, 0, 255, 0.57) 3px 10px 10px;
+}
+
+h3{
+  font-size: 38px;
+}
+
+label{
+  font-size: 28px;
+}
+
+button{
+  width: 180px;
+  height: 40px;
+  background-color: #de00ec;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Corinthia', cursive;
+  font-size: 28px;
+  box-shadow: rgba(49, 34, 189, 0.57) 3px 5px;
+  cursor: pointer;
+}
+
+button:hover{
+  box-shadow: rgba(180, 0, 72, 0.57) 3px 5px;
+  color: #021f1f;
+}
+
+button:active{
+  background-color: #021f1f;
+  color: grey;
+  box-shadow: rgba(0, 66, 180, 0.57) 3px 5px;
+}

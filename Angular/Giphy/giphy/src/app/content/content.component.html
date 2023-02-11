@@ -1,0 +1,29 @@
+<app-inputgif #event (submit)="onSubmit(event)"></app-inputgif>
+
+<div  [ngStyle]="{'height':elWidth,overflow:'hidden'}" >
+  <div class="container" *ngIf="!clickStatuss;else filtImages">
+    <div *ngFor="let item of images$ |async" >
+      <h1>{{item.title}}</h1>
+      <img [src]="item.url" width="560px" height="350px">
+      <h3>{{item.desc}}</h3>
+    </div>
+  </div>
+
+</div>
+
+<ng-template #filtImages>
+  <div class="container">
+    <div *ngFor="let item of filterImages" >
+      <h1>{{item.title}}</h1>
+      <img [src]="item.url" width="560px" height="350px">
+      <h3>{{item.desc}}</h3>
+    </div>
+  </div>
+
+</ng-template>
+<button (click)="showMore()">Show More</button>
+<button (click)="hide()">Hide</button>
+
+
+
+

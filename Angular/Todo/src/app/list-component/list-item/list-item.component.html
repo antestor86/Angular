@@ -1,0 +1,10 @@
+<form [formGroup] = "form" (ngSubmit)="onSubmit()">
+  <div class="item">
+    <label>
+      <input type="checkbox" [value]="listItem.completed" name="title"  formControlName="completed">
+    </label>
+    <label type="submit"  type="submit">{{listItem.label}}</label>
+
+    <button type="submit">add</button>
+  </div>
+</form>

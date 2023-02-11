@@ -1,0 +1,25 @@
+<div class="container">
+  <img [src]="src" >
+  <div class="top_title">
+    <h5>All For ALL.This is Multi Web App for everything</h5>
+    <div class="themes">
+      <div class="theme" *ngFor="let theme of themes">
+        <img  [src]="theme.src">
+        <h5>{{theme.text}}</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="fon">
+    <div class="icons">
+      <img *ngFor="let logo of logos" [src]="logo">
+    </div>
+  </div>
+
+  <div class="content" *ngFor="let item of menu">
+    <img [src]="item.image" >
+    <hr>
+    <h2>{{item.title}}</h2>
+    <p class="content_text">{{item.content}}</p>
+  </div>
+</div>

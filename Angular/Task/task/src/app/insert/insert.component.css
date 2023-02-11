@@ -1,0 +1,102 @@
+.title{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 30px;
+  color: rgba(41, 39, 39, 0.856);
+}
+
+.container{
+  font-family: 'Baloo Tammudu 2', cursive;
+  display: grid;
+  grid-template-rows: 62% 10% ;
+
+}
+
+form{
+  width: 600px;
+  height: 530px;
+  border-radius: 1px solid grey;
+  font-family: 'Baloo Tammudu 2', cursive;
+  display: grid;
+  grid-template-rows: 5% 5% 5% 5% 5% 5%;
+  grid-gap:20px;
+  margin-left: 1%;
+  color: white;
+}
+
+.input_component{
+  background-color: rgba(0, 128, 128, 0.438);
+  margin: 5px;
+  width: 1100px;
+  height: 15px;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 10% 23% 23% 23% 20%;
+
+}
+
+label{
+  margin-right: 10px;
+  width: 520px;
+}
+
+input{
+  width: 220px;
+  height: 15px;
+  margin-left:2px;
+  padding-left: 5px;
+}
+
+.btn{
+  width: 220px;
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 30px;
+  background-color: rgba(45, 131, 112, 0.8);
+  font-family:'Sigmar One', cursive;
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.btn.valid:hover{
+  /* background-color: rgba(45, 131, 112, 0.8);*/
+   text-decoration: underline;
+   color: white;
+   width: 218px;
+   height: 38px;
+
+ }
+
+ .btn:active{
+  padding: 7px;
+  font-size: 16px;
+  background-color: rgba(110, 110, 110, 0.644)
+}
+
+.btn:disabled{
+  background-color: grey;
+  color: white;
+}
+
+.close{
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.alert.ng-touched.ng-invalid{
+  color: red;
+  border: 1px solid red;
+}
+
+small{
+  color: red;
+}
+
+.completed{
+  color: rgba(45, 131, 112, 0.8);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+

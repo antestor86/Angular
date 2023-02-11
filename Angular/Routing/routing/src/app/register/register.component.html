@@ -1,0 +1,20 @@
+<div class="container" >
+  <form  [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="formgroup">
+      <label>Email</label>
+      <input type="text" class="form-input" formControlName='email' placeholder="Set email" >
+      <div *ngIf="form.get('email').invalid && form.get('email').touched" class="invalid">
+        <small *ngIf="form.get('email').errors.required">Incorrect Email</small>
+      </div>
+    </div>
+    <div class="formgroup">
+      <label for="login">Login</label>
+      <input type="text" class="form-input" formControlName='login'>
+    </div>
+    <div class="formgroup" >
+      <label>Password</label>
+      <input type="password" class="form-input" formControlName='password'>
+    </div>
+    <button type="submit">Register</button>
+  </form>
+</div>

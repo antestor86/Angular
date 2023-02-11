@@ -1,0 +1,29 @@
+<!-- <div class="menu">
+    <div #burger *ngFor="let item of menuitems" class="menu_item" (mouseenter)="showBurger(burger)">
+        <nav>{{ item }}</nav>
+        <nav *ngIf="burger.innerText !== 'Միջազգային ֆուտբոլ'; else burg"></nav>
+    </div>
+</div>
+
+<ng-template #burg>
+    <div class="burger">
+        <div *ngFor="let item of $burgerItems">
+            <nav>
+                <h4>{{ item }}</h4>
+            </nav>
+        </div>
+    </div>
+</ng-template> -->
+<div class="menu">
+    <div #elem *ngFor="let item of menuitems" class="menu_item" (mouseover)="toogle(elem)" (click)="goToContent(elem)">
+        {{ item }}
+    </div>
+    <div *ngIf="!isOpen; else burger"></div>
+</div>
+<ng-template #burger>
+    <div class="burger_body">
+        <div *ngFor="let item of burgerItems" class="burger">
+            <div>{{ item }}</div>
+        </div>
+    </div>
+</ng-template>

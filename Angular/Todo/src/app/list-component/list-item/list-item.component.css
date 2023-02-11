@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&family=Oswald:wght@200&family=Roboto:wght@700&display=swap');
+
+*{
+    font-family: 'Mohave', sans-serif;
+}
+
+.item{
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    height: 60px;
+    width: auto;
+    font-family: 'Mohave', sans-serif;
+    font-size: 30px;
+    color: grey;
+    display: grid;
+    grid-template-columns: 7% 88% 10%;
+}
+
+.item input{
+    margin-left: 15px;
+    margin-right: 5px;
+    margin-top: 15px;
+    color: grey;
+    border: 5px solid grey;
+    width: 20px;
+    height: 20px;
+    border-radius: 12px;
+}
+
+.item input[type="checkbox"]:checked::after{
+    background-color: grey;
+}
+
+.item label{
+    color: grey;
+
+    margin-top: 8px;
+}
+
+.item span{
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.item span{
+
+  color: grey;
+}
+
+button{
+  cursor: pointer;
+}
+
+

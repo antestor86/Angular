@@ -1,0 +1,17 @@
+<div class="container" *ngIf='customer$|async as customer'>
+  <button class="btn" (click)="backToHome()">Back to CustomersList</button>
+  <div class="container">
+    <img [src]="customer$?.image">
+    <h1>{{customer$?.name}}</h1>
+  </div>
+  <button class="btn" (click)="edit()">Edit</button>
+</div>
+<div *ngIf="!statuss,else formTemplate" class="template"></div>
+<ng-template #formTemplate>
+  <form [formGroup]='form' (ngSubmit)="finish()">
+    <input placeholder="name" formControlName="name">
+    <input placeholder="username" formControlName="username">
+    <input placeholder="phone number" formControlName="phone">
+    <button type="submit" class="btn">Finish</button>
+  </form>
+</ng-template>

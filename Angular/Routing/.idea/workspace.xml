@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="74461d53-1101-4403-8379-d8fd8041b843" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../kinoman/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/.idea/CardHolder.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/src/app/interfaces/carddata.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/src/app/main-form/main-form.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/src/app/main-form/main-form.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/src/app/main-form/main-form.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/src/app/main-form/main-form.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/src/assets/pictures/Visa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/src/assets/pictures/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardHolder/cardHolder/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/home/home.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/home/home.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/home/home.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/home/home.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/insert/insert.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/insert/insert.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/insert/insert.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/insert/insert.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/login/login.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/login/login.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/login/login.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/login/login.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/search/search.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/search/search.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/search/search.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/search/search.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/services/autentichate.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/singleuser/singleuser.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/singleuser/singleuser.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/singleuser/singleuser.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/app/singleuser/singleuser.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/assets/db.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Customer/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TypeScript/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/src/assets/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cgcatana/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../http/src/app/request/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../http/src/app/request/users.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/Layot-select.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/Layot.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/Layot.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/db.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/src/app/models/skill.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/src/app/models/user.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/src/app/services/getdata.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/src/app/userslist/userslist.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/src/app/userslist/userslist.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/src/app/userslist/userslist.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/src/app/userslist/userslist.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../valute/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/.vscode/tasks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weather/local-weather/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../JS/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JS/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../JS/main.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="23km4XmGzyBxCLdSpzt1qtjEkEb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Summary" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="74461d53-1101-4403-8379-d8fd8041b843" name="Default Changelist" comment="" />
+      <created>1642286267276</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642286267276</updated>
+      <workItem from="1642286268444" duration="44000" />
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1060" y="298" key="FileChooserDialogImpl" timestamp="1642286319463">
+      <screen x="-1680" y="38" width="1680" height="1010" />
+    </state>
+    <state x="-1060" y="298" key="FileChooserDialogImpl/0.0.1920.1040/-1680.38.1680.1010@-1680.38.1680.1010" timestamp="1642286319463" />
+  </component>
+</project>

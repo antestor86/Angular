@@ -1,0 +1,115 @@
+head{
+    display: grid;
+    grid-template-columns: 55% 15% 15% 5% 5%;
+    grid-column-gap:10px;
+    grid-row-gap:10px;
+    padding: 10px;
+    grid-auto-rows: 30px;
+    align-items:center;
+    background-color: rgb(38, 48, 94);
+    background-repeat:repeat;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    
+
+}
+
+input{
+    outline: none;
+    width: 180px;
+    border-radius: 5px;
+    border: 1px solid white;
+    text-align: center;
+}
+
+button{
+    width: 60px;
+    height: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.37);
+    outline: none;
+    border-radius: 5px;
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    background-color: rgba(76, 0, 130, 0.5);
+    color: rgb(255, 255, 255);
+}
+
+button:active{
+    background-color: rgb(63, 11, 83);
+    box-shadow:rgb(1, 74, 148) 1px 3px  10px;
+    width: 59px;
+    height: 20px;
+}
+
+h5{
+    color: tan;
+    
+}
+
+
+.items{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(1, 1, 1, 0.5);
+}
+
+
+
+
+.body{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+    grid-template-rows: 400px 400px 400px;
+    grid-column-gap: 10px;
+    grid-row-gap:10px; 
+    background-color: rgb(25, 42, 59);
+       
+}
+
+
+/*FOR DIRECTIVES*/
+
+.activeSearch{
+    width: 59px;
+    background-color: rgba(119, 136, 153, 0.541);
+    color: rgb(190, 169, 190);
+}
+
+
+/*--------------------------------------*/
+
+.addShadow{
+    box-shadow: rgba(1, 1, 1, 0.5);
+    animation-duration: 0.5s;
+    animation-name:move;
+    z-index: 1000;
+}
+
+/*----------------------------*/
+
+@keyframes move{
+    from{
+        margin: 0px;
+    }
+    to{
+        margin:2px;
+    }
+}
+
+
+/*-------------------------*/
+
+.onButton{
+    width: 60px;
+    height: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.37);
+    outline: none;
+    border-radius: 5px;
+    color: rgb(233, 232, 232);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    background-color: rgba(104, 53, 139, 0.5);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&family=Oswald:wght@200&family=Roboto:wght@700&display=swap');
+
+*{
+    font-family: 'Mohave', sans-serif;
+}
+
+
+.form{
+    width: auto;
+    display: grid;
+    grid-template-columns: 83.5% 10%;
+    margin: auto;
+}
+input{
+    width:586px;
+    height: 40px;
+    outline:none ;
+    border: 0.2px solid rgba(128, 128, 128, 0.233);
+    margin: auto;
+    padding-left: 10px;
+    font-size: 28px;
+    color: rgba(128, 128, 128, 0.5);
+}
+
+button{
+    width: 120px;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: rgba(128, 128, 128, 0.445);
+}

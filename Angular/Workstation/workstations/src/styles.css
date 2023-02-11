@@ -1,0 +1,8 @@
+* {
+    margin: auto;
+
+}
+
+body{
+    background: radial-gradient( circle, rgba(255, 165, 165, 0.14) 10% , rgba(229, 229, 229, 0.34) 20%, rgba(0, 128, 0, 0.12) 50%);
+}

@@ -1,0 +1,87 @@
+<ng-container *ngIf="(workstation$ | async) as workstation">
+    <h1>Workstation Parameters</h1>
+    <form class="form" [formGroup]="form" (ngSubmit)="submit()">
+        <div class="form_item" formGroupName="types">
+            <label>Region</label>
+            <select formControlName="region">
+                <option
+                    *ngFor="let item of regions$ | async"
+                    [value]="item" >
+                    {{ item }}
+                </option>
+            </select>
+
+        </div>
+        <div class="form_item" formGroupName="types">
+            <label>Branch</label>
+            <select formControlName="branch">
+                <option
+                    *ngFor="let branch of branches$ | async" [value]="branch.name"
+                >
+                    {{ branch.name }}
+                </option>
+            </select>
+        </div>
+        <div class="form_item">
+            <label>Board</label>
+            <input type="text" formControlName='board' [placeholder]="workstation.board" />
+        </div>
+        <div class="form_item">
+            <label>Ip Address</label>
+            <input type="text" [placeholder]="workstation.ipAddress" formControlName='ipAddress' />
+        </div>
+        <div class="form_item">
+            <label>CPU</label>
+            <input type="text" [placeholder]="workstation.cpu" formControlName="cpu" />
+        </div>
+        <div class="form_item">
+            <label>Ram</label>
+            <input type="text" formControlName='ram' />
+        </div>
+        <div class="form_item" formGroupName="types">
+            <label>HDD</label>
+            <select formControlName="hdd">
+                <option *ngFor="let hard of hards" [value]="hard" >
+                    {{ hard }}
+                </option>
+            </select>
+        </div>
+        <div class="form_item">
+            <label>Capacity</label>
+            <input type="text" formControlName="capacity" [placeholder]="workstation.capacity" />
+        </div>
+        <div class="form_item" formGroupName="types">
+            <label>Ram Type</label>
+            <select formControlName="ramType">
+                <option *ngFor="let ram of ram$ | async" [value]="ram" >
+                    {{ ram }}
+                </option>
+            </select>
+        </div>
+        <div class="form_item">
+            <label>Hostname</label>
+            <input type="text" formControlName='hostname' [placeholder]="workstation.hostname" />
+            <div *ngIf="form.get('hostname')?.invalid && form.get('hostname')?.touched" class="invalid">
+                <small *ngIf="form.get('hostname')?.errors">Incorrect Value</small>
+            </div>
+        </div>
+        <div class="form_item">
+            <label>Barcode</label>
+            <input type="text" formControlName='barcode' [placeholder]="workstation.barcode" />
+        </div>
+        <div class="form_item" formGroupName="types">
+            <label>Operation System</label>
+            <select formControlName="os">
+                <option *ngFor="let system of osList" [ngValue]="system.name">
+                    {{ system.name }}
+                </option>
+            </select>
+        </div>1
+        <div class="buttons">
+            <button (click)="close()" class="add">Cancel</button>
+            <button type="submit" class="add" >Edit</button>
+        </div>
+
+    </form>
+</ng-container>
+

@@ -1,0 +1,24 @@
+<body>
+<form class="form"  [formGroup]="signUpForm" (ngSubmit)="signUp()">
+  <img [src]="logo">
+  <h1>Please Sign Up</h1>
+  <input type="text" id="inputName" class="formControl" placeholder="Name min 6 words" formControlName='username'>
+  <div *ngIf="signUpForm.get('username').invalid && signUpForm.get('username').touched" class="invalid">
+    <small *ngIf="signUpForm.get('username').invalid">Set Correct Name</small>
+  </div>
+  <input type="text" id="inputlogin" class="formControl" placeholder="Login min 6 words" formControlName='login'>
+  <div *ngIf="signUpForm.get('login').invalid && signUpForm.get('login').touched" class="invalid">
+    <small *ngIf="signUpForm.get('login').invalid">Set Correct Login</small>
+  </div>
+  <input type="email" id="inputEmail" class="formControl" placeholder="Email" formControlName='email'>
+  <div *ngIf="signUpForm.get('email').invalid && signUpForm.get('email').touched" class="invalid">
+    <small *ngIf="signUpForm.get('email').invalid">Set Correct email</small>
+  </div>
+  <input type="password" id="inputPassword" class="formControl" placeholder="password min 6 words" formControlName='password'>
+  <div *ngIf="signUpForm.get('password').invalid && signUpForm.get('password').touched" class="invalid">
+    <small *ngIf="signUpForm.get('password').invalid">Set Correct Password</small>
+  </div>
+  <button class="btn" type="submit" [disabled]="signUpForm.invalid" >Sign Up</button>
+</form>
+</body>
+

@@ -1,0 +1,126 @@
+{
+    "posts": [{
+        "id": 1,
+        "title": "json-server",
+        "author": "typicode"
+    }],
+    "comments": [{
+        "id": 1,
+        "body": "some comment",
+        "postId": 1
+    }],
+    "profile": {
+        "name": "typicode"
+    },
+    "images": [{
+        "id": "1",
+
+        "title": "kargin",
+
+        "desc": "Lusamut,Sireli morqur",
+
+        "url": "https://thumbs.gfycat.com/VariableEnchantingIndochinahogdeer-size_restricted.gif"
+
+
+    },
+      {
+        "id": "2",
+
+        "title": "kargin",
+
+        "desc": "Kpnela",
+
+        "url": "https://thumbs.gfycat.com/BlueClumsyGrub-size_restricted.gif"
+      },
+      {
+        "id": "3",
+
+        "title": "kargin",
+
+        "desc": "Pachik",
+
+        "url": "https://thumbs.gfycat.com/GivingDeadGrayling-size_restricted.gif"
+      },
+      {
+        "id": "4",
+
+        "title": "kargin",
+
+        "desc": "Tars",
+
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqGPvqyEWsgsCtyX7aah2u0xUes7gp3yaGQ&usqp=CAU"
+      },
+      {
+        "id": "5",
+
+        "title": "kargin",
+
+        "desc": "Gyaj",
+
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpb54o-5f3TBuRawghfJZ33MkdybjMkKNDBA&usqp=CAU"
+      },
+      {
+        "id": "6",
+
+        "title": "animals",
+
+        "desc": "walking dog",
+
+        "url": "https://www.liveabout.com/thmb/9oyhVbEg1OHIPqxsUSe9Pif61U8=/640x640/filters:no_upscale():max_bytes(150000):strip_icc()/superdog-treadmill-5af44eb2eb97de003d8c771d.gif"
+      },
+      {
+        "id": "7",
+
+        "title": "tost",
+
+        "desc": "movie",
+
+        "url": "https://blog.hubspot.com/hubfs/Smiling%20Leo%20Perfect%20GIF.gif"
+      },
+      {
+        "id": "8",
+
+        "title": "why",
+
+        "desc": "cartoon",
+
+        "url": "https://media4.giphy.com/media/gd09Y2Ptu7gsiPVUrv/giphy.gif"
+      },
+      {
+        "id": "9",
+
+        "title": "minions",
+
+        "desc": "cartoon",
+
+        "url": "https://www.ixbt.com/img/n1/news/2020/5/1/tenor-google.gif"
+      },
+      {
+        "id": "10",
+
+        "title": "cry",
+
+        "desc": "baby",
+
+        "url": "https://images.wondershare.com/filmora/article-images/what-is-gif.gif"
+      },
+      {
+        "id": "11",
+
+        "title": "cry",
+
+        "desc": "baby",
+
+        "url": "https://media1.giphy.com/media/3o6wrvdHFbwBrUFenu/200.gif"
+      },
+      {
+        "id": "12",
+
+        "title": "popcorn",
+
+        "desc": "jackson",
+
+        "url": "https://media.wired.com/photos/593221d8b8eb31692072dedf/master/w_2560%2Cc_limit/MJ-giphy.gif"
+      }
+    ]
+}

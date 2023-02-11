@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Corinthia&family=Josefin+Sans:wght@200&family=Karma:wght@300&family=Montserrat:wght@100;300&family=Oswald:wght@200;600&family=PT+Sans&family=Playfair+Display&family=Roboto:wght@700&family=Rubik:wght@300&family=Secular+One&family=Ubuntu&display=swap');
+
+.main_container{
+  font-family: 'PT Sans', sans-serif;
+}
+
+.calc_body{
+  background: linear-gradient(35deg,cadetblue 0% ,dodgerblue 30%, grey 100%);
+  width: 720px;
+  height: 800px;
+  margin-top: 2%;
+  display: grid;
+  grid-template-rows: 10% 70% 20%;
+
+
+}
+
+.display_value{
+  margin-top: 10%;
+  width: 440px;
+  height: 150px;
+  background-color: #0d56a3;
+  color: white;
+  font-size: 38px;
+  border-radius: 10px;
+  box-shadow: rgba(28, 71, 109, 0.64) 10px 10px 10px;
+  overflow: hidden;
+}
+
+.display_value h2{
+  text-align: right;
+  margin-top: 10%;
+  margin-right: 2%;
+}
+
+.btns{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  margin-top: 20%;
+  margin-left: 5%;
+
+}
+
+.button_counatiner{
+    margin-top: 10%;
+}
+
+
+
+button{
+  background-color: rgba(0, 122, 215, 0.05);
+  width: 140px;
+  height: 100px;
+  color: white;
+  border: none;
+  font-size: 43px;
+  cursor:pointer;
+  cursor:pointer;
+  border-radius: 5px;
+}
+
+button:active{
+  background-color: orangered;
+}
+
+.actions{
+  display: grid;
+  grid-template-columns: 40% 10% ;
+  margin-right: 5%;
+  margin-top: 12.5%;
+  margin-left: 22%;
+  position: absolute;
+}
+
+.action_block{
+
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10%;
+}
+
+

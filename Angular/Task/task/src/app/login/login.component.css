@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.container{
+  display: grid;
+  grid-template-columns: 55% 30%;
+  font-family: 'Roboto', sans-serif;
+}
+
+img{
+  width: 450px;
+  height: 400px;
+  margin-left: 150px;
+
+  }
+
+.login{
+  display: grid;
+  grid-template-rows: 10% 10% 10% 10% 10%;
+  width: 520px;
+  height: 400px;
+  border: 1px solid rgb(63, 199, 158);
+  margin-top: 10%;
+  border-radius: 10PX;
+}
+
+.component{
+  display: grid;
+  grid-template-columns: 30% 50%;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+input{
+  margin-bottom: 30px;
+  width: 250px;
+  height: 30px;
+  border: 1px solid rgb(63, 199, 158);
+  border-radius: 3px;
+  outline: none;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+input.ng-invalid.ng-touched{
+  border: 1px solid red;
+}
+.btn{
+  width: 120px;
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: rgba(45, 131, 112, 0.8);
+  font-family:'Sigmar One', cursive;
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.btn:hover{
+ /* background-color: rgba(45, 131, 112, 0.8);*/
+  text-decoration: underline;
+  color: white;
+  font-size: 18px;
+}
+
+.btn:active{
+  padding: 7px;
+  font-size: 19px;
+  background-color: rgba(110, 110, 110, 0.644)
+}
+
+label{
+  font-family: 'Roboto', sans-serif;
+  color:rgba(45, 131, 112, 0.8) ;
+}
+
+.invalid{
+  color: red;
+}
+
+.error{
+  color: red;
+  margin-top:20px;
+  margin-left:60px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ng_content{
+  margin-top: 10px;
+}
+
+

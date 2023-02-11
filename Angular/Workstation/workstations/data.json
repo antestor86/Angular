@@ -1,0 +1,252 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "workstations": [
+    {
+      "ipAddress": "10.10.29.31",
+      "cpu": "intel core i5 7310",
+      "board": "P8H61M",
+      "ram": "4",
+      "capacity": "128",
+      "hostname": "WS0291601",
+      "barcode": "00002365",
+      "types": {
+        "ramType": "DDR3",
+        "region": "Yerevan",
+        "branch": "Davitashen",
+        "hdd": "SSD",
+        "os": "Windows 10 Enterprise LTSC"
+      },
+      "id": 9
+    },
+    {
+      "ipAddress": "10.10.29.31",
+      "cpu": "intel core i5 3330",
+      "board": "P8H61-M",
+      "ram": "4",
+      "capacity": "500",
+      "hostname": "WS0290901",
+      "barcode": "00002401",
+      "types": {
+        "ramType": "DDR3",
+        "region": "Yerevan",
+        "branch": "Davitashen",
+        "hdd": "HDD",
+        "os": "Windows 10 Enterprise LTSC"
+      },
+      "id": 10
+    },
+    {
+      "ipAddress": "10.10.57",
+      "cpu": "intel core i5 3330",
+      "board": "H61M",
+      "ram": "4",
+      "capacity": "500",
+      "hostname": "WK0290901",
+      "barcode": "00002401",
+      "types": {
+        "ramType": "DDR3",
+        "region": "Yerevan",
+        "branch": "Shinararner",
+        "hdd": "HDD",
+        "os": "Windows 10 Enterprise LTSC"
+      },
+      "id": 11
+    },
+    {
+      "ipAddress": "10.10.57.21",
+      "cpu": "intel core i5 3330",
+      "board": "H61M",
+      "ram": "4",
+      "capacity": "500",
+      "hostname": "WK05001601",
+      "barcode": "00002403",
+      "types": {
+        "ramType": "DDR3",
+        "region": "Yerevan",
+        "branch": "Shinararner",
+        "hdd": "HDD",
+        "os": "Windows 10 Enterprise LTSC"
+      },
+      "id": 12
+    },
+    {
+      "ipAddress": "10.10.1.10",
+      "cpu": "intel Core i7 3430",
+      "board": "P5H61M",
+      "ram": "4",
+      "capacity": "500",
+      "hostname": "WK00011601",
+      "barcode": "00002635",
+      "types": {
+        "ramType": "DDR3",
+        "region": "Ararat",
+        "branch": "Ararat",
+        "hdd": "HDD",
+        "os": "Windows 10 Enterprise"
+      },
+      "id": 13
+    }
+  ],
+  "regions": [
+    "Vayoc Dzor",
+    "Ararat",
+    "Yerevan",
+    "Gegharkuniq",
+    "Syunik",
+    "Shirak",
+    "Tavush",
+    "Aragacotn",
+    "Lori",
+    "Armavir"
+  ],
+  "branches": [
+    {
+      "name": "Davitashen",
+      "region": "Yerevan"
+    },
+    {
+      "name": "Shinararner",
+      "region": "Yerevan"
+    },
+    {
+      "name": "Arabkir",
+      "region": "Yerevan"
+    },
+    {
+      "name": "Komitas",
+      "region": "Yerevan"
+    },
+    {
+      "name": "Zeytun",
+      "region": "Yerevan"
+    },
+    {
+      "name": "Nor Nork",
+      "region": "Yerevan"
+    },
+    {
+      "name": "Kentron",
+      "region": "Yerevan"
+    },
+    {
+      "name": "Opera",
+      "region": "Yerevan"
+    },
+    {
+      "name": "Yeritasardakan",
+      "region": "Yerevan"
+    },
+    {
+      "name": "Sayat Nova",
+      "region": "Yerevan"
+    },
+    {
+      "name": "Armenia",
+      "region": "Yerevan"
+    },
+    {
+      "name": "Malatya",
+      "region": "Yerevan"
+    },
+    {
+      "name": "Kesaria",
+      "region": "Yerevan"
+    },
+    {
+      "name": "Erebuni",
+      "region": "Yerevan"
+    },
+    {
+      "name": "Vayoc Dzor",
+      "region": "Vayoc Dzor"
+    },
+    {
+      "name": "Vayk",
+      "region": "Vayoc Dzor"
+    },
+    {
+      "name": "Dilijan",
+      "region": "Tavush"
+    },
+    {
+      "name": "Berd",
+      "region": "Tavush"
+    },
+    {
+      "name": "Tavush",
+      "region": "Tavush"
+    },
+    {
+      "name": "Ararat",
+      "region": "Ararat"
+    },
+    {
+      "name": "Masis",
+      "region": "Ararat"
+    },
+    {
+      "name": "Vedi",
+      "region": "Ararat"
+    },
+    {
+      "name": "Lori",
+      "region": "Lori"
+    },
+    {
+      "name": "Sevan",
+      "region": "Gegharkuniq"
+    },
+    {
+      "name": "Gegharkuniq",
+      "region": "Geghakunik"
+    },
+    {
+      "name": "Chambarak",
+      "region": "Gegharkunik"
+    },
+    {
+      "name": "Aragacotn",
+      "region": "Aragacotn"
+    }
+  ],
+  "ramtypes": [
+    "DDR3",
+    "DDR4",
+    "DDR5"
+  ],
+  "other": [
+    {
+      "ipAddress": "10.10.30.21",
+      "cpu": "Core i5 2321",
+      "ram": "4",
+      "capacity": "500",
+      "hostname": "CT0301501",
+      "barcode": "00008187",
+      "board": "P8H61-M",
+      "types": {
+        "ramType": "DDR3",
+        "region": "Yerevan",
+        "branch": "Zeytun",
+        "hdd": "HDD",
+        "os": "Windows 10 Enterprise LTSC"
+      },
+      "id": 1
+    }
+  ]
+}

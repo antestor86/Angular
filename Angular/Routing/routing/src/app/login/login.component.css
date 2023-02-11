@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+.container{
+   font-family: 'Noto Sans KR', sans-serif;
+   width: 600px;
+   height: 600px;
+   border: 3px solid rgba(128, 128, 128, 0.63);
+   border-radius: 10px;
+   box-shadow: 2px 3px 15px grey;
+   margin-left: 30%;
+   margin-top: 5%;
+}
+
+.form-control{
+  display: grid;
+  grid-template-columns: 25% 1%;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.form-control label{
+  margin-right: 20px;
+}
+
+input{
+  width: 350px;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 2px solid grey;
+  padding: 2px;
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+  outline: none;
+  border: 1px solid grey;
+}
+input.ng-touched{
+  border:1px solid rgba(128, 128, 128, 0.301);
+  color: red;
+  border: 1px solid red;
+}
+
+input.ng-invalid{
+  border:1px solid rgba(128, 128, 128, 0.301);
+  color: red;
+  border: 1px solid red;
+}
+
+label{
+  font-size: 18px;
+  margin-left: 10px;
+  color: rgb(78, 76, 76);
+  margin-top: 10px;
+}
+
+
+form{
+  display: grid;
+  grid-template-rows: 50% 30% 90% 30%;
+  grid-row-gap:20px;
+}
+
+.formgroup{
+  display: grid;
+  grid-template-columns: 25% 50%;
+  grid-gap:10px
+
+}
+
+button{
+  width: 220px;
+  height: 40px;
+  background-color: grey;
+  color: white;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  margin-left: 190px;
+  cursor: pointer;
+}
+
+button:active{
+  background-color: rgb(46, 44, 44);
+  color:white;
+}
+
+
+.invalid{
+  color: red;
+  background-color: white;
+}

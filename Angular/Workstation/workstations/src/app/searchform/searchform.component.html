@@ -1,0 +1,30 @@
+<form class="search_form" [formGroup]="form" (ngSubmit)="submit(form.value.types)">
+    <div class="form_item" formGroupName="types">
+        <label>By OS</label>
+        <select formControlName="os" class="input_select">
+            <option *ngFor="let system of os" [value]="system">
+                {{ system }}
+            </option>
+        </select>
+    </div>
+    <div class="form_item" formGroupName="types">
+        <label>By Region</label>
+        <select formControlName="region" class="input_select">
+            <option *ngFor="let item of regions$ | async" [value]="item">
+                {{ item }}
+            </option>
+        </select>
+    </div>
+    <div class="form_item" formGroupName="types">
+        <label>Branch</label>
+        <select formControlName="branch" class="input_select">
+            <option
+                *ngFor="let branch of branches$ | async"
+                [value]="branch.name"
+            >
+                {{ branch.name }}
+            </option>
+        </select>
+    </div>
+    <button type="submit">Search</button>
+</form>

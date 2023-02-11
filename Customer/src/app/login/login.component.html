@@ -1,0 +1,40 @@
+<div class="container">
+  <form class="searchForm" [formGroup]='form' (ngSubmit)='findUser()'>
+    <div class="component">
+      <input class="search" placeholder="search by name" formControlName='username'>
+      <button class="btn">Search by Name</button>
+    </div>
+  </form>
+</div>
+<div class="insertButtons">
+  <button class="btn">Insert User</button>
+  <button class="btn" (click)='backHome()'>Logout</button>
+</div>
+<div class="users" *ngFor='let user of customers'>
+  <div class="singlepost" [routerLink]="['/user',user.id]">
+    <div class="name">
+      <h2>Անուն:{{user.name}}</h2>
+      <h2>Ազգանուն:{{user.surname}}</h2>
+    </div>
+    <img [src]='user.avatar'>
+    <p>Տարիքը:{{user.age}}</p>
+    <div class="address">
+      <h3>{{user.country}}</h3>
+      <h4>ք.{{user.city}}</h4>
+      <h4 *ngFor='let address of user.addresses'>
+      Հասցե:{{address}}
+      </h4>
+    </div>
+    <h2 class="gender">Սեռը:{{user.gender}}</h2>
+
+    <h3 *ngFor='let phone of user.phones' class="phone">
+      <h2>Հեռ</h2>
+      <h4>{{phone.mobile}}</h4>
+      <h4>{{phone.home}}</h4>
+    </h3>
+    <div *ngFor='let skill of user.skills' class="skill">
+      <strong>Հմտություն:{{skill}}</strong>
+    </div>
+  </div>
+</div>
+

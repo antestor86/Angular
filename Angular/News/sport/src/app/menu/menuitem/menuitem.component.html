@@ -1,0 +1,12 @@
+<div class="menu_item">
+    <nav>{{ item }}</nav>
+    <div *ngIf="!isOpen; else burger"></div>
+</div>
+
+<ng-template #burger>
+    <div class="burger">
+        <nav *ngFor="let item of burgerItems">
+            {{ item }}
+        </nav>
+    </div>
+</ng-template>

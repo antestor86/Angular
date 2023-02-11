@@ -1,0 +1,26 @@
+<div *ngIf="!current">
+  No Data
+</div>
+<div *ngIf="current" >
+  <div fxLayout="row" class="rigth">
+    <div fxFlex="66%">{{current?.city}},{{current?.country}}</div>
+
+  </div>
+  <div fxLayout="row">
+  </div>
+  <div>{{current?.date | date:'EEEE MMM d'}}</div>
+  <div fxLayout>
+    <div fxFlex="66%">
+      <img [src]="current?.image" style="zoom: 170%">
+    </div>
+    <div fxFlex>{{current?.temperature|number:'1.0-0'}}F</div>
+  <div fxLayoutAlighn="center">
+    <div class="mat-caption">
+      {{current?.description}}
+    </div>
+  </div>
+  </div>
+</div>
+
+
+

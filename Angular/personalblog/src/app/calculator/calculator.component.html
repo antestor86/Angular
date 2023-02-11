@@ -1,0 +1,21 @@
+<div class="main_container">
+  <div class="calc_body">
+
+      <div class="display_value">
+        <h2>{{displayValue}}</h2>
+      </div>
+
+      <div class="btns">
+        <div *ngFor="let btn of numbers" class="button_counatiner">
+          <button (click)="changeDisplayValue(btn.ondisplay)">{{btn.ondisplay}}</button>
+        </div>
+      </div>
+
+      <div class="actions">
+        <div *ngFor="let action of actions" class="action_block">
+          <button (click)="doAction(action.value)">{{action.value}}</button>
+        </div>
+      </div>
+
+  </div>
+</div>

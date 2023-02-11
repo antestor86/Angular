@@ -1,0 +1,14 @@
+<div>
+  <ul>
+    <div class="container">
+      <li *ngFor="let user of users" class="user_container">
+         <h3>{{user.username}}</h3>
+        <label>Email Address</label>
+        <small>{{user.email}}</small>
+        <label>Login</label>
+        <h2>{{user.login}}</h2>
+        <button (click)="removeUser(user.id)">Remove</button>
+      </li>
+    </div>
+  </ul>
+</div>

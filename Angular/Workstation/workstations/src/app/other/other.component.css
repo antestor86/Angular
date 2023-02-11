@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*grid-template-columns: 2% 20% 13% 23% 12% 25% 15% 16% 19% 21% 9% 30% 20%;1
+   font-family: 'Open Sans', sans-serif;
+*/
+
+.icon{
+    width: 250px;
+    height: 600px;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 20% 20% 10%;
+    font-family: 'Open Sans', sans-serif
+}
+
+.body{
+    width: 380px;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    display: grid;
+    grid-template-rows: 10% 20% 10%;
+}
+
+.title{
+    width: 380px;
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+
+
+}
+
+
+
+
+
+
+

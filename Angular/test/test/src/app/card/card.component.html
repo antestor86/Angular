@@ -1,0 +1,23 @@
+<div class="card">
+    <form [formGroup]="form" (ngSubmit)="getFormValue()">
+        <div class="numberinput" formGroupName="cardNumber">
+            <input [placeholder]="firstOctate" formControlName="firstOctate" maxlength="4" />
+            <input [placeholder]="secondOctate" formControlName="secondOctate" maxlength="4" />
+            <input [placeholder]="thirdthOctate" formControlName="thirdthOctate" maxlength="4" />
+            <input [placeholder]="forthOctate" formControlName="fourthOctate" maxlength="4" />
+        </div>
+        <div class="input" formGroupName="cardholder">
+            <input [placeholder]="cardHolderName" formControlName="name" />
+            <input [placeholder]="cardHolderSurname" formControlName="surname" />
+        </div>
+        <div class="dateinput" formGroupName="ecspDate">
+            <input [placeholder]="dateNumber" formControlName="mounth" maxlength="2" />
+            <label>/</label>
+            <input [placeholder]="dateNumber" formControlName="year" maxlength="2" />
+        </div>
+        <div class="cvc" >
+            <input placeholder="cvc" formControlName ="threeCvc" maxlength="3" />
+        </div>
+        <button type="submit">Send</button>
+    </form>
+</div>

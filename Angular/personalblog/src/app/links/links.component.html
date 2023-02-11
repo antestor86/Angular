@@ -1,0 +1,52 @@
+<div class="body">
+
+  <div class="modal" [ngClass]="{hidden:visible}">
+    <div class="main_modal">
+        <form [formGroup]="form" (submit)="addLink()" class="main_form">
+          <div class="form_component">
+            <label>Link Title</label>
+            <input type="text" formControlName="title">
+          </div>
+          <div class="form_component">
+            <label>Page address</label>
+            <input type="text" formControlName="address">
+          </div>
+          <div class="form_component">
+            <label>Page Logo image address</label>
+            <input type="text" formControlName="image">
+          </div>
+          <div class="form_component">
+            <label>Page Description</label>
+            <input type="text" formControlName="desc">
+          </div>
+          <div class="button_container">
+            <button (click)="hideModal()" class="submit_button">Close</button>
+            <button type="submit" class="submit_button">Add Link</button>
+          </div>
+        </form>
+    </div>
+  </div>
+
+
+  <div class="main_container">
+    <div class="button_div">
+      <button (click)="showModal()" class="modal_btn">Add New Link</button>
+    </div>
+    <div *ngFor="let link of links | paginate:{itemsPerPage:5,currentPage:page,totalItems:length}" class="link_component">
+      <img [src]="link.image">
+      <h1>{{link.desc}}</h1>
+      <div class="link_container">
+        <h2>{{link.title}}</h2>
+        <div class="link_div">
+          <a [href]="link.address">Open</a>
+        </div>
+        <div class="link_div">
+          <button class="remnove_btn" (click)="removeData(link.id)">Remove</button>
+        </div>
+      </div>
+    </div>
+    <pagination-controls (pageChange)="page=$event"></pagination-controls>
+  </div>
+
+
+</div>

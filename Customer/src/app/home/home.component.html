@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="acba">
+    <img [src]='logo'>
+  </div>
+  <form class="login" [formGroup]="form" (ngSubmit)="login()">
+    <div class="component">
+      <label for="username">Username</label>
+      <input type="text" name="username" placeholder="type username" formControlName='username'>
+    </div>
+    <div class="component">
+      <label for="password">Password</label>
+      <input type="password" name="password" placeholder="type password" formControlName='password'>
+    </div>
+    <div *ngIf="form.get('password').invalid && form.get('password').touched">
+      <small *ngIf="form.get('password').errors.required" class="invalid">incorrect password</small>
+    </div>
+    <button class="btn" type="submit"  [disabled]="form.invalid">Login</button>
+  </form>
+</div>
+
+
+
+

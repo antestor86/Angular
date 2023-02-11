@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.container{
+    border: 2px rgba(128, 128, 128, 0.2) double;
+    width: 720px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    top: 120px;
+    
+}
+
+
+.container h1{
+    font-family: 'Roboto', sans-serif;
+    color: rgba(209, 160, 87, 0.39);
+    font-size: 55px;
+    text-align: center;
+}
+
+.todos_list{
+    box-shadow: rgba(128, 128, 128, 0.171) 0px 5px 5px 0px;
+}
+
+.completed{
+    width: 120px;
+}

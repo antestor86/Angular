@@ -1,0 +1,15 @@
+<div *ngIf="slides && slides.length>0" class="container">
+  <img *ngFor="let slide of slides;let i = index" [src]="slide.url" [alt]="slide.title"
+  [ngClass]="{'imageActive':currentindex === i}" class="fade">
+  <div *ngIf="indicators" class="indicator">
+    <span *ngFor="let dot of slides;let i = index" class="dot"
+          [ngClass]="{'active':currentindex === i}" (click)="selectImage(i)">O</span>
+  </div>
+  <button  class="btn-carousel prev" (click)="onPrevClick()">
+    Prew
+  </button>
+  <button  class="btn-carousel next" (click)="onNextClick()">
+    next
+  </button>
+</div>
+

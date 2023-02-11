@@ -1,0 +1,58 @@
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@500&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif, bold;
+        font-style: bold;
+        font-weight: bold;
+        color: grey;
+    }
+
+
+     button {
+        width: 120px;
+        border: none;
+        background-color: rgb(21, 95, 58);
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 10px 10px 10px rgb(11, 163, 131);
+    }
+
+    button:hover {
+        background-color: #04716c;
+    }
+
+    button:active {
+        border: 1px solid grey;
+        background-color: #1564a8;
+        font-size: 18px;
+    }
+
+    .search_form {
+        width: 1800px;
+        display: grid;
+        grid-template-columns: repeat(4, 350px);
+        margin-bottom: 2%;
+    }
+
+    .form_item {
+        display: grid;
+        grid-template-columns: 20% 30%;
+        font-size: 15px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .input_select {
+        background: linear-gradient(45deg, rgba(174, 196, 255, 0.4) 35%, rgba(228, 255, 240, 0.58) 45%);
+        width: 220px;
+        height: 30px;
+        border-bottom: 2px solid rgb(211, 210, 210);
+        border-radius: 5px;
+        outline: none;
+        box-shadow: 10px 5px 8px rgb(197, 195, 195);
+        border: none;
+    }

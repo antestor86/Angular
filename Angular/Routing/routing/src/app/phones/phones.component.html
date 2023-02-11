@@ -1,0 +1,20 @@
+<a (click)="addPhone()">Add Phone</a>
+<button class="btn" [routerLink]="['/posts']" [queryParams]="{showIds:true}">ShowIds</button>
+<button (click)="hideId()" class="btn">Hide Id</button>
+<div class="content" *ngFor='let phone of phones'>
+  <div class="title">
+  <h1 *ngIf="showIds">N||{{phone.id}}</h1>
+  <hr>
+  </div>
+  <a [routerLink]="['/posts',phone.id]">
+
+   <img [src]='phone.url'>
+  </a>
+  <hr>
+  <strong>BRAND||{{phone.brand}}</strong>
+  <hr>
+  <h2>MODEL||{{phone.model}}</h2>
+  <div (click)="removePhone(phone.id)">Remove Phone</div>
+</div>
+
+

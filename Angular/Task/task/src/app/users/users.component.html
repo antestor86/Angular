@@ -1,0 +1,121 @@
+<div class="page">
+  <div class="container">
+    <form class="searchForm" [formGroup]="form" (ngSubmit)="getInputs()">
+      <div class="component">
+        <label>Search by name</label>
+        <input
+          type="text"
+          class="search"
+          placeholder=".search by name"
+          formControlName="name"
+        />
+      </div>
+      <div class="component">
+        <label>Search by city</label>
+        <input
+          type="text"
+          class="search"
+          placeholder=".search by city"
+          formControlName="city"
+        />
+      </div>
+      <div class="component">
+        <label>Search by street</label>
+        <input
+          type="text"
+          class="search"
+          placeholder=".search by street"
+          formControlName="street"
+        />
+      </div>
+      <button type="submit" class="btn">Search</button>
+      <button type="submit" class="btn" (click)="logOut()">Logout</button>
+      <button class="btn" (click)="insert()">Insert</button>
+    </form>
+  </div>
+
+  <table class="title">
+    <tr class="title">
+      <th>N</th>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>Phone</th>
+      <th>City</th>
+      <th>Street</th>
+    </tr>
+  </table>
+  <table class="customer_table" >
+    <div class="list" *ngIf="!searchStatuss; else showSearch">
+      <tr *ngFor="let user of customers | paginate:{itemsPerPage:5,currentPage:page,totalLength:length}" class="rows">
+        <td>
+          <h3>{{ user?.id }}</h3>
+        </td>
+        <td><img [src]="user?.image" /></td>
+        <td>
+          <p>{{ user?.name }}</p>
+        </td>
+        <td>
+          <p>{{ user?.surname }}</p>
+        </td>
+        <td>
+          <p>{{ user?.phone }}</p>
+        </td>
+        <td>
+          <p>{{ user?.address?.city }}</p>
+        </td>
+        <td>
+          <p>{{ user?.address?.street }}</p>
+        </td>
+        <td>
+          <button (click)="removeUser(user.id)" class="removeBtn">
+            Remove
+          </button>
+          <a [routerLink]="['/users', user.id]" class="edit">Edit</a>
+        </td>
+       </tr>
+       <pagination-controls (pageChange)="page=$event"></pagination-controls>
+    </div>
+   </table>
+
+
+
+
+  <ng-template #showSearch>
+    <table class="find" class="customer_table">
+      <tr
+        *ngFor="let find of findedUsers  | paginate:{itemsPerPage:5,currentPage:page,totalLength:length}"
+        class="rows"
+        [routerLink]="['/users', find.id]"
+      >
+        <td>
+          <h3>{{ find?.id }}</h3>
+        </td>
+        <td><img [src]="find?.image" /></td>
+        <td>
+          <p>{{ find?.name }}</p>
+        </td>
+        <td>
+          <p>{{ find?.surname }}</p>
+        </td>
+        <td>
+          <p>{{ find?.phone }}</p>
+        </td>
+        <td>
+          <p>{{ find?.address?.city }}</p>
+        </td>
+        <td>
+          <p>{{ find?.address?.street }}</p>
+        </td>
+        <td>
+          <button (click)="removeUser(user.id)" class="removeBtn">
+            Remove
+          </button>
+          <a [routerLink]="['/users', find.id]" class="edit">Edit</a>
+        </td>
+      </tr>
+      <pagination-controls (pageChange)="page=$event" class="pagination"></pagination-controls>
+    </table>
+    </ng-template>
+</div>
+

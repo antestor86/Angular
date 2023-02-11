@@ -1,0 +1,53 @@
+   .content {
+       width: 1050px;
+       margin-left: 23%;
+   }
+
+   .background {
+       width: 600px;
+       height: 400px;
+   }
+
+   .title {
+       position: absolute;
+       background-color: rgba(95, 64, 71, 0.95);
+       width: 1050px;
+       height: 120px;
+       justify-content: center;
+       text-align: center;
+       top: 115%;
+       z-index: 2;
+   }
+
+   .title h1 {
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 20px;
+       color: white;
+       text-decoration: none;
+       display: block;
+       top: 30%;
+       left: 2%;
+       position: absolute;
+       z-index: 1;
+   }
+
+   a {
+       position: relative;
+       left: 5%;
+       bottom: 10%;
+       z-index: 3;
+   }
+
+   .backgrouond>img {
+       position: relative;
+       left: 28%;
+       justify-content: center;
+       z-index: 0;
+   }
+
+   img {
+       position: inherit;
+       left: 20%;
+       justify-content: center;
+       margin-left: 2%;
+   }

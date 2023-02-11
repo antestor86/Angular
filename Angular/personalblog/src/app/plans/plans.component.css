@@ -1,0 +1,42 @@
+.carousel{
+  overflow: hidden;
+  width: 20%;
+  height: 70%;
+  border-radius: 5px;
+  box-shadow: #2c353d 13px 5px 10px 10px;
+}
+
+
+
+
+.slides{
+  width: 500%;
+  height: auto;
+
+}
+
+li{
+  list-style: none;
+  width: 300px;
+  height: 150px;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+img{
+  position: relative;
+  left: 0px;
+  width: 290px;
+  height: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+

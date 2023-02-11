@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Oswald:wght@200;600&family=PT+Sans&family=Playfair+Display&family=Roboto:wght@700&family=Ubuntu&display=swap');
+
+body{
+  width: 1500px;
+  height: 1500px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form{
+  margin-top: 100px;
+  width: 600px;
+  height: 700px;
+  border: 1px solid rgba(128, 128, 128, 0.7);
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 10% 10% 5% 5% 5% 5% 5% 2% ;
+  grid-gap: 10px;
+}
+
+img{
+  max-width: 150px;
+  max-height: 150px;
+}
+
+label{
+  font-size: 18px;
+}
+
+#email_id{
+  position: relative;
+  right: 115px;
+}
+
+#password{
+  position: relative;
+  right: 130px;
+}
+
+input{
+  width: 350px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.69);
+  outline: none;
+}
+
+input:hover{
+  border: 2px solid rgba(34, 153, 189, 0.68);
+  box-shadow: rgba(34, 153, 189, 0.75) 2px 2px 2px;
+}
+
+#checkbox_id{
+  width: 20px;
+  height:20px;
+}
+
+.checkbox{
+  display: grid;
+  grid-template-columns: 50% 120%;
+}
+
+.checkbox label{
+  width: 120px;
+}
+
+button{
+  width: 350px;
+  height: 40px;
+  color: white;
+  background-color: #2299bd;
+  border: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:active{
+  background-color: grey;
+}
+
+button:disabled{
+  background-color: grey;
+}
+
+.invalid{
+  color: red;
+  font-size: 12px;
+  height: 20px;
+  display: grid;
+  grid-template-rows: 2% 2% 2%;
+}
+
+.invalid small{
+  height: 10px;
+}
+
+input.ng-touched.ng-invalid{
+  border: 1px solid red;
+}
+

@@ -1,0 +1,51 @@
+<h1 class="title">Insert New User</h1>
+<div class="container">
+  <form [formGroup]="insertForm" (ngSubmit)="addUser()">
+    <div class="input_component">
+      <label for="name">Name</label>
+      <input placeholder="*name." formControlName="name" class="alert">
+      <div *ngIf="insertForm.get('name').invalid && insertForm.get('name').touched">
+        <small *ngIf="insertForm.get('name').errors.required">Please write the user name</small>
+      </div>
+    </div>
+    <div class="input_component">
+      <label for="surname">Surname</label>
+      <input placeholder="*surname." type="text" formControlName="surname" class="alert">
+      <div *ngIf="insertForm.get('surname').invalid && insertForm.get('surname').touched">
+        <small *ngIf="insertForm.get('surname').errors.required">Please write the user surname</small>
+      </div>
+    </div>
+    <div class="input_component">
+      <label for="email">Email</label>
+      <input placeholder="*email." formControlName="email" class="alert">
+      <div *ngIf="insertForm.get('email').invalid && insertForm.get('email').touched">
+        <small *ngIf="insertForm.get('email').errors.required">Please write correct email</small>
+      </div>
+    </div>
+    <div class="input_component">
+      <label for="phone">Phone</label>
+      <input placeholder="*phonenumber." type="number" formControlName="phone" class="alert">
+      <div *ngIf="insertForm.get('phone').invalid && insertForm.get('phone').touched">
+        <small *ngIf="insertForm.get('phone').errors.required">Please write the correct value</small>
+      </div>
+    </div>
+    <div class="input_component" formGroupName="address">
+      <label>Address</label>
+      <input placeholder="*street" formControlName="street">
+      <input placeholder="*city" formControlName="city">
+    </div>
+    <div class="input_component">
+      <label for="email">Image</label>
+      <input placeholder="set url." formControlName="image" type="text" />
+    </div>
+    <button type="submit" [disabled]="insertForm.invalid" class="btn">
+      Add
+    </button>
+  </form>
+  <div *ngIf="!addStatuss,else completed" class="template"></div>
+  <ng-template #completed>
+    <h1 class="completed">User Added</h1>
+  </ng-template>
+
+  <button class="close btn" (click)="return()">close</button>
+</div>

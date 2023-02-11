@@ -1,0 +1,70 @@
+<div class="main_container" *ngIf="customer$|async as customer">
+  <div class="info">
+    <img [src]="customer?.image">
+    <div class="customer_params">
+      <div class="single">
+        <label class="title">Name</label>
+        <h2 class="text">{{customer?.name}}</h2>
+      </div>
+      <div class="single">
+        <label class="title">Surname</label>
+        <h2 class="text">{{customer?.surname}}</h2>
+      </div>
+      <div class="single">
+        <label class="title">Phone Number</label>
+        <h4 class="text">{{customer?.phone}}</h4>
+      </div>
+      <div class="single">
+        <label class="title">Address</label>
+        <p class="text">{{customer?.address.street}}</p>
+        <p class="title">{{customer?.address.city}}</p>
+      </div>
+      <div class="single">
+        <label class="title">Email</label>
+        <a class="link">{{customer?.email}}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<button (click)="backToHome()" class="btn">Return</button>
+<button  class="btn" (click)="editStatuss()">Edit</button>
+<div *ngIf="!addStatuss else added"></div>
+<ng-template #added><h1 class="edit">Edited</h1></ng-template>
+<div *ngIf="!statuss,else editform"></div>
+<ng-template #editform>
+  <form [formGroup]="form" (ngSubmit)="finish()">
+    <div class="input_component">
+      <label>Name</label>
+      <input type="text" formControlName='name' placeholder="name">
+    </div>
+    <div class="input_component">
+      <label>Surname</label>
+      <input type="text" formControlName='surname' placeholder="surname">
+    </div>
+    <div class="input_component">
+      <label>Phone Number</label>
+      <input type="text" formControlName='phone' placeholder="...phone">
+    </div>
+    <div class="input_component">
+      <label>Email</label>
+      <input type="text" formControlName="email"  placeholder="email address">
+      <div *ngIf="form.get('email').invalid" class="invalid">
+        <small *ngIf="form.get('email').errors.invalid" class="invalid">Write Correct email</small>
+      </div>
+    </div>
+    <div class="input_component" formGroupName="address">
+      <label>Address</label>
+      <input type="text" formControlName='street' placeholder="street">
+      <input type="text" formControlName='city' placeholder="city">
+    </div>
+    <div class="input_component">
+      <label>Image Url</label>
+      <input type="text" formControlName='image' placeholder="..url">
+    </div>
+    <button type="submit" class="submit" [disabled]='form.invalid'>Submit</button>
+  </form>
+</ng-template>
+
+

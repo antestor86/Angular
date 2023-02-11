@@ -1,0 +1,76 @@
+<app-searchform  (getMessage)="getMessage($event)" ></app-searchform>
+
+<div class="table">
+    <ul class="title">
+        <li>Id</li>
+        <li>Region</li>
+        <li>Branch Name</li>
+        <li>Hostname</li>
+        <li>Barcode</li>
+        <li>Ip Address</li>
+        <li>Cpu</li>
+        <li>Board</li>
+        <li>HDD</li>
+        <li>Capacity</li>
+        <li>Ram Type</li>
+        <li>Ram</li>
+        <li>OS</li>
+    </ul>
+</div>
+<hr>
+<div class="elem" *ngIf="!searchStatuss;else showSearch">
+    <div class="item" *ngFor="let item of workstations$ | async" >
+<!--        <div (click)="navigate(item.id, 'viewMode')">-->
+        <div class="id">
+            <fa-icon [icon]="faCocktain" ></fa-icon>
+        </div>
+        <p>{{item.types.region}}</p>
+        <p>{{item.types.branch}}</p>
+        <p>{{item.hostname}}</p>
+        <p>{{item.barcode}}</p>
+        <p>{{item.ipAddress}}</p>
+        <p>{{item.cpu}}</p>
+        <p>{{item.board}}</p>
+        <p>{{item.types.hdd}}</p>
+        <p>{{item.capacity}}</p>
+        <p>{{item.types.ramType}}</p>
+        <p>{{item.ram}}</p>
+        <p>{{item.types.os}}</p>
+<!--        </div>-->
+        <a (click)="removeItem(item.id)">Remove</a>
+        <a (click)="navigate(item.id, 'editMode')">Edit</a>
+    </div>
+
+
+</div>
+
+
+
+<ng-template #showSearch>
+    <div class="item" *ngFor="let item of filterValue" >
+
+        <div class="id">
+            <fa-icon [icon]="faCocktain" ></fa-icon>
+        </div>
+        <p>{{item.types.region}}</p>
+        <p>{{item.types.branch}}</p>
+        <p>{{item.hostname}}</p>
+        <p>{{item.barcode}}</p>
+        <p>{{item.ipAddress}}</p>
+        <p>{{item.cpu}}</p>
+        <p>{{item.board}}</p>
+        <p>{{item.types.hdd}}</p>
+        <p>{{item.capacity}}</p>
+        <p>{{item.types.ramType}}</p>
+        <p>{{item.ram}}</p>
+        <p>{{item.types.os}}</p>
+        <!--        </div>-->
+        <a (click)="removeItem(item.id)">Remove</a>
+        <a (click)="navigate(item.id, 'editMode')">Edit</a>
+    </div>
+
+</ng-template>
+
+
+
+

@@ -1,0 +1,21 @@
+<div class="carousel">
+  <ul class="slides">
+    <li *ngFor="let slide of pictures">
+      <img [src]="slide.src" [ngStyle]="{'position':'relative','left':posx}">
+    </li>
+  </ul>
+</div>
+<button (click)="moveRight()" [disabled]="buttonActive" >Next</button>
+<button (click)="moveLeft()" [disabled]="leftButtonActive" >Previous</button>
+<div class="otherConatiner">
+  <div>
+    <button (click)="elements()" [ngStyle]="{backgroundColor:'red',position:'relative',top:'+100px'}">Open</button>
+    <a *ngIf="openStatuss;else showelements" ></a>
+    <ng-template #showelements>
+      <h1>Menu</h1>
+      <h1>contacts</h1>
+    </ng-template>
+  </div>
+</div>
+
+

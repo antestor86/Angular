@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Montserrat:wght@100;300&family=Oswald:wght@200;600&family=PT+Sans&family=Playfair+Display&family=Roboto:wght@700&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Montserrat:wght@100;300&family=Oswald:wght@200;600&family=PT+Sans&family=Playfair+Display&family=Roboto:wght@700&family=Ubuntu&display=swap');
+.header{
+  width: auto;
+  height: 62px;
+  background-color: rgba(160, 156, 156, 0.36);
+  color: #525151;
+  display: grid;
+  grid-template-columns: 10% 50% 70%;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+
+
+
+.menu{
+  display: grid;
+  grid-template-columns: repeat(5,40%);
+  list-style: none;
+  text-decoration: none;
+}
+
+.menu_item{
+  text-decoration: none;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+
+
+.menu_item a{
+  text-decoration: none;
+  color: #525151;
+}
+
+.menu_item a:hover{
+  color: #007ad7;
+}
+
+.title{
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgba(27, 41, 47, 0.56);
+}
+
+a.active{
+  color: #971707;
+}
+
+
+
