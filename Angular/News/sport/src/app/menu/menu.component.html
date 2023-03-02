@@ -22,8 +22,8 @@
 </div>
 <ng-template #burger>
     <div class="burger_body">
-        <div *ngFor="let item of burgerItems" class="burger">
-            <div>{{ item }}</div>
+        <div *ngFor="let item of burgerItems$ | async" class="burger">
+            <div (click)="enterInternationalContent(item.path)">{{ item.displayName }}</div>
         </div>
     </div>
 </ng-template>

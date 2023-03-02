@@ -13,6 +13,15 @@ import { MenuitemComponent } from './menu/menuitem/menuitem.component';
 import { NgModule } from '@angular/core';
 import { SliderComponent } from './slider/slider.component';
 import { VideosComponent } from './videos/videos.component';
+import { SpainComponent } from './international/spain/spain.component';
+import { EnglandComponent } from './international/england/england.component';
+import { ItalyComponent } from './international/italy/italy.component';
+import { GermanComponent } from './international/german/german.component';
+import { FranceComponent } from './international/france/france.component';
+import { ChamponsComponent } from './international/champons/champons.component';
+import { EuropeComponent } from './international/europe/europe.component';
+import { NationsComponent } from './international/nations/nations.component';
+import {ReactiveFormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -26,12 +35,21 @@ import { VideosComponent } from './videos/videos.component';
     VideosComponent,
     SliderComponent,
     BurgerDirective,
-    MenuitemComponent
+    MenuitemComponent,
+    SpainComponent,
+    EnglandComponent,
+    ItalyComponent,
+    GermanComponent,
+    FranceComponent,
+    ChamponsComponent,
+    EuropeComponent,
+    NationsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

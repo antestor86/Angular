@@ -1,7 +1,38 @@
-<div>
-    <form>
+<div class="container">
+    <form class="form" [formGroup]="form" (ngSubmit)="inSubmit()">
         <div class="input">
             <label>Վերնագիր</label>
+            <input type="text" formControlName="title">
         </div>
+        <div class="input">
+            <label>Թեմա</label>
+            <input type="text" formControlName="theme">
+        </div>
+
+        <div class="input">
+            <label>Ա/Ա</label>
+            <input type="date" formControlName="date">
+        </div>
+        <div class="input">
+            <label>Նկարի հղում</label>
+            <input type="text" formControlName="url">
+        </div>
+        <div class="input">
+            <label>Կատեգորիա</label>
+            <input type="text" formControlName="category">
+        </div>
+        <div class="input">
+            <label>Աղբյուր</label>
+            <input type="text" formControlName="source">
+        </div>
+        <div class="input">
+            <label>Լրացուցիչ նկարի հղում</label>
+            <input type="text" formControlName="secondsource">
+        </div>
+        <div class="textarea">
+            <label>Հոդված</label>
+            <textarea maxlength="10000" formControlName="text"></textarea>
+        </div>
+        <button type="submi">Ավելացնել</button>
     </form>
 </div>

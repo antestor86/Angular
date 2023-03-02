@@ -149,3 +149,8 @@ nav {
     background-color: rgb(212, 191, 230);
     color: rgb(113, 87, 138);
 }
+
+.burger:active {
+    background-color: rgb(212, 191, 230);
+    color: rgb(46, 43, 49);
+}
