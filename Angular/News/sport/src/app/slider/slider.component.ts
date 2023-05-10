@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { map, tap } from 'rxjs';
+
 
 import { Article } from '../interfaces/article.interface';
 import { DataService } from '../services/data.service';
@@ -18,13 +18,9 @@ export class SliderComponent implements OnInit {
   }
 
   getArticles(): void {
-    this.data.getData().pipe(
-      tap((item: any) => {
-        console.log(item)
-      })
-    ).subscribe((data) => {
-      this.articles = data
-
+    this.data.getData().subscribe((data) => {
+      this.articles = data;
+      console.log(data[0])
     })
   }
 

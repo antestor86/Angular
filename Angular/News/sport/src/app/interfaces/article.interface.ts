@@ -1,10 +1,10 @@
 export interface Article {
-    id: String,
-    date: Date,
+    id?: Number,
     title: String,
-    content: String,
+    date: Date,
     image: String,
-    url: string,
-    style: String,
-    hashTag: String
+    category:String,
+    source:String,
+    moreImageUrl:String[],
+    content: String,
 }

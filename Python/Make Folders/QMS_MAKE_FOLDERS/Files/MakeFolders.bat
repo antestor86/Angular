@@ -1,0 +1,1 @@
+"C:\Users\razmik.avetisyan\AppData\Local\Programs\Python\Python38-32\python.exe" "C:\Users\razmik.avetisyan\Desktop\MY_FILES\Python Work\QMS_MAKE_FOLDERS\Files\QMS CREATE FOLDERS WITH SUBFOLDRES.py"

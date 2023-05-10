@@ -1,0 +1,41 @@
+* {
+    background-color: rgb(2, 13, 77);
+}
+
+.main {
+    box-sizing: content-box;
+    margin: auto;
+    display: block;
+}
+
+li {
+    display: inline-block;
+    width: 10vh;
+    margin: 2vh;
+    text-align: center;
+    font-weight: bold;
+    padding: 12px;
+    color: rgb(212, 212, 212);
+    background-color: rgb(67, 63, 119);
+}
+
+#number-list {
+    display: inline;
+    list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+#sort-button {
+    width: 120px;
+    padding: 2vh;
+    margin-left: 10vh;
+    margin-bottom: 10vh;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(31, 21, 173);
+    border: 1px solid rgb(31, 21, 173);
+    cursor: pointer;
+}

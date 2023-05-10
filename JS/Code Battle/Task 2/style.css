@@ -1,0 +1,29 @@
+.main {
+    margin-top: 100px;
+}
+
+li {
+    display: inline-block;
+    margin: auto;
+    width: 120px;
+    padding: 2vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-align: center;
+    border: 1px solid rgba(23, 52, 85, 0.918);
+    border-radius: 5px;
+    background-color: rgb(56, 67, 168);
+    list-style: none;
+}
+
+#btn {
+    width: 120px;
+    padding: 2vh;
+    margin-left: 95vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    background-color: rgb(45, 94, 151);
+    border: 1px solid rgb(45, 94, 151);
+    color: white;
+    cursor: pointer;
+}
