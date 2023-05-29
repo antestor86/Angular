@@ -1,0 +1,5 @@
+<div class="menu">
+    <div *ngFor="let item of routes">
+        <button [routerLink]="[item.route]">{{item.name}}</button>
+    </div>
+</div>

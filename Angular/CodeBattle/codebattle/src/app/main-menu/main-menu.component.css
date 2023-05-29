@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+.menu {
+    background-color: rgb(10, 11, 117);
+    color: white;
+    display: grid;
+    grid-template-columns: 5% 5% 5% 5%;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    margin-top: 1vh;
+    max-width: 35vh;
+    height: 40px;
+    background-color: rgb(22, 85, 158);
+    color: white;
+    cursor: pointer;
+    border: 1px solid rgb(22, 85, 158);
+    border-radius: 5px;
+    padding: 1vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:active {
+    background-color: rgb(10, 11, 117);
+}
