@@ -19,10 +19,12 @@ li {
     margin: 2vh;
     background-color: rgb(22, 85, 158);
     margin: 3vh;
-    margin-top: 5px;
+    padding-top: 15px;
     width: 80px;
     height: 30px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 button {
@@ -36,6 +38,8 @@ button {
     border-radius: 5px;
     padding: 1vh;
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 button:active {
