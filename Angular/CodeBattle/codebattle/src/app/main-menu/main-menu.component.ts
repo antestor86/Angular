@@ -21,6 +21,10 @@ export class MainMenuComponent {
     {
       name:'Task Two',
       route:'task_two'
+    },
+    {
+      name:'Task Three',
+      route:'task_three'
     }
 
   ]
