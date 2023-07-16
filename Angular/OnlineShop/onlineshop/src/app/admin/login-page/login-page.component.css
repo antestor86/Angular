@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Roboto;
+    src: url("../../../assets/fonts/Roboto/Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: Roboto-italic;
+    src: url("../../../assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+.form-control {
+    width: 1000px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 9% 98%;
+    margin-top: 2%;
+}
+
+.form-control>input {
+    width: 50%;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding-left: 1%;
+    font-family: Roboto;
+}
+
+.validation {
+    color: red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 120px;
+    height: 120px;
+}
+
+.validation>small {
+    width: 120px;
+}

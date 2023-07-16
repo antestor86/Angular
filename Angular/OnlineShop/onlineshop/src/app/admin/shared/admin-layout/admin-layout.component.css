@@ -1,0 +1,67 @@
+@font-face {
+    font-family: Roboto;
+    src: url("../../../../assets/fonts/Roboto/Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: Roboto-italic;
+    src: url("../../../../assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 76% 35%;
+    height: 60px;
+    background-color: rgb(36, 35, 35);
+    color: white;
+}
+
+h1 {
+    font-family: Roboto;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+h1>a {
+    color: rgb(179, 177, 177);
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: normal;
+    font-family: Roboto-italic;
+}
+
+h1>a:hover {
+    color: white;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 14% 15% 9% 10% 12%;
+    font-family: Roboto-italic;
+    margin-top: 3%;
+}
+
+li {
+    list-style-type: none;
+}
+
+li>a {
+    color: rgb(179, 177, 177);
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: normal;
+    font-family: Roboto-italic;
+}
+
+li>a:hover {
+    color: white;
+}
+
+.container {
+    margin-left: 18%;
+    margin-top: 3%;
+    font-family: Roboto;
+    font-weight: bold;
+    font-family: Roboto-italic;
+    font-size: 18px;
+}
