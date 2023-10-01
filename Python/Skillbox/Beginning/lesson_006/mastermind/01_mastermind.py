@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from engine import mastermind_engine
+from engine.mastermind_engine import _mainnumber,string_number
 
 # Игра «Быки и коровы»
 # https://goo.gl/Go2mb9
@@ -42,7 +44,11 @@
 # Это пример применения SOLID принципа (см https://goo.gl/GFMoaI) в архитектуре программ.
 # Точнее, в этом случае важен принцип единственной ответственности - https://goo.gl/rYb3hT
 
-# TODO здесь ваш код...
+#val = input("write a number:")
+mastermind_engine.createWhishnumber()
+whishnumber = mastermind_engine.convertSetToInt()
+mastermind_engine.guessWhishNumber()
+print(whishnumber)
 
 
 
