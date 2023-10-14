@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Open+Sans&family=Oswald:wght@200&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+* {
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+}
+
+.content {
+    border-top: 1px solid grey;
+    margin-top: 13vh
+}
+
+.todo-list-container {
+    width: 60%;
+    margin: auto;
+}
+
+.todo-list-item {
+    width: 10vw;
+    display: grid;
+    grid-template-columns: 20% 100%;
+}
+
+.todo-input-checkbox {
+    width: 2vh;
+}
