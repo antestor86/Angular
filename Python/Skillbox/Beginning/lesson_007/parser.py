@@ -9,10 +9,10 @@ headers = {
     'Connection':'keep-alive'
 }
 
-request = requests.get('https://www.sports.ru/')
+request = requests.get('https://www.sports.ru/barcelona/calendar/2023-2024/la-liga/')
 
 print(request.status_code)
 sprotsru=BeautifulSoup(request.content,"html.parser")
-result = sprotsru.findAll("a","h2 material-list__title-link")
+result = sprotsru.findAll("tr")
 for article in result:
     print(article)
