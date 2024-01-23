@@ -15,16 +15,20 @@ export class MainMenuComponent {
 
   routes = [
     {
-      name:'Task One',
+      name:'Task 1',
       route:  '/task_one'
     },
     {
-      name:'Task Two',
+      name:'Task 2',
       route:'task_two'
     },
     {
-      name:'Task Three',
+      name:'Task 3',
       route:'task_three'
+    },
+    {
+      name:'Task 4',
+      route:'task_four'
     }
 
   ]

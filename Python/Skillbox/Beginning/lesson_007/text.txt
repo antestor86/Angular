@@ -1,0 +1,14 @@
+runas /user:razmik.avetisyan@acbaca.local powershell
+$folders  = Dir "\\fileshare\ForTechnicalSupport\4_AcbaFolders\*"
+$acc_oper = Dir "\\fileshare\ForTechnicalSupport\4_AcbaFolders\acc_oper\*"
+$CB_Rep   = Dir "\\fileshare\ForTechnicalSupport\4_AcbaFolders\CB_Rep\*"
+$CrRepOfNew_Project_SQL = Dir "\\fileshare\ForTechnicalSupport\4_AcbaFolders\CrRepOfNew_Project_SQL\*"
+$MDB_TMP = Dir "\\fileshare\ForTechnicalSupport\4_AcbaFolders\MDB_TMP\*"
+$xls_for_credit_proj = Dir "\\fileshare\ForTechnicalSupport\4_AcbaFolders\xls_for_credit_proj\*"
+
+Copy-Item -Path $folders -Destination "C:\" -PassThru
+Copy-Item -Path $acc_oper -Destination "C:\acc_oper" -PassThru
+Copy-Item -Path $CB_Rep -Destination "C:\CB_Rep" -PassThru
+Copy-Item -Path $CrRepOfNew_Project_SQL -Destination "C:\CrRepOfNew_Project_SQL" -PassThru
+Copy-Item -Path $MDB_TMP -Destination "C:\MDB_TMP" -PassThru
+Copy-Item -Path $xls_for_credit_proj -Destination "C:\xls_for_credit_proj" -PassThru

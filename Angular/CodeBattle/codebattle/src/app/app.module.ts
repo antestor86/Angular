@@ -9,6 +9,8 @@ import { HomeComponent } from './home/home.component';
 import {  RouterModule } from '@angular/router';
 import { TaskTwoComponent } from './task-two/task-two.component';
 import { TaskThreeComponent } from './task-three/task-three.component';
+import { TaskfourComponent } from './taskfour/taskfour.component';
+import { TaskfiveComponent } from './taskfive/taskfive.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { TaskThreeComponent } from './task-three/task-three.component';
     MainMenuComponent,
     HomeComponent,
     TaskTwoComponent,
-    TaskThreeComponent
+    TaskThreeComponent,
+    TaskfourComponent,
+    TaskfiveComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,62 @@
-#circle {
+* {
+    background-color: rgb(2, 13, 77);
+}
+
+.main {
+    box-sizing: content-box;
     margin: auto;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background-color: red;
+    display: block;
+}
+
+#number-list {
+    display: inline;
+    list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+li {
+    display: inline-block;
+    width: 10vh;
+    margin: 1vh;
+    text-align: center;
+    font-weight: bold;
+    padding: 12px;
+    color: rgb(212, 212, 212);
+}
+
+#sort-by-id {
+    width: 120px;
+    padding: 2vh;
+    margin-left: 10vh;
+    margin-bottom: 10vh;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(31, 21, 173);
+    border: 1px solid rgb(31, 21, 173);
+    cursor: pointer;
+}
+
+#sort-by-size {
+    width: 120px;
+    padding: 2vh;
+    margin-left: 10vh;
+    margin-bottom: 10vh;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(31, 21, 173);
+    border: 1px solid rgb(31, 21, 173);
+    cursor: pointer;
+}
+
+#sort-by-id:active {
+    background-color: rgb(14, 21, 173);
+}
+
+#sort-by-size:active {
+    background-color: rgb(14, 21, 173);
 }

@@ -1,45 +1,27 @@
-import {Injectable} from "@angular/core"
-import { Todo } from "../interfaces/todos.interface"
-import { Data } from "@angular/router"
-import {HttpClient} from '@angular/common/http'
-import { Observable, map, tap } from "rxjs"
+import { Injectable } from "@angular/core"
+import { ToDo } from "../interfaces/todo.interface"
+import { HttpClient} from "@angular/common/http"
+
+
 @Injectable({providedIn:'root'})
-
 export class DataService{
-  data:Todo[] = []
-  url = 'http://localhost:3000/todos'
+  todo!:ToDo
+  URL = 'https://todo-258c9-default-rtdb.firebaseio.com/'
+  todos:ToDo[] = []
   constructor(private http:HttpClient){
+
   }
 
-  getData():Observable<any>{
-    return this.http.get<Todo>(this.url).pipe(
-      map((responseData: any) => {
-        const postArray: Todo[] = []
-        for (let i in responseData) {
-          this.data.push(responseData[i])
-        }
-        return responseData
-      })
-    )
+  getData(){
+
   }
 
-  editData(info:Todo){
-      return info
+  addData(){
+
   }
 
-  removeData(id:any){
-      return this.http.delete<Todo>(id)
-  }
+  removeData(){
 
-  addData(item:Todo):Observable<Todo>{
-      let newData = {}
-      return this.http.post<Todo>(this.url,item).pipe(
-          tap(
-            ()=>{
-              newData = {...item}
-            }
-          )
-      )
-      }
+  }
 
 }
